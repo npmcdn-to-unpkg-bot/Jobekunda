@@ -186,7 +186,7 @@ left: 300px;
 }
                             /*List items in my menu*/
 #main-nav ul li:hover{
-    border-left: 3px solid #3A7B97;
+    border-left: 3px solid #CE2A5F;
 }
 
 
@@ -231,7 +231,7 @@ text-transform: uppercase;
     line-height: 10px;}
 
 
-.Navlow-panel p:hover a{color:#589CB7;}
+.Navlow-panel p:hover a{color:#CE2A5F;}
 
 #Navmember{;
 
@@ -256,7 +256,7 @@ margin-right: 0 !important;
     position: relative;
     display: block;
     color: #eee;
-    height: 95%;
+
     float: left;
     width: 90%;
    }
@@ -268,25 +268,28 @@ margin-right: 0 !important;
                     line-height: 26px !important;
                     font-weight: 100%;
                     border: 0;
-                    visibility: hidden;
+                  /*  visibility: hidden;*/
+                        margin-top: 5px;
                     }
 
 
 .hu904{ 
     position: absolute;
+        top: 1.45em;
     float: right;
     display: inline-block;
-    height: 69%;
+    background: 
 
 
 }
 
-.helo6{    background: rgba(236, 236, 236, 0.24);
+.helo6{
+    background: rgba(236, 236, 236, 0.24);
     border: 0;
-    /* line-height: 2.35em; */
+    height: 28px;
     cursor: pointer;
     border-radius: 20px;
-    height: inherit;}
+}
 
 
 .icon{font-size: 15px;
@@ -322,7 +325,7 @@ margin-right: 0 !important;
                        /*Banner video */
 .header-container {
   width: 100%;
-  height: 700px;
+  height: 500px;
   border-right: none;
   border-left: none;
   position: relative;
@@ -339,12 +342,13 @@ margin-right: 0 !important;
   bottom: 0;
 }
 
-video {
+.video-container>video {
   background-color: #000;
   position: absolute;
   z-index: -1;
   opacity: 1;
   width: 100%;
+  height: 100%
 
 }
   
