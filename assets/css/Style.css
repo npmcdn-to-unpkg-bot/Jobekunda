@@ -186,7 +186,7 @@ left: 300px;
 }
                             /*List items in my menu*/
 #main-nav ul li:hover{
-    border-left: 3px solid #CE2A5F;
+
 }
 
 
@@ -490,7 +490,17 @@ ul.actions {
     visibility: visible;
     z-index: 10000;
 
+
 }
+
+.activetumbs  {width: 100%;
+    line-height: 0;
+    display: block;
+    position: relative;
+    margin: 0px;
+    overflow: hidden;
+    float: left;
+   background-color: #000;}
 
  #thumbnailsproducts{   display: -moz-flex;
     display: -webkit-flex;
@@ -505,7 +515,8 @@ ul.actions {
   }
 
 
-#thumbnailsproducts article{position: relative;
+#thumbnailsproducts article{
+  position: relative;
     width: 14%;
     background: #fff;
     outline: 0;
@@ -517,6 +528,7 @@ ul.actions {
     position: relative;
     border: 0;
     outline: 0;
+        margin: 0.5em 0.5em;
 }
 
   #thumbnailsproducts .thumnail img{
@@ -528,32 +540,29 @@ ul.actions {
 
 }
 
-.activetumbs img {width:100%;
-  -webkit-transition:0.4s;
-  -moz-transition:0.4s;
-  -o-transition:0.4s;
-  transition:0.4s;
-  opacity:1;
-  filter:alpha(opacity=100);
-  margin:0px auto;}
-
-.activetumbs:hover img{
--webkit-transform:scale(1.4) rotate(15deg);
-  -moz-transform:scale(1.4) rotate(15deg);
-  -o-transform:scale(1.4 rotate(15deg));
-  transform:scale(1.4) rotate(15deg);
-  opacity:0.5;
-  filter:alpha(opacity=50);
-
+#thumbnailsproducts article ::before{moz-pointer-events: none;
+    -webkit-pointer-events: none;
+    -ms-pointer-events: none;
+    pointer-events: none;
+    -moz-transition: opacity 0.25s ease;
+    -webkit-transition: opacity 0.25s ease;
+    -ms-transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 2px #00D3B7, inset 0 0 0px 3px rgba(0, 0, 0, 0.15);
+    opacity: 0;
+    z-index: 1;
 }
 
- {opacity:1;
-  filter:alpha(opacity=100);
-  right:0;
-  bottom:0;
-  height:auto;}
 
-
+#thumbnailsproducts a:hover .thumnail:before {
+    opacity: 1;
+}
                               /*viewer*/
 
  #viewerProducts{ -moz-transition: opacity 0.75s ease, width 0.75s ease;
