@@ -52,13 +52,17 @@
       <!-- VIDEO CAROUSEL
     ======================================================= -->
     <div class="header-container">
-      <div class="video-container">
-        <video preload="true" autoplay="autoplay" loop="loop" screen="fullscreen" muted>
-          <source src="video/video.mp4" type="video/mp4">
-          <source src="" type="video/webm">
-          <source src="" type="video/mov">
-          <source src="" type="video/3gp">
-        </video>
+      <div class="Banner_fu">
+        <ul class="bg-slideshow">
+          <li><span></span></li>
+          <li><span></span></li>
+          <li><span></span></li>
+          <li><span></span></li>
+          <li><span></span></li>
+
+        </ul>
+
+       
       </div>
 
 
@@ -73,7 +77,7 @@
                  </div>
 
                 <!--  <h3> Best African fashion Designers</h3> -->
-                  <div class="box-search">
+                 <!--  <div class="box-search">
                                      
                       <div class = "container-1">
                       <input type = "search" id = "search" placeholder = "" />
@@ -85,27 +89,125 @@
                                   </button>
 
                             </div>
-                      </div>
-                 </div>   <!-- Main bar -->
+                      </div> -->
+        </div>   <!-- Main bar -->
+
+                 <div class = "elementsBanner">
+                    <ul class = "actions">
+                      <li id="signup">
+                        <a href="#" class="button_09 special">Sign Up</a>
+                      </li>
+                      <li>
+                        <a href="#" class="button_09" >Log In</a>
+                      </li>
+
+                    </ul>
+
+
+
+                 </div>
 
  </header>
    
- <!--  <div class = "pagewrapper"> 
-        <div class = "pagewrapper">
+  <div class = "pagewrapper"> 
+        <div class = "pageContainer">
          
-                <div class = "content-Section">
+                
   
+                <div id = "sectionProducts01t">
 
-                Hi everyone
+                  <section id = "thumbnailsproducts">
+                    <article class="activetumbs">
+                      <a href = "images/thums/imme01.jpg" class = "thumnail" data-position = "">
+                        <img src="images/thums/imme01.jpg" atl>
+                      </a></article>
+                    <article class="activetumbs">
+                      <a href = "images/thums/imme02.jpg" class = "thumnail" data-position = "">
+                        <img src="images/thums/imme02.jpg" atl>
+                      </a></article>
+                    <article class="activetumbs">
+                      <a href = "images/thums/imme03.jpg" class = "thumnail" data-position = "">
+                        <img src="images/thums/imme03.jpg" atl>
+                      </a></article>
+                    <article class="activetumbs">
+                      <a href = "images/thums/imme04.jpg" class = "thumnail" data-position = "">
+                        <img src="images/thums/imme04.jpg" atl>
+                      </a></article>
+                    <article class="activetumbs">
+                      <a href = "images/thums/imme05.jpg" class = "thumnail" data-position = "">
+                        <img src="images/thums/imme05.jpg" atl>
+                      </a></article>
+                    <article class="activetumbs">
+                      <a href = "images/thums/imme06.jpg" class = "thumnail" data-position = "">
+                        <img src="images/thums/imme06.jpg" atl>
+                      </a></article>
+                    <article class="activetumbs">
+                      <a href = "images/thums/imme07.jpg" class = "thumnail" data-position = "">
+                        <img src="images/thums/imme07.jpg" atl>
+                      </a></article>
+                    <article class="activetumbs">
+                      <a href = "images/thums/imme08.jpg" class = "thumnail" data-position = "">
+                        <img src="images/thums/imme08.jpg" atl>
+                      </a></article>
+                    <article class="activetumbs">
+                      <a href = "images/thums/imme09.jpg" class = "thumnail" data-position = "">
+                        <img src="images/thums/imme09.jpg" atl>
+                      </a></article>
+                    <article class="activetumbs">
+                      <a href = "images/thums/imme10.jpg" class = "thumnail" data-position = "">
+                        <img src="images/thums/imme10.jpg" atl>
+                      </a></article>
+                    <article class="activetumbs">
+                      <a href = "images/thums/imme11.jpg" class = "thumnail" data-position = "">
+                        <img src="images/thums/imme11.jpg" atl>
+                      </a></article> 
+                    <article class="activetumbs">
+                      <a href = "images/thums/imme12.jpg" class = "thumnail" data-position = "">
+                        <img src="images/thums/imme12.jpg" atl>
+                      </a></article>        
+                    <article class="activetumbs">
+                      <a href = "images/thums/imme13.jpg" class = "thumnail" data-position = "">
+                        <img src="images/thums/imme13.jpg" atl>
+                      </a></article>
+                    <article class="activetumbs">
+                      <a href = "images/thums/imme14.jpg" class = "thumnail" data-position = "">
+                        <img src="images/thums/imme14.jpg" atl>
+                      </a></article>           
+                  </section>
 
 
 
-                </div>   
+                </div>
+
+                <div id = "viewerProducts">
+                  <div class="slideElemnts">
+                      <div class = "nav-next">
+                        <a href="#">
+                          <i class="fa fa-chevron-right"></i>
+                        </a>
+                      </div>
+                      <div class = "nav-previous">
+                        <a href="#">
+                          <i class="fa fa-chevron-left"></i>
+                        </a>
+                      </div>
+
+                  </div>
+                  <div class="slide">
+                    <div caption = "captionSlide"></div>
+                    <div class = "imageSlide" style="background-image:url('images/fills/imme01fills.jpg'); background-position: 50% 15%;">
+                      
+                    </div>
+                  </div>
+
+                </div>
+                
+
 
                 </div> 
 
   </div>     
- -->
+
 
                         <script type="text/javascript">
             // Side Menu Trigger Function
