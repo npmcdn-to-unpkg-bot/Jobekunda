@@ -145,6 +145,8 @@
                       <a href = "images/thums/imme07.jpg" class = "thumnail" data-position = "">
                         <img src="images/thums/imme07.jpg" atl>
                       </a></article>
+
+                      
                     <article class="activetumbs">
                       <a href = "images/thums/imme08.jpg" class = "thumnail" data-position = "">
                         <img src="images/thums/imme08.jpg" atl>
