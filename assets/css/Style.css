@@ -187,6 +187,8 @@ left: 300px;
                             /*List items in my menu*/
 #main-nav ul li:hover{
 
+
+
 }
 
 
@@ -230,7 +232,7 @@ text-transform: uppercase;
     line-height: 10px;}
 
 
-.Navlow-panel p:hover a{color:#CE2A5F;}
+/*.Navlow-panel p:hover a{color:#CE2A5F;}*/
 
 #Navmember{
 background:rgba(242, 48, 84, 0.81);
@@ -490,10 +492,10 @@ ul.actions {
     visibility: visible;
     z-index: 10000;
 
-
 }
 
-.activetumbs  {width: 100%;
+
+.activetumbs  {
     line-height: 0;
     display: block;
     position: relative;
@@ -502,7 +504,28 @@ ul.actions {
     float: left;
    background-color: #000;}
 
- #thumbnailsproducts{   display: -moz-flex;
+   .thumbnailsproducts article{
+  position: relative;
+    width: 18%;
+    background: #fff;
+    outline: 0;
+    margin: 0.6em 0.6em;
+}
+.section-Container{ margin-left: 3em;
+
+
+}
+
+
+article img:hover{
+    transform: scale(1.5);
+    transition: all 2s ease-in-out;
+    overflow: hidden;
+    z-index: -2;
+
+  } 
+
+ .thumbnailsproducts{   display: -moz-flex;
     display: -webkit-flex;
     display: -ms-flex;
     display: flex;
@@ -510,37 +533,34 @@ ul.actions {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 98%;
+     width: 98%;
     margin-left: auto;
+    background-color: #fff;
+    margin-right: auto;
   }
 
 
-#thumbnailsproducts article{
-  position: relative;
-    width: 14%;
-    background: #fff;
-    outline: 0;
-}
 
 
-  #thumbnailsproducts .thumnail{  -webkit-tap-highlight-color: transparent;
+
+ .thumbnailsproducts .thumnail{  -webkit-tap-highlight-color: transparent;
     display: block;
     position: relative;
     border: 0;
     outline: 0;
-        margin: 0.5em 0.5em;
+    margin:0;
 }
 
-  #thumbnailsproducts .thumnail img{
+  .thumbnailsproducts .thumnail img{
 
         display: block;
     width: 100%;
-        height: 17em;
+        height: 19em;
 
 
 }
 
-#thumbnailsproducts article ::before{moz-pointer-events: none;
+.thumbnailsproducts article ::before{moz-pointer-events: none;
     -webkit-pointer-events: none;
     -ms-pointer-events: none;
     pointer-events: none;
@@ -560,7 +580,7 @@ ul.actions {
 }
 
 
-#thumbnailsproducts a:hover .thumnail:before {
+.thumbnailsproducts a:hover .thumnail:before {
     opacity: 1;
 }
                               /*viewer*/

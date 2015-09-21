@@ -116,7 +116,8 @@
   
                 <div id = "sectionProducts01t">
 
-                  <section id = "thumbnailsproducts">
+                  <section class = "thumbnailsproducts">
+                    <div class="section-Container">
                     <article class="activetumbs">
                       <a href = "images/thums/imme01.jpg" class = "thumnail" data-position = "">
                         <img src="images/thums/imme01.jpg" atl>
@@ -126,31 +127,22 @@
                         <img src="images/thums/imme02.jpg" atl>
                       </a></article>
                     <article class="activetumbs">
-                      <a href = "images/thums/imme03.jpg" class = "thumnail" data-position = "">
-                        <img src="images/thums/imme03.jpg" atl>
-                      </a></article>
-                    <article class="activetumbs">
-                      <a href = "images/thums/imme04.jpg" class = "thumnail" data-position = "">
-                        <img src="images/thums/imme04.jpg" atl>
-                      </a></article>
-                    <article class="activetumbs">
-                      <a href = "images/thums/imme05.jpg" class = "thumnail" data-position = "">
-                        <img src="images/thums/imme05.jpg" atl>
+                      <a href = "images/thums/imme07.jpg" class = "thumnail" data-position = "">
+                        <img src="images/thums/imme07.jpg" atl>
                       </a></article>
                     <article class="activetumbs">
                       <a href = "images/thums/imme06.jpg" class = "thumnail" data-position = "">
                         <img src="images/thums/imme06.jpg" atl>
                       </a></article>
                     <article class="activetumbs">
-                      <a href = "images/thums/imme07.jpg" class = "thumnail" data-position = "">
-                        <img src="images/thums/imme07.jpg" atl>
+                      <a href = "images/thums/imme03.jpg" class = "thumnail" data-position = "">
+                        <img src="images/thums/imme03.jpg" atl>
                       </a></article>
-
-                      
-                    <article class="activetumbs">
-                      <a href = "images/thums/imme08.jpg" class = "thumnail" data-position = "">
-                        <img src="images/thums/imme08.jpg" atl>
-                      </a></article>
+                      </div>
+                   </section>
+                   
+                   <section class = "thumbnailsproducts">   
+                      <div class="section-Container">
                     <article class="activetumbs">
                       <a href = "images/thums/imme09.jpg" class = "thumnail" data-position = "">
                         <img src="images/thums/imme09.jpg" atl>
@@ -171,11 +163,10 @@
                       <a href = "images/thums/imme13.jpg" class = "thumnail" data-position = "">
                         <img src="images/thums/imme13.jpg" atl>
                       </a></article>
-                    <article class="activetumbs">
-                      <a href = "images/thums/imme14.jpg" class = "thumnail" data-position = "">
-                        <img src="images/thums/imme14.jpg" atl>
-                      </a></article>           
-                  </section>
+                    </div>
+
+                    </section>  
+                    
 
 
 
