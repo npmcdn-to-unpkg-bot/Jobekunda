@@ -111,65 +111,94 @@
   <div class = "pagewrapper"> 
         <div class = "pageContainer">
          
-                
+              <div id="first-sectionP">
   
-                <div id = "sectionProducts01t">
+                      <div class="flex-container">
 
-                  <section class = "thumbnailsproducts" tabindex="-1">
-                    <div class="section-Container">
-                    <article class="activetumbs">
-                      <a href = "images/thums/imme01.jpg" class = "thumnail" data-position = "">
-                        <img src="images/thums/imme01.jpg" atl>
-                      </a></article>
-                    <article class="activetumbs" tabindex="-1">
-                      <a href = "images/thums/imme02.jpg" class = "thumnail" data-position = "">
-                        <img src="images/thums/imme02.jpg" atl>
-                      </a></article>
-                    <article class="activetumbs" tabindex="-1">
-                      <a href = "images/thums/imme07.jpg" class = "thumnail" data-position = "">
-                        <img src="images/thums/imme07.jpg" atl>
-                      </a></article>
-                    <article class="activetumbs" tabindex="-1">
-                      <a href = "images/thums/imme06.jpg" class = "thumnail" data-position = "">
-                        <img src="images/thums/imme06.jpg" atl>
-                      </a></article>
-                    <article class="activetumbs" tabindex="-1">
-                      <a href = "images/thums/imme03.jpg" class = "thumnail" data-position = "">
-                        <img src="images/thums/imme03.jpg" atl>
-                      </a></article>
-                      </div>
-                   </section>
-                   
-                   <section class = "thumbnailsproducts" >   
-                      <div class="section-Container">
-                    <article class="activetumbs" tabindex="-1">
-                      <a href = "images/thums/imme09.jpg" class = "thumnail" data-position = "">
-                        <img src="images/thums/imme09.jpg" atl>
-                      </a></article>
-                    <article class="activetumbs" tabindex="-1">
-                      <a href = "images/thums/imme10.jpg" class = "thumnail" data-position = "">
-                        <img src="images/thums/imme10.jpg" atl>
-                      </a></article>
-                    <article class="activetumbs" tabindex="-1">
-                      <a href = "images/thums/imme11.jpg" class = "thumnail" data-position = "">
-                        <img src="images/thums/imme11.jpg" atl>
-                      </a></article> 
-                    <article class="activetumbs" tabindex="-1">
-                      <a href = "images/thums/imme12.jpg" class = "thumnail" data-position = "">
-                        <img src="images/thums/imme12.jpg" atl>
-                      </a></article>        
-                    <article class="activetumbs" tabindex="-1">
-                      <a href = "images/thums/imme13.jpg" class = "thumnail" data-position = "">
-                        <img src="images/thums/imme13.jpg" atl>
-                      </a></article>
-                    </div>
+            <div class="flex-item">
+               <!--  <p class="text">Confidence</p> -->
+                <a href="#">
+                <img src="images/thums/imme01.jpg" alt="men design">
+                </a>
+            </div>
 
-                    </section>  
-                    
+            <div class="flex-item">
+              <!--   <p class="text">Cute</p> -->
+                <a href="#">
+                <img src="images/thums/imme02.jpg" alt="men design">
+                </a>
+            </div>
+
+            <div class="flex-item">
+               <!--  <p class="text">Simple</p> -->
+                <a href="#">
+                <img src="images/thums/imme03.jpg" alt="men design">
+                </a>
+            </div>
+
+            <div class="flex-item">
+               <!--  <p class="text">Classy</p> -->
+                <a href="#">
+                <img src="images/thums/imme04.jpg" alt="men design">
+                </a>
+            </div>
+
+            <div class="flex-item">
+              <!--   <p class="text">Stylist</p> -->
+                <a href="#">
+                <img src="images/thums/imme05.jpg" alt="men design">
+                </a>
+            </div>
+
+        </div>
 
 
 
-                </div>
+        <div class="flex-container">
+
+            <div class="flex-item">
+            <!--     <p class="text">Beautiful</p> -->
+                <a href="#">
+                <img src="images/thums/imme06.jpg" alt="children design">
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <!-- <p class="text">Look at me</p> -->
+                <a href="#">
+                <img src="images/thums/imme07.jpg" alt="children design">
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <!-- <p class="text">Cool Style</p> -->
+                <a href="#">
+                <img src="images/thums/imme08.jpg" alt="children design">
+                </a>
+            </div>
+
+            <div class="flex-item">
+                <!-- <p class="text">Nice Twins</p> -->
+                <a href="#">
+                <img src="images/thums/imme09.jpg" alt="children design">
+                </a>
+            </div>
+
+            <div class="flex-item">
+               <!--  <p class="text">Colourful</p> -->
+                <a href="#">
+                <img src="images/thums/imme10.jpg" alt="children design">
+                </a>
+            </div>
+
+        </div>
+</div>
+
+           
+
+
+
+             </div>   <!--Page Container  -->
 
                 <div id = "viewerProducts">
                   <div id="screenslide-Cont">
@@ -208,7 +237,7 @@
 
                     </div>
 
-              </div>  
+              </div>  <!-- Right side info area -->
                 </div>
 
      
