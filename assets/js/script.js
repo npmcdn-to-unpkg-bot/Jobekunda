@@ -1,4 +1,9 @@
-<script type="text/javascript">
+
+
+
+
+
+
 	// Side Menu Trigger Function
 	$('a.sideTrigger').click(function() {
 		$('body').toggleClass('sideOpen');
@@ -10,4 +15,5 @@
 		$('body').removeClass('sideOpen');
 		return false;
 	});
-</script>
+
+
