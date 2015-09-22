@@ -112,6 +112,10 @@
         <div class = "pageContainer">
          
               <div id="first-sectionP">
+
+                <div class="captopn-section">
+                  <h1><a href="#">Latest Products</a></h1>
+                </div>
   
                       <div class="flex-container">
 
@@ -192,58 +196,11 @@
             </div>
 
         </div>
-</div>
-
-           
+</div><!-- First Section ends -->
 
 
 
-            
 
-                <div id = "viewerProducts">
-                  <div id="screenslide-Cont">
-
-                   <div class="slideElemnts">
-                    <!--     <div class = "nav-next">
-                          <a href="#">
-                            <i class="fa fa-chevron-right"></i>
-                         </a>
-                        </div>
-                        <div class = "nav-previous">
-                         <a href="#">
-                           <i class="fa fa-chevron-left"></i>
-                         </a>
-                        </div> -->
-                    </div>    
-                  <div class="slide">
-                      <div caption = "captionSlide"></div>
-                      <div class = "imageSlide" style="background-image:url('images/largepix/imme12.jpg'); background-position: 50% 15%;">
-                      </div>
-                  </div>
-                  
-                 
-
-                </div>
-              <div id="right-side">
-                    <div class="viewer0info-Rside">
-                        <img src="images/Profilepix/11698517_10205466839968531_5750592294516276713_n.jpg" class="avatar-holder01">
-                        <div class="name-head"><a href="#">Jobizzness Watumad</a></div>
-                    </div>
-                    <div class="viewer0info-content"></div>
-                    <div class="viewer0info-footer">
-
-                        <p class="other-Angles">
-                            <a href="#"><img src="images/Products/difAngles/thumbnil/rascal-tee-front.jpg" class="thumnail-RV"></a></p>
-
-                        <p class="other-Angles"><a href=""><img src="images/Products/difAngles/thumbnil/rascal-tee-back.jpg" class="thumnail-RV"></a></p>
-
-
-                    </div>
-
-              </div>  <!-- Right side info area -->
-                </div><!-- Viewer Products -->
-
-     
                </div>   <!--Page Container  -->
   </div>  
 
