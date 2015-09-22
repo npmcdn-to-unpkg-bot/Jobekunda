@@ -117,28 +117,28 @@
 
             <div class="flex-item">
                <!--  <p class="text">Confidence</p> -->
-                <a href="#">
+                <a href="#" class="thumnails">
                 <img src="images/thums/imme01.jpg" alt="men design">
                 </a>
             </div>
 
             <div class="flex-item">
               <!--   <p class="text">Cute</p> -->
-                <a href="#">
+                <a href="#" class="thumnails">
                 <img src="images/thums/imme02.jpg" alt="men design">
                 </a>
             </div>
 
             <div class="flex-item">
                <!--  <p class="text">Simple</p> -->
-                <a href="#">
+                <a href="#" class="thumnails">
                 <img src="images/thums/imme03.jpg" alt="men design">
                 </a>
             </div>
 
-            <div class="flex-item">
+            <div class="flex-item Active">
                <!--  <p class="text">Classy</p> -->
-                <a href="#">
+                <a href="#" class="thumnails">
                 <img src="images/thums/imme04.jpg" alt="men design">
                 </a>
             </div>
@@ -198,7 +198,7 @@
 
 
 
-             </div>   <!--Page Container  -->
+            
 
                 <div id = "viewerProducts">
                   <div id="screenslide-Cont">
@@ -231,18 +231,21 @@
                     </div>
                     <div class="viewer0info-content"></div>
                     <div class="viewer0info-footer">
-                        <p><span><img src="images/Products/difAngles/thumbnil/rascal-tee-front.jpg"></span></p>
-                        <p><span><img src="images/Products/difAngles/thumbnil/rascal-tee-back.jpg"></span></p>
+
+                        <p class="other-Angles">
+                            <a href="#"><img src="images/Products/difAngles/thumbnil/rascal-tee-front.jpg" class="thumnail-RV"></a></p>
+
+                        <p class="other-Angles"><a href=""><img src="images/Products/difAngles/thumbnil/rascal-tee-back.jpg" class="thumnail-RV"></a></p>
 
 
                     </div>
 
               </div>  <!-- Right side info area -->
-                </div>
+                </div><!-- Viewer Products -->
 
      
-
-  </div>  <!-- Page contatiner     -->
+               </div>   <!--Page Container  -->
+  </div>  
 
 
            
