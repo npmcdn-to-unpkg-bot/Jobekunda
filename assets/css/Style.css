@@ -482,7 +482,7 @@ ul.actions {
 
 .caption-section{width: 200px;
      margin-left: 1em;
-          border-bottom: 1px solid #C7C7C7;
+          border-bottom: 1px solid #CCCCCC;
         height: 2em;}
 
 .caption-section a{    margin: 4em 1em;
@@ -693,7 +693,7 @@ float: left;
                     /*Laptop Screen*/
      @media screen and (max-width: 1280px){
           .pagewrapper{
-      max-width: 80em;
+      max-width: 90em;
       min-width: 70em;
         padding: 0em 3.3em 0em 3.3em;}
 
