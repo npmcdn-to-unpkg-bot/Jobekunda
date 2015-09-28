@@ -69,7 +69,9 @@
                  <div class = "pull-left">
                      <a href = "#" class = "sideTrigger">
                       <span class = "menu-icon">
-                        <img src = "images/Men.png" id = "ico-menu">
+
+                        <img src = "images/Men.png"  id = "ico-menu">
+
                       </span>
                       <span class = "menu-text">Menu</span>
                      </a>
@@ -113,98 +115,211 @@
          
               <div id="first-sectionP">
 
-                <div class="captopn-section">
-                  <h1><a href="#">Latest Products</a></h1>
+                <div class="caption-section">
+                  <a href="#">Latest Products</a>
                 </div>
   
-                      <div class="flex-container">
+              <div class="flex-container">
 
             <div class="flex-item">
-               <!--  <p class="text">Confidence</p> -->
-                <a href="#" class="thumnails">
-                <img src="images/thums/imme01.jpg" alt="men design">
-                </a>
+                  <div class = "image-Container" >
+
+                    <a href="#" class="thumnails">
+                    <img src="images/thums/imme01.jpg" alt="men design">
+                     </a>
+                  </div> 
+                  
+                  <div class = "elements-Container"></div>  
             </div>
 
+             <div class="flex-item">
+                  <div class = "image-Container" >
+
+                    <a href="#" class="thumnails">
+                    <img src="images/thums/imme02.jpg" alt="men design">
+                     </a>
+                  </div> 
+                  
+                  <div class = "elements-Container"></div>  
+            </div>
+            
+             <div class="flex-item">
+                  <div class = "image-Container" >
+
+                    <a href="#" class="thumnails">
+                    <img src="images/thums/imme03.jpg" alt="men design">
+                     </a>
+                  </div> 
+                  
+                  <div class = "elements-Container"></div>  
+            </div>
+            
+             <div class="flex-item">
+                  <div class = "image-Container" >
+
+                    <a href="#" class="thumnails">
+                    <img src="images/thums/imme04.jpg" alt="men design">
+                     </a>
+                  </div> 
+                  
+                  <div class = "elements-Container"></div>  
+            </div>
             <div class="flex-item">
-              <!--   <p class="text">Cute</p> -->
-                <a href="#" class="thumnails">
-                <img src="images/thums/imme02.jpg" alt="men design">
-                </a>
+                  <div class = "image-Container" >
+
+                    <a href="#" class="thumnails">
+                    <img src="images/thums/imme05.jpg" alt="men design">
+                     </a>
+                  </div> 
+                  
+                  <div class = "elements-Container"></div>  
+
             </div>
 
-            <div class="flex-item">
-               <!--  <p class="text">Simple</p> -->
-                <a href="#" class="thumnails">
-                <img src="images/thums/imme03.jpg" alt="men design">
-                </a>
+       </div><!-- Flex container First ends here -->     
+
+         
+
+
+        <div class="flex-container secondflex">
+
+                    <div class="flex-item">
+                  <div class = "image-Container" >
+
+                    <a href="#" class="thumnails">
+                    <img src="images/thums/imme06.jpg" alt="men design">
+                     </a>
+                  </div> 
+                  
+                  <div class = "elements-Container"></div>  
             </div>
 
-            <div class="flex-item Active">
-               <!--  <p class="text">Classy</p> -->
-                <a href="#" class="thumnails">
-                <img src="images/thums/imme04.jpg" alt="men design">
-                </a>
+             <div class="flex-item">
+                  <div class = "image-Container" >
+
+                    <a href="#" class="thumnails">
+                    <img src="images/thums/imme07.jpg" alt="men design">
+                     </a>
+                  </div> 
+                  
+                  <div class = "elements-Container"></div>  
+            </div>
+            
+             <div class="flex-item">
+                  <div class = "image-Container" >
+
+                    <a href="#" class="thumnails">
+                    <img src="images/thums/imme08.jpg" alt="men design">
+                     </a>
+                  </div> 
+                  
+                  <div class = "elements-Container"></div>  
+            </div>
+            
+             <div class="flex-item">
+                  <div class = "image-Container" >
+
+                    <a href="#" class="thumnails">
+                    <img src="images/thums/imme09.jpg" alt="men design">
+                     </a>
+                  </div> 
+                  
+                  <div class = "elements-Container"></div>  
             </div>
 
-            <div class="flex-item">
-              <!--   <p class="text">Stylist</p> -->
-                <a href="#">
-                <img src="images/thums/imme05.jpg" alt="men design">
-                </a>
-            </div>
+             <div class="flex-item">
+                  <div class = "image-Container" >
+
+                    <a href="#" class="thumnails">
+                    <img src="images/thums/imme10.jpg" alt="men design">
+                     </a>
+                  </div> 
+                  
+                  <div class = "elements-Container"></div>  
 
         </div>
+      </div><!-- Flex container second ends here -->
 
 
+              <div class="flex-container secondflex">
 
-        <div class="flex-container">
+                    <div class="flex-item">
+                  <div class = "image-Container" >
 
-            <div class="flex-item">
-            <!--     <p class="text">Beautiful</p> -->
-                <a href="#">
-                <img src="images/thums/imme06.jpg" alt="children design">
-                </a>
+                    <a href="#" class="thumnails">
+                    <img src="images/thums/imme11.jpg" alt="men design">
+                     </a>
+                  </div> 
+                  
+                  <div class = "elements-Container"></div>  
             </div>
 
-            <div class="flex-item">
-                <!-- <p class="text">Look at me</p> -->
-                <a href="#">
-                <img src="images/thums/imme07.jpg" alt="children design">
-                </a>
+             <div class="flex-item">
+                  <div class = "image-Container" >
+
+                    <a href="#" class="thumnails">
+                    <img src="images/thums/imme12.jpg" alt="men design">
+                     </a>
+                  </div> 
+                  
+                  <div class = "elements-Container"></div>  
+            </div>
+            
+             <div class="flex-item">
+                  <div class = "image-Container" >
+
+                    <a href="#" class="thumnails">
+                    <img src="images/thums/imme13.jpg" alt="men design">
+                     </a>
+                  </div> 
+                  
+                  <div class = "elements-Container"></div>  
+            </div>
+            
+             <div class="flex-item">
+                  <div class = "image-Container" >
+
+                    <a href="#" class="thumnails">
+                    <img src="images/thums/imme14.jpg" alt="men design">
+                     </a>
+                  </div> 
+                  
+                  <div class = "elements-Container"></div>  
             </div>
 
-            <div class="flex-item">
-                <!-- <p class="text">Cool Style</p> -->
-                <a href="#">
-                <img src="images/thums/imme08.jpg" alt="children design">
-                </a>
-            </div>
+             <div class="flex-item">
+                  <div class = "image-Container" >
 
-            <div class="flex-item">
-                <!-- <p class="text">Nice Twins</p> -->
-                <a href="#">
-                <img src="images/thums/imme09.jpg" alt="children design">
-                </a>
-            </div>
-
-            <div class="flex-item">
-               <!--  <p class="text">Colourful</p> -->
-                <a href="#">
-                <img src="images/thums/imme10.jpg" alt="children design">
-                </a>
-            </div>
+                    <a href="#" class="thumnails">
+                    <img src="images/thums/imme15.jpg" alt="men design">
+                     </a>
+                  </div> 
+                  
+                  <div class = "elements-Container"></div>  
 
         </div>
+      </div><!-- Flex container Third ends here -->
+
+
 </div><!-- First Section ends -->
 
+            <div id ="Loadmore-wrapper" >
+              <div class = "Loadmore-container"><a href="#">Load More</a></div>
 
 
+            </div>
 
-               </div>   <!--Page Container  -->
+   </div>   <!--Page Container  -->
   </div>  
 
+<footer class = "footerContainerWrapper">
+  
 
+
+
+
+
+</footer>
            
     <!-- Scripts -->
 <script src="assets/js/jquery-2.1.4.min.js"></script>
