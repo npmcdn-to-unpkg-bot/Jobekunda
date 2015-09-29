@@ -304,7 +304,8 @@
 </div><!-- First Section ends -->
 
             <div id ="Loadmore-wrapper" >
-              <div class = "Loadmore-container"><a href="#">Load More</a></div>
+              <div class = "Loadmore-container">
+                <a href="#" id = "Loadmore">Load</a></div>
 
 
             </div>
