@@ -474,12 +474,11 @@ ul.actions {
                           /*First Section*/
 
 
-#first-sectionP{
+#latest-products{
     width: 95%;
       margin-left: auto;
     margin-right: auto;}
 
-.secondflex{margin-top: 2em;}
 
 .caption-section{width: 200px;
      margin-left: 1em;
@@ -490,46 +489,87 @@ ul.actions {
     font-size: 109%;
 
 }
-.flex-container {
-margin: 1em 0;
-    height: 270px;
-}
 
-.flex-item {
-float: left;
-    padding: 0;
-    width: 14em;
-    height: 16em;
-    text-align: center;
-    line-height: 4px;
-    position: relative;
-    background-color: #fff;
-    margin: 0 1em;
-    box-shadow: 0px 0px 3px -1px rgba(0, 0, 0, 0.52);
 
-}
-.image-Container{height: 80%;
+
+.products-row{    background: #fff;
+    height: 337px;
+    overflow: hidden;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
 
 
 }
 
-.elements-Container{height:20%;
-    background-color: #FFFFFF;
-    padding: 5px;}
 
-.flex-item img {
-    width: 85%;
-    height: 94%;
-    margin-top: 13px;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
+.thumnai-items{    background-color: #fff;
+    width: 240px;
+    height: 300px;
+    display: inline-block;
+    margin: 0;
+    overflow: hidden;
+        box-shadow: 0px 0px 4px 2px #eee;
+
+
+}
+
+.thumnai-items>a>img{     min-height: 300px;
+    min-width: 238px;
+    vertical-align: middle;
 }
 
 
+.latestProducts-wrapper{margin:1em 0;
+                        background: #fff;
 
+
+}
+
+
+.thumnai-items>a>img:hover{transform: scale(1.05);
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in;}
+
+
+
+
+
+
+
+
+                                                  /*section 2 of my page*/
+
+
+
+    .wrapper-content2{background: #fff;
+                      height:25em;
+                      color: 000;
+           
+
+
+
+
+    }                                              
+
+
+
+.disp-products{    width: 70%;
+    height: 20em;
+    border-right: 1px solid #E6E6E6;
+    float: left;
+    margin-top: 2em;}
+
+
+.info-area{    width: 30%;
+    height: 20em;
+    float: right;
+    margin-top: 2em;
+
+}
                               /*viewer*/
 #viewerProducts{width:98%;
                 height:40em;
@@ -719,7 +759,7 @@ margin-top: 15px;
           .pagewrapper{
       max-width: 90em;
       min-width: 70em;
-        padding: 0em 3.3em 0em 3.3em;}
+        padding: 0;}
 
    body{font-size:90%;
  }
