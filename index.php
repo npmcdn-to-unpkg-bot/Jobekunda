@@ -3,6 +3,7 @@
 <head>
    <title>MyTailor | African Fahion industry</title>
    <link rel="stylesheet" href="assets/css/Style.css" type="text/css"/>
+   <link rel="shortcut icon" href="images/favicon.png" />
 
    <meta charset="UTF-8">
             
@@ -10,15 +11,59 @@
 </head>
 
 <body>
+        <!-- Script for sigunp -->
 
 <div id="page">
+              <!-- Start Overlay -->
+              <div id="overlay">
+              </div>
+
+              <!-- End Overlay -->
+              <!-- Start Special Centered Box -->
+
+              <div id="specialBox-008">
+                    <div class="signup-wrapper">
+                      
+                    
+
+
+                <div id="header-form">
+                  <p>Sign Up</p>
+                </div>
+
+                <!-- Signup Form -->
+      <form id="signup-form" method="post" action="#">
+
+        <input type="text" name="username" Placeholder="username">
+        <input type="email" name="email" id="email" placeholder="Email Address" />
+        <input type="password" name="pswd" id="password" placeholder="Password" />
+        <input type="email" name="pswd-vy" id="password-re" placeholder="Re-type Password" />
+
+
+        <input type="submit" value="Sign Up" />
+      </form>
+
+
+
+
+
+
+            <!--   <button onmousedown="toggleOverlay()">X</button> -->
+
+                </div>
+
+
+            </div>
+
+
+
     <div class="SideMenu">
 
      <nav id="main-nav">
               <ul>
                 <div class="actionsMain">
                   <a href="#" class="closeTrigger"><span class="icon-close">X</span></a>
-               <a href="#" class="signupSideM">Sign up</a>
+               <a href="signup.php" class="signupSideM">Sign up</a>
                <a href="#" class="signinSideM">Member</a>
 
                 </div>
@@ -77,8 +122,17 @@
                      </a>
                  </div>
 
+                <div>
+                  <a href="#">MyTailor</a>
+
+
+
+                </div>
+
+
+
                 <!--  <h3> Best African fashion Designers</h3> -->
-                 <!--  <div class="box-search">
+                  <div class="box-search">
                                      
                       <div class = "container-1">
                       <input type = "search" id = "search" placeholder = "" />
@@ -90,13 +144,13 @@
                                   </button>
 
                             </div>
-                      </div> -->
+                      </div>
         </div>   <!-- Main bar -->
 
                  <div class = "elementsBanner">
                     <ul class = "actions">
                       <li id="signup">
-                        <a href="#" class="button_09 special">Sign Up</a>
+                        <a href="signup.php" class="button_09 special" onmousedown="toggleOverlay()">Sign Up</a>
                       </li>
                       <li>
                         <a href="#" class="button_09" >Log In</a>
@@ -148,23 +202,65 @@
               <div class = "wrapper-content2">
 
 
-                  <section class = "disp-products"></section>
-                  <section class = "info-area">
-                    
+                  <section class = "disp-products">
+                    <article class = "wrapper-dp">
+                        <div class= "item-pdwr"><a href="#" style="margin:0;"><img src="images/thums/imme12.jpg" alt="Female Pearls" height="175px"></a></div>
+                        <div class = "caption">
+                          <a href="#"><h4>Female Pearls</h4></a>
+                        </div>
+                    </article>
+                     <article class = "wrapper-dp">
+                        <div class= "item-pdwr"><a href="#" style="margin:0;"><img src="images/thums/imme13.jpg" alt="Female Pearls" height="175px"></a></div>
+                        <div class = "caption">
+                          <a href="#"><h4>Black coat Male</h4></a>
+                        </div>
+                    </article>
+                     <article class = "wrapper-dp">
+                        <div class= "item-pdwr"><a href="#" style="margin:0;"><img src="images/thums/imme14.jpg" alt="Female Pearls" height="175px"></a></div>
+                        <div class = "caption">
+                          <a href="#"><h4>Blue cimis</h4></a>
+                        </div>
+                    </article>
+                     <article class = "wrapper-dp">
+                        <div class= "item-pdwr"><a href="#" style="margin:0;"><img src="images/thums/imme15.jpg" alt="Female Pearls" height="175px"></a></div>
+                        <div class = "caption">
+                          <a href="#"><h4>African kala</h4></a>
+                        </div>
+                    </article>
+                     <article class = "wrapper-dp">
+                        <div class= "item-pdwr"><a href="#" style="margin:0;"><img src="images/thums/imme16.jpg" alt="Female Pearls" height="175px"></a></div>
+                        <div class = "caption">
+                          <a href="#"><h4>mousorr ak mouba</h4></a>
+                        </div>
+                    </article>
+                     <article class = "wrapper-dp">
+                        <div class= "item-pdwr"><a href="#" style="margin:0;"><img src="images/thums/imme17.jpg" alt="Female Pearls" height="175px"></a></div>
+                        <div class = "caption">
+                          <a href="#"><h4>Female Pearls</h4></a>
+                        </div>
+                    </article>
+                     <article class = "wrapper-dp">
+                        <div class= "item-pdwr"><a href="#" style="margin:0;"><img src="images/thums/imme18.jpg" alt="Female Pearls" height="175px"></a></div>
+                        <div class = "caption">
+                          <a href="#"><h4>New style mousorr</h4></a>
+                        </div>
+                    </article>
+                     <article class = "wrapper-dp">
+                        <div class= "item-pdwr"><a href="#" style="margin:0;"><img src="images/thums/imme19.jpg" alt="Female Pearls" height="175px"></a></div>
+                        <div class = "caption">
+                          <a href="#"><h4>Female Coat</h4></a>
+                        </div>
+                    </article>
 
-                    banner
+
+
                   </section>
-                
+                  <section class = "info-area">
 
+                    <span><a href="#"><img src="images/advert1.jpg"></a></span>
 
-
-
-
-
-
-
-
-              </div>
+                  </section>
+</div>
 
 
 
