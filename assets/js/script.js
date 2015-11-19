@@ -30,6 +30,8 @@
         });
     })(jQuery);
 
+    //Signup Box function
+
 function toggleOverlay(){
   var overlay = document.getElementById('overlay');
   var specialBox = document.getElementById('specialBox-008');
