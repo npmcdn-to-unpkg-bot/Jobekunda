@@ -28,7 +28,9 @@
 
 
                 <div id="header-form">
-                  <span><h2>MyTailor</h2></span>
+                  <div id = "form-logo">
+
+                  </div>
 
                   
                 </div>
@@ -40,7 +42,8 @@
             <div id="social-sign">
             <div class="panel-sn" >
               <div  class="social-connets facebook-p">
-              <a href="#"><span>Login with Facebook</span></a>
+              <a href="#">
+                <span>Login with Facebook</span></a>
             </div></div>
 
             </div> 
@@ -58,7 +61,7 @@
           </div> <!-- Body form eds -->
 
          <div id = "footer-form">
-                      <span class="links-sign" id="lgin"><a href="#">Log in</a></span>
+                      <span class="links-sign" id="lgin"><a href="#">Sign Up</a></span>
 
                       <span class="links-sign" id="fpass"><a href="#">Forgot my Password</a></span>
             
@@ -270,17 +273,38 @@
                     <span><a href="#"><img src="images/advert1.jpg"></a></span>
 
                   </section>
-</div>
+              </div>  <!-- Wrapper content ends here -->
+
+            
+
+
+              <div id = "deals-container">
+      
+                <ul class = "topDeals-Slide">
+                  
+                    <li class="Slide-item--active Slide-item_tdeals" id="Slide-item_tdeals-one">
+
+                      <div>
+                        <span><a href="#">Left</a></span>
+                        <span><a href="#">Right</a></span>
+
+                          <span>Top Deals</span>
+                          <span>Just $20 Free Shipping</span>
 
 
 
+                        <div>
+                      
+                    </li>
+                    <li class="Slide-item_tdeals"></li>
+                    <li class="Slide-item_tdeals"></li>
+                    <li class="Slide-item_tdeals"></li>
 
-<!--             <div id ="Loadmore-wrapper" >
-              <div class = "Loadmore-container">
-                <a href="#" id = "Loadmore">Load</a></div>
+
+                </ul>
 
 
-            </div> -->
+              </div>
 
    </div>   <!--Page Container  -->
   </div>  

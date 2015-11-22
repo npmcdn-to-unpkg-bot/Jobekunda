@@ -265,20 +265,20 @@ margin-right: 0 !important;
             #search{width:100%;
                     margin:0;
                     height:86%;
-                    font: 18px arial,sans-serif;
+                    font: 88% arial,sans-serif;
                     line-height: 26px !important;
-                    font-weight: 100%;
                     border: 0;
                     margin-top: 5px;
                     background:#fff;
+                     border: 1px solid;
                     }
  
 
 .hu904{ 
     margin-top: 5px;
     display: inline-block;
-    height: 2.1em;
-}
+    height: 2.1em;}
+
 /*        background-color: rgb(206, 42, 95);
             border-top: rgba(0, 175, 224, 0.86) 2px solid;
             border-right: rgba(0, 175, 224, 0.86) 2px solid;
@@ -291,19 +291,33 @@ margin-right: 0 !important;
     border: 0;
     height: 100%;
     cursor: pointer;
-    background: #F23054;
+    background: #0C3753;
+
+
+}
+
+.container-1 input[type="search"]:focus{    -moz-animation: focus 0.1s;
+    -webkit-animation: focus 0.1s;
+    -ms-animation: focus 0.1s;
+    animation: focus 0.1s;
+    background-color: rgb(234, 234, 232) !important;
+    border-color: #33A4FF !important;
+   
+
+
 
 }
 
 
 .icon{font-size: 15px;
-      color: #C7C7C7;}
+      color: #fff;}
 
 /*button.helo6:hover{background:rgba(234, 45, 105, 0.86);*/
 
 }      
 
-  button.helo6:focus{border:0;}                                   /*Banner video*/
+  button.helo6:focus{border:0;}    
+
 
                           /*Logo*/
 
@@ -413,7 +427,7 @@ margin-right: 0 !important;
 div#overlay {
   display: none;
   z-index: 2;
-  background: rgba(0, 0, 0, 0.49);
+  background: rgba(0, 0, 0, .9);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -502,7 +516,7 @@ div#specialBox-008 {
     -webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
     -ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, opacity 0.2s ease-in-out;
-    background-color: #f23054;
+    background-color: #F23054;
     border-radius: 6px;
     border: 0;
     color: #ffffff !important;
@@ -521,7 +535,7 @@ div#specialBox-008 {
     width: 12em;}
 
     #signup-form input[type="submit"]:hover, #signup-form input[type="button"]:hover{
-                                    background-color:#565656;
+                                    background-color:#FD3056;
 
     }
 
@@ -580,15 +594,26 @@ input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focu
 #fpass{margin-left: 9em;
 
 
-  }                          /*Header Elements*/
+  } 
+
+ #form-logo{background: url('../../images/flogo.png');
+                height: 100%;
+    width: 55%;
+    margin-left: 5em;
+    background-repeat: no-repeat;
+    background-size: 106%;
+    background-position: 50% 85%;
+ }
+
+                           /*Header Elements*/
 
 
 ul.actions {
     cursor: default;
     list-style: none;
     padding-left: 0;
-  position: absolute;
-                    top: 21em;
+    position: absolute;
+    top: 21em;
     left: 27em;}
 
 .Buts_02{    padding: 0.9em 3.9em;
@@ -621,7 +646,8 @@ ul.actions {
 
 
 
-.button_09{     background-color: transparent;
+.button_09{
+    background-color: transparent;
     box-shadow: inset 0 0 0 2px #29CD52;
     color: #fff;
     min-width: 12em;
@@ -921,14 +947,42 @@ ul.actions {
 
 
 }    
+
+
+
+              /*Deals side beuty works*/
+
+#deals-container{position: relative;
+                  height: 25em;
+
+
+
+}
+.Slide-item--active{display: list-item !important; 
+
+}      
+
+li.Slide-item_tdeals{display: none;
+                  height: 100%;
+                  width:100%;
+                  margin:0;
+                    }
+              
+
+#Slide-item_tdeals-one{background: rgb(255, 100, 100);
+
+
+}
+
+
+.topDeals-Slide{
+    height: 100%;}
                                        /*Footer*/
 
 .footerContainerWrapper{background:#fff;
                         height: 5em;
 box-shadow: 0 0px 3px -1px rgba(0, 0, 0, .52);
 margin-top: 15px;
-
-
 
 }                                       
 
