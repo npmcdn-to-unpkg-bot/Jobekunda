@@ -3,19 +3,20 @@
 <head>
    <title>MyTailor | African Fahion industry</title>
    <link rel="stylesheet" href="assets/css/Style.css" type="text/css"/>
+   <link rel="stylesheet" href="assets/css/unslider.css">
+   <link rel="stylesheet" href="assets/css/unslider-dots.css">
    <link rel="shortcut icon" href="images/favicon.png" />
-
+   <link href='https://fonts.googleapis.com/css?family=Rubik+Mono+One' rel='stylesheet' type='text/css'>
    <meta charset="UTF-8">
-            
    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 </head>
 
 <body>
-        <!-- Script for sigunp -->
+      
 
 <div id="page">
               <!-- Start Overlay -->
-              <div id="overlay" onmousedown="toggleOverlay()" >
+              <div id="overlay" onmousedown="toggleOverlay()">
               </div>
 
               <!-- End Overlay -->
@@ -23,19 +24,9 @@
 
               <div id="specialBox-008">
                     <div class="signup-wrapper">
-                      
-                    
-
-
-                <div id="header-form">
-                  <div id = "form-logo">
-
-                  </div>
-
-                  
-                </div>
-
-
+                      <div id="header-form">
+                      <div id = "form-logo"></div>
+                      </div>
             <div id="body-form">
 
 
@@ -62,17 +53,9 @@
 
          <div id = "footer-form">
                       <span class="links-sign" id="lgin"><a href="#">Sign Up</a></span>
-
                       <span class="links-sign" id="fpass"><a href="#">Forgot my Password</a></span>
             
                       </div>  
-
-
-
-
-
-            <!--   <button onmousedown="toggleOverlay()">X</button> -->
-
                 </div>
 
 
@@ -120,12 +103,8 @@
     ======================================================= -->
     <div class="header-container">
       <div class="Banner_fu">
+
         <ul class="bg-slideshow">
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
-          <li><span></span></li>
 
         </ul>
 
@@ -136,15 +115,16 @@
         <div class = "Bar-main">
                  <div class = "pull-left">
                      <a href = "#" class = "sideTrigger">
-                      <span class = "menu-icon">
 
-                        <img src = "images/Men.png"  id = "ico-menu">
-
-                      </span>
+                          <span class = "menu-icon">
+                            <img src="images/icons/menu.svg"  style="width: 29px;">
+                        </span> <!-- Menu Icon ends here -->
                       <span class = "menu-text">Menu</span>
+
                      </a>
                  </div>
-                <!--  <h3> Best African fashion Designers</h3> -->
+            
+
                   <div class="box-search">
                                      
                       <div class = "container-1">
@@ -158,7 +138,7 @@
 
                             </div>
                       </div>
-        </div>   <!-- Main bar -->
+        </div>   <!-- Main bar ends -->
 
                  <div class = "elementsBanner">
                     <ul class = "actions">
@@ -182,32 +162,6 @@
          
               <div id="latest-products">
 
-                <div class="caption-section">
-                  <a href="#">Latest Products</a>
-                </div>
-  
-            	<div class = "latestProducts-wrapper">
-
-                  <div class = "products-row" id = "prodrow1">
-                    <ul class = "vertical-scroller" id = "my-thumbs-list" style="margin-top: 1em;">
-                      <li class = "thumnai-items"><a href="#" style="margin: 0;"><img src="images/thums/imme01.jpg" height="300px"></a></li>
-                      <li class = "thumnai-items"><a href="#" style="margin: 0;"><img src="images/thums/imme02.jpg" height="300px"></a></li>
-                      <li class = "thumnai-items"><a href="#" style="margin: 0;"><img src="images/thums/imme03.jpg" height="300px"></a></li>
-                      <li class = "thumnai-items"><a href="#" style="margin: 0;"><img src="images/thums/imme04.jpg" height="300px"></a></li>
-                      <li class = "thumnai-items"><a href="#" style="margin: 0;"><img src="images/thums/imme05.jpg" height="300px"></a></li>
-                      <li class = "thumnai-items"><a href="#" style="margin: 0;"><img src="images/thums/imme06.jpg" height="300px"></a></li>
-                      <li class = "thumnai-items"><a href="#" style="margin: 0;"><img src="images/thums/imme07.jpg" height="300px"></a></li>
-                      <li class = "thumnai-items"><a href="#" style="margin: 0;"><img src="images/thums/imme08.jpg" height="300px"></a></li>
-                      <li class = "thumnai-items"><a href="#" style="margin: 0;"><img src="images/thums/imme09.jpg" height="300px"></a></li>
-                      <li class = "thumnai-items"><a href="#" style="margin: 0;"><img src="images/thums/imme10.jpg" height="300px"></a></li>
-                      <li class = "thumnai-items"><a href="#" style="margin: 0;"><img src="images/thums/imme11.jpg" height="300px"></a></li>
-                    </ul>
-                  </div>
-            			
-				
-
-
-            	</div> <!-- Latest Products Wrapper ends -->
 
               </div><!-- Latest Products -->
 
@@ -270,7 +224,6 @@
                   </section>
                   <section class = "info-area">
 
-                    <span><a href="#"><img src="images/advert1.jpg"></a></span>
 
                   </section>
               </div>  <!-- Wrapper content ends here -->
@@ -278,50 +231,73 @@
             
 
 
-              <div id = "deals-container">
+              <div class = "deals-container">
       
-                <ul class = "topDeals-Slide">
+                <ul>
                   
-                    <li class="Slide-item--active Slide-item_tdeals" id="Slide-item_tdeals-one">
-
-                      <div>
-                        <span><a href="#">Left</a></span>
-                        <span><a href="#">Right</a></span>
-
-                          <span>Top Deals</span>
-                          <span>Just $20 Free Shipping</span>
-
-
-
+                    <li id="Slide-item_tdeals-one">
+                      <div class = "Slidecont-wraps" >
+                        <span><h1>Top Deals from top Designers</h1></span>
+                        <span><h2>Just $20 Free Shipping From all over ther world. Dummy text me</h2></span>
                         <div>
-                      
                     </li>
-                    <li class="Slide-item_tdeals"></li>
-                    <li class="Slide-item_tdeals"></li>
-                    <li class="Slide-item_tdeals"></li>
+                    <li>
+                       <div class = "Slidecont-wraps">
+                        <span><h1>Top Deals from top Designers</h1></span>
+                        <span><h2>Just $20 Free Shipping From all over ther world. Dummy text me</h2></span>
+                        <div>
+                    </li>
+                    <li>
+                       <div class = "Slidecont-wraps">
+                        <span><h1>Top Deals from top Designers</h1></span>
+                        <span><h2>Just $20 Free Shipping From all over ther world. Dummy text me</h2></span>
+                        <div>
+                    </li>
+                    <li>
+                       <div class = "Slidecont-wraps">
+                        <span><h1>Top Deals from top Designers</h1></span>
+                        <span><h2>Just $20 Free Shipping From all over ther world. Dummy text me</h2></span>
+                        <div>
+                    </li>
+
+                </ul> <!-- Slider ends here -->
+              </div> <!-- Large container for the deals ends -->
 
 
-                </ul>
+              <div id = "last-section">
 
+                    <div><h1>Categories</h1></div>
+
+                  <ul class= "categories_container">
+                      <li class="large-cnt">
+                        <div class="Panel-ct">
+                          <a href="#"><img src="images/sbanner1.jpg" style="width: 300px;"></a></div></li>
+                      <li class="large-cnt">
+                        <div class="Panel-ct">
+                          <a href="#"><img src="images/sbanner2.jpg" style="width: 300px;"></a></div></li>
+                      <li class="large-cnt">
+                        <div class="Panel-ct">
+                          <a href="#"><img src="images/sbanner1.jpg" style="width: 300px;"></a></div></li>
+                          <li class="large-cnt">
+                        <div class="Panel-ct">
+                          <a href="#"><img src="images/sbanner3.jpg" style="width: 300px;"></a></div></li>
+                  </ul>
 
               </div>
+
 
    </div>   <!--Page Container  -->
   </div>  
 
 <footer class = "footerContainerWrapper">
-  
-
-
-
-
 
 </footer>
            
     <!-- Scripts -->
+
         <script src="assets/js/jquery-2.1.4.min.js"></script>
         <script src="assets/js/script.js"></script>
-        <script src="assets/js/jquery.mThumbnailScroller.js"></script>
+        <script src="assets/js/unslider.js"></script>
 
 </body>
 

@@ -20,15 +20,10 @@
 //Slider
 
 
- (function($){
-        $(window).load(function(){
-            $("#prodrow1").mThumbnailScroller({
-              axis:"x", //change to "y" for vertical scroller
-              	theme:"buttons-out"
-           
-            });
-        });
-    })(jQuery);
+
+ $(function() { $('.deals-container').unslider() });
+
+
 
     //Signup Box function
 
