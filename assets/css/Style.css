@@ -103,9 +103,7 @@ tr, td {
           
 }
 
-  .pagewrapper{  width: 70%;
-                margin-top: 2em;
-}
+  .pagewrapper{  width: 70%;}
 
 
 .footerContainerWrapper{
@@ -129,8 +127,7 @@ tr, td {
     line-height: 10px;
     padding: 33px 20px 20px 20px;
     color: #fff;
-    border-bottom: 1px solid rgba(158, 158, 158, 0.69);
-}
+    border-bottom: 1px solid rgba(51, 51, 51, 0.69);}
 
 
                                                 /*Now this is the left side*/
@@ -222,14 +219,13 @@ margin-right: 0 !important;
                                             /*Search Box*/
 
 
-.box-search{padding-bottom: 4px;
+.box-search{    padding-bottom: 4px;
     padding-top: 4px;
     width: 35em;
     float: left;
     height: 3em;
     margin-top: -1em;
-    margin-left: 15em;
-}
+    margin-left: 15em;}
 
 .container-1{    text-align: left;
     position: relative;
@@ -282,7 +278,10 @@ margin-right: 0 !important;
 
                           /*Logo*/
 
-  #logo{margin: 5em 0em 0em 5em;}                  
+.logo-panel{    height: 4em;
+    float: right;
+    margin-top: -1em;
+    margin-right: 3em;}                
 
 
 
@@ -306,11 +305,29 @@ margin-right: 0 !important;
 
                        /*Banner Show */
 .header-container{
-  width: 100%;
-  height: 500px;
-  border-right: none;
-  border-left: none;
-  position: relative;}
+    width: 100%;
+    height: 42em;
+    border-right: none;
+    border-left: none;
+    position: relative;}
+
+    .Banner_fu{    position: absolute;
+    height: 89%;
+    width: 100%;
+    top: 5em;}
+
+  .Slide-item_bgt{    background: url('../../images/banner/banner01.jpg') #080808;
+    height: 100%;
+    background-size: cover;
+    margin: 0;
+}
+
+
+  
+.slieshow-09ms{height: 100%;
+
+
+}
 
                                     /*Overlay Sigup Guy*/
 
@@ -334,7 +351,7 @@ div#specialBox-008 {
     margin: 30px auto 0px auto;
     width: 530px;
     height: 600px;
-    background:#ECECEC;
+    background:transparent;
     color: #000;
 
 
@@ -347,7 +364,7 @@ div#specialBox-008 {
     margin: 2em auto;
     height: 90%;
     background-color:#fff;
-    border-radius: 6px; 
+    border-radius: 2px; 
         border: 1px solid #e3e5e8;
         padding: 5px 2em}
 
@@ -522,7 +539,7 @@ ul.actions {
 
 .button_09{
     background-color: transparent;
-    box-shadow: inset 0 0 0 2px #FFC107;
+    box-shadow: inset 0 0 0 2px #CD8958;
     color: #fff;
     min-width: 12em;
     font-size: 100%;
@@ -547,12 +564,16 @@ ul.actions {
 
 
 
-                          /*First Section*/
+                         
+
+.banner-02-rt{width:100%;
+              height:25em;
+              background:#202024;
+                  padding: 5em 2em;
 
 
-
-
-
+}
+                  /*First Section */
 
                                                   /*section 2 of my page*/
 
@@ -612,7 +633,7 @@ ul.actions {
 
 
 
-.caption>a{color:#3B8E65;
+.caption>a{color:#888888;
             text-align: center;
 
 
@@ -834,7 +855,10 @@ margin-top: 15px;
 #ico-menu{width:2em;}
 
 /*Svg icons*/
-
+    #logo-image{width: 144px;
+    height: 43px;
+    margin-right: 5em;
+      box-shadow: 0px 0px 0px 1px;}
 
 
                      /*Wide Screen*/
@@ -990,3 +1014,15 @@ margin-top: 15px;
                   border: 1px solid #5B5A5A;}
 
 
+/* Texts*/
+
+h3{    font: 15px/41px sans-serif;
+
+
+}
+
+h1{    font: bold 40px/45px Lato;
+    color: #fff;
+
+
+}

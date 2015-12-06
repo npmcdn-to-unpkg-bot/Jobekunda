@@ -25,7 +25,14 @@
               <div id="specialBox-008">
                     <div class="signup-wrapper">
                       <div id="header-form">
-                      <div id = "form-logo"></div>
+                      <div id = "form-logo">
+                                  
+                        <span style="margin:0;"><a href="#"><img src="images/logo.png" id="logo-image" style="
+    margin-top: 4em;"></a></span>
+                
+
+
+                      </div>
                       </div>
             <div id="body-form">
 
@@ -102,11 +109,15 @@
       <!-- VIDEO CAROUSEL
     ======================================================= -->
     <div class="header-container">
+
       <div class="Banner_fu">
+      
+                <ul class="slieshow-09ms">
+                  
+                    <li class="Slide-item_bgt"></li>
 
-        <ul class="bg-slideshow">
+                </ul> <!-- Slider ends here -->
 
-        </ul>
 
        
       </div>
@@ -138,15 +149,20 @@
 
                             </div>
                       </div>
+
+
+                      <div class="logo-panel">
+                        <span style="margin:0;"><a href="#"><img src="images/logo.png" id="logo-image"></a></span>
+                      </div>
         </div>   <!-- Main bar ends -->
 
                  <div class = "elementsBanner">
                     <ul class = "actions">
                       <li id="signup">
-                        <a href="signup.php" class="button_09 special" >Sign Up</a>
+                        <a href="signup.php" class="button_09 special" >SIGN UP</a>
                       </li>
                       <li>
-                        <a href="#" class="button_09" onmousedown="toggleOverlay()" >Log In</a>
+                        <a href="#" class="button_09" onmousedown="toggleOverlay()" >LOG IN</a>
                       </li>
 
                     </ul>
@@ -160,10 +176,15 @@
   <div class = "pagewrapper"> 
         <div class = "pageContainer">
          
-              <div id="latest-products">
+              <div class="banner-02-rt">
+                <section><h1 style="text-align:center;">MEET AMAZING DESIGNERS!<br>GET YOUR OUTFITS TO YOUR DOOR!</h1></section>
+                  <section><h3 style="text-align:center;">LOREM IPSUM DOLOR SIT AMET CONSE CTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENIAM.</h3></section>
 
 
-              </div><!-- Latest Products -->
+
+              </div><!-- short banner -->
+
+       
 
 
               <div class = "wrapper-content2">
