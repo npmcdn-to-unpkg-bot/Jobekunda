@@ -1,9 +1,6 @@
 
 
 
-
-
-
 	// Side Menu Trigger Function
 	$('a.sideTrigger').click(function() {
 		$('body').toggleClass('sideOpen');
@@ -20,23 +17,39 @@
 //Slider
 
 
-
- $(function() { $('.deals-container').unslider() });
-
+jQuery(document).ready(function($) {
+  jQuery.rsCSS3Easing.easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
+  $('#slider-cover1').royalSlider({
+    arrowsNav: true,
+    arrowsNavAutoHide: false,
+    fadeinLoadedSlide: false,
+    controlNavigationSpacing: 0,
+    controlNavigation: 'bullets',
+    imageScaleMode: 'none',
+    imageAlignCenter:false,
+    blockLoop: true,
+    loop: true,
+    numImagesToPreload: 6,
+    transitionType: 'fade',
+    keyboardNavEnabled: true,
+    block: {
+      delay: 400
+    }
+  });
+});
 
 
     //Signup Box function
 
 function toggleOverlay(){
   var overlay = document.getElementById('overlay');
-  var specialBox = document.getElementById('specialBox-008');
-  overlay.style.opacity = .8;
-  if(overlay.style.display == "block"){
-    overlay.style.display = "none";
-    specialBox.style.display = "none";
+
+  if(overlay.style.visibility == "visible"){
+    overlay.style.visibility = "hidden";
+
   } else {
-    overlay.style.display = "block";
-    specialBox.style.display = "block";
+    overlay.style.visibility = "visible";
+
   }
 }
 

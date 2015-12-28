@@ -2,35 +2,23 @@
 <html>
 <head>
    <title>MyTailor | African Fahion industry</title>
-   <link rel="stylesheet" href="assets/css/Style.css" type="text/css"/>
-   <link rel="stylesheet" href="assets/css/unslider.css">
-   <link rel="stylesheet" href="assets/css/unslider-dots.css">
-   <link rel="shortcut icon" href="images/favicon.png" />
-   <link href='https://fonts.googleapis.com/css?family=Rubik+Mono+One' rel='stylesheet' type='text/css'>
    <meta charset="UTF-8">
-   <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="assets/css/Style.css" type="text/css"/>
+   <link rel="shortcut icon" href="images/favicon.png" />
 </head>
 
 <body>
-      
-
-<div id="page">
-              <!-- Start Overlay -->
-              <div id="overlay" onmousedown="toggleOverlay()">
-              </div>
-
-              <!-- End Overlay -->
               <!-- Start Special Centered Box -->
-
-              <div id="specialBox-008">
-                    <div class="signup-wrapper">
+    <div id="overlay" style="
+    visibility: hidden;" >
+          <div class="signin-wrapper">
                       <div id="header-form">
                       <div id = "form-logo">
                                   
                         <span style="margin:0;"><a href="#"><img src="images/logo.png" id="logo-image" style="
     margin-top: 4em;"></a></span>
                 
-
 
                       </div>
                       </div>
@@ -41,13 +29,14 @@
             <div class="panel-sn" >
               <div  class="social-connets facebook-p">
               <a href="#">
+                <span><img src="images/icons/fb-art.png"></span>
                 <span>Login with Facebook</span></a>
             </div></div>
 
             </div> 
 
                 <!-- Signup Form -->
-        <form id="signup-form" method="post" action="#">
+        <form id="signin-form" method="post" action="#">
 
         <input type="text" name="username" Placeholder="username or Email">
         <input type="password" name="pswd" id="password" placeholder="Password" />
@@ -66,8 +55,11 @@
                 </div>
 
 
-            </div>
 
+
+
+      </div>  <!-- Div signin wrapper ends here -->
+       
 
 
     <div class="SideMenu">
@@ -92,10 +84,6 @@
                     <p><a href="">Business</a></p>
                     <p><a href="">Be a partner</a></p>
                     <p><a href="">African Fashion</a></p>
-                       <div class="companycall">
-                            <span ><img src="images/phone.png" width="40px" height="30px" id="cbutton"></span><p>(+44 756 8221 532)</p>
-                        </div>
-
                   </div>
 
               </ul>
@@ -128,7 +116,7 @@
                      <a href = "#" class = "sideTrigger">
 
                           <span class = "menu-icon">
-                            <img src="images/icons/menu.svg"  style="width: 29px;">
+                            <img src="images/icons/menu.svg"  style="width: 29px; height: 30px;">
                         </span> <!-- Menu Icon ends here -->
                       <span class = "menu-text">Menu</span>
 
@@ -150,10 +138,10 @@
                             </div>
                       </div>
 
-
+<!-- 
                       <div class="logo-panel">
                         <span style="margin:0;"><a href="#"><img src="images/logo.png" id="logo-image"></a></span>
-                      </div>
+                      </div> -->
         </div>   <!-- Main bar ends -->
 
                  <div class = "elementsBanner">
@@ -176,141 +164,296 @@
   <div class = "pagewrapper"> 
         <div class = "pageContainer">
          
-              <div class="banner-02-rt">
-                <section><h1 style="text-align:center;">MEET AMAZING DESIGNERS!<br>GET YOUR OUTFITS TO YOUR DOOR!</h1></section>
-                  <section><h3 style="text-align:center;">LOREM IPSUM DOLOR SIT AMET CONSE CTETUR ADIPISICING ELIT, SED DO EIUSMOD TEMPOR INCIDIDUNT UT LABORE ET DOLORE MAGNA ALIQUA. UT ENIM AD MINIM VENIAM.</h3></section>
+              <div class="link-02-rt">
+
+                  <section class="kilama-01">
+                      <a class="_kilama 057_f" href="#" title="Top-deals">
+                          <div class="kilama-div">
+                            <div class="kilalma-ico">
+                              <img class="kilama-img"  style="height:100px;" src="images/icons/t-deals.svg" alt>
+                            </div>
+                            <div class="kilama-tit">Top Deals</div>
+                            <div class="kilama-inf">Dummy text do<br> whatever it wants</div>
+                          </div>
+                      </a>
 
 
+                      <a class="_kilama 057_f" href="#" title="Local-designers">
+                          <div class="kilama-div">
+                            <div class="kilalma-ico">
+                              <img class="kilama-img"  style="height:100px;" src="images/icons/local.svg" alt>
+                            </div>
+                            <div class="kilama-tit">Local Designers</div>
+                            <div class="kilama-inf">Dummy text do<br> whatever it wants</div>
+                          </div>
+                      </a>
+
+                         <a class="_kilama 057_f" href="#" title="Local-designers">
+                          <div class="kilama-div">
+                            <div class="kilalma-ico">
+                              <img class="kilama-img"  style="height:100px;" src="images/icons/partner.svg" alt>
+                            </div>
+                            <div class="kilama-tit">Become a Partner</div>
+                            <div class="kilama-inf">Dummy text do<br> whatever it wants</div>
+                          </div>
+                      </a>
+
+                         <a class="_kilama 057_f" href="#" title="Local-designers">
+                          <div class="kilama-div">
+                            <div class="kilalma-ico">
+                              <img class="kilama-img"  style="height:100px;" src="images/icons/community.svg" alt>
+                            </div>
+                            <div class="kilama-tit">Community</div>
+                            <div class="kilama-inf">Dummy text do<br> whatever it wants</div>
+                          </div>
+                      </a>
+                      
+
+                  </section>
+
+                      <div class="v-090">
+                      <span class="button_09" id="vp-but0"><a href="#">View Products</a></span>
+                      </div>
 
               </div><!-- short banner -->
 
-       
+              <div class="row">
 
+                    <div class ="lth-col-1 ht-col-4 all-container">
+                        <div class="lth-wrapper" style="background:url('images/thums/imme04.jpg');background-size: cover;">
+                          <a href="#">
+                            <div class="overlay-items">
+                              
 
-              <div class = "wrapper-content2">
-
-
-                  <section class = "disp-products">
-                    <article class = "wrapper-dp">
-                        <div class= "item-pdwr"><a href="#" style="margin:0;"><img src="images/thums/imme12.jpg" alt="Female Pearls" height="175px"></a></div>
-                        <div class = "caption">
-                          <a href="#" style="margin: 0;"><h4>Female Pearls</h4></a>
+                            </div>
+                          </a>
                         </div>
-                    </article>
-                     <article class = "wrapper-dp">
-                        <div class= "item-pdwr"><a href="#" style="margin:0;"><img src="images/thums/imme13.jpg" alt="Female Pearls" height="175px"></a></div>
-                        <div class = "caption">
-                          <a href="#" style="margin: 0;"><h4>Black coat Male</h4></a>
+
+                    </div>
+
+                    <div class="lth-col-1 ht-col-1 all-container" >
+                          <div class="lth-wrapper" style="background:url('images/thums/01.jpg');background-size: cover;">
+                          <a href="#">
+                             <div class="overlay-items">
+                              
+
+                            </div>
+                          </a>
                         </div>
-                    </article>
-                     <article class = "wrapper-dp">
-                        <div class= "item-pdwr"><a href="#" style="margin:0;"><img src="images/thums/imme14.jpg" alt="Female Pearls" height="175px"></a></div>
-                        <div class = "caption">
-                          <a href="#" style="margin: 0;"><h4>Blue cimis</h4></a>
+                    </div>
+                
+                       <div class="lth-col-1 ht-col-1 all-container">
+                          <div class="lth-wrapper" style="background:url('images/thums/02.jpg');background-size: cover;">
+                          <a href="#">
+                             <div class="overlay-items">
+                              
+
+                            </div>
+
+                          </a>
+                        </div>   
+                       </div> 
+
+                      <div class="lth-col-1 ht-col-1 all-container">
+                          <div class="lth-wrapper" style="background:url('images/thums/03.jpg');background-size: cover;">
+                          <a href="#">
+                             <div class="overlay-items">
+                              
+
+                            </div>
+                          </a>
                         </div>
-                    </article>
-                     <article class = "wrapper-dp">
-                        <div class= "item-pdwr"><a href="#" style="margin:0;"><img src="images/thums/imme15.jpg" alt="Female Pearls" height="175px"></a></div>
-                        <div class = "caption">
-                          <a href="#" style="margin: 0;"><h4>African kala</h4></a>
-                        </div>
-                    </article>
-                     <article class = "wrapper-dp">
-                        <div class= "item-pdwr"><a href="#" style="margin:0;"><img src="images/thums/imme16.jpg" alt="Female Pearls" height="175px"></a></div>
-                        <div class = "caption">
-                          <a href="#" style="margin: 0;"><h4>mousorr ak mouba</h4></a>
-                        </div>
-                    </article>
-                     <article class = "wrapper-dp">
-                        <div class= "item-pdwr"><a href="#" style="margin:0;"><img src="images/thums/imme17.jpg" alt="Female Pearls" height="175px"></a></div>
-                        <div class = "caption">
-                          <a href="#" style="margin: 0;"><h4>Female Pearls</h4></a>
-                        </div>
-                    </article>
-                     <article class = "wrapper-dp">
-                        <div class= "item-pdwr"><a href="#" style="margin:0;"><img src="images/thums/imme18.jpg" alt="Female Pearls" height="175px"></a></div>
-                        <div class = "caption">
-                          <a href="#" style="margin: 0;"><h4>New style mousorr</h4></a>
-                        </div>
-                    </article>
-                     <article class = "wrapper-dp">
-                        <div class= "item-pdwr"><a href="#" style="margin:0;"><img src="images/thums/imme19.jpg" alt="Female Pearls" height="175px"></a></div>
-                        <div class = "caption">
-                          <a href="#" style="margin: 0;"><h4>Female Coat</h4></a>
-                        </div>
-                    </article>
+                    </div>
+                
+                       <div class="lth-col-1 ht-col-1 all-container">
+                          <div class="lth-wrapper" style="background:url('images/thums/04.jpg');background-size: cover;">
+                          <a href="#">
+                             <div class="overlay-items">
+                              
+
+                            </div>
+                          </a>
+                        </div>   
+                       </div>   
+
+                            <!-- Secon layer -->
+
+                        <div class="lth-col-1 ht-col-1 all-container">
+                          <div class="lth-wrapper" style="background:url('images/thums/05.jpg');background-size: cover;">
+                          <a href="#">
+                             <div class="overlay-items">
+                              
+
+                            </div>
+                          </a>
+                        </div>   
+                       </div> 
+
+                         <div class="lth-col-4 ht-col-1 all-container" id="lrg-item">
+                          <div class="lth-wrapper" style="background:url('images/thums/06.jpg');background-size: cover;">
+                          <a href="#">
+                             <div class="overlay-items">
+                              
+
+                            </div>
+                          </a>
+                        </div>   
+                       </div> 
+
+                          <div class="lth-col-1 ht-col-1 all-container">
+                          <div class="lth-wrapper" style="background:url('images/thums/07.jpg');background-size: cover;">
+                          <a href="#">
+                             <div class="overlay-items">
+                              
+
+                            </div>
+                          </a>
+                        </div>   
+                       </div> 
+
+                          <div class="lth-col-1 ht-col-1 all-container">
+                          <div class="lth-wrapper" style="background:url('images/thums/08.jpg');background-size: cover;">
+                          <a href="#">
+                             <div class="overlay-items">
+                              
+
+                            </div>
+                          </a>
+                        </div>   
+                       </div> 
+
+                          <div class="lth-col-1 ht-col-1 all-container">
+                          <div class="lth-wrapper" style="background:url('images/thums/09.jpg');background-size: cover;">
+                          <a href="#">
+                             <div class="overlay-items">
+                            </div>
+                          </a>
+                        </div>   
+                       </div> 
+              </div>   <!-- Latest products ends -->
+
+              <div class="about-container">
+                    <span class="lp-text"><h1>About MyTailor</h1></span>
+
+                    <div class="text-09kl">
+                          <p>We're a fast-growing, New York-based cloud infrastructure  provider, and our talented team is at the center We're a fast-growing, New York-based cloud infrastructure  provider, and our talented team is at the center of everything we do. Our philosophy is collaboration-focused, remote-friendly, and flexible. We care deeply about supporting the growth of all our employees and making sure they feel professionally fulfilled. We're a fast-growing, New York-based cloud infrastructure  provider, and our talented team is at the center of everything we do. Our philosophy is collaboration-focused, remote-friendly, and flexible. We care deeply about supporting the growth of all our employees and making sure they feel professionally fulfilled.</p>
+                    </div>
+              </div> <!-- About Container ended -->
+
+              <div class="slider-cover" id="slider-cover1">
+                  <div class="rsContent slide1">
+                      <div class="bContainer">
+                          <strong class="rsABlock txtCent blockHeadline">This is an animated block</strong>
+                        <span class="rsABlock txtCent" data-move-effect="none">you can place it on any type of slide</span>
+                      </div>
+                 </div>
+
+                 <div class="rsContent slide2">
+    <div class="bContainer">
+      <strong class="rsABlock txtCent blockSubHeadline" data-move-effect="none">Transition Types</strong>
+      <span class="rsABlock txtCent" data-move-effect="top">from top  ↓</span>
+      <span class="rsABlock txtCent" data-move-effect="bottom">from bottom ↑</span>
+      <span class="rsABlock txtCent" data-move-effect="left">from left →</span>
+      <span class="rsABlock txtCent" data-move-effect="right">from right ←</span>
+      <span class="rsABlock txtCent" data-move-effect="none">just fade</span>
+    </div>
+  </div>
+
+    <div class="rsContent slide3">
+    <div class="bContainer">
+      <strong class="rsABlock txtCent blockSubHeadline" data-move-effect="none" data-delay="0">Customizable Animation</strong>
+      <span class="rsABlock txtCent" data-move-effect="left" data-delay="1000" data-move-offset="500" data-easing="easeOutBack" data-fade-effect="none">easing</span>
+      <span class="rsABlock txtCent" data-move-effect="left" data-delay="1500" data-move-offset="500" data-fade-effect="none">delay</span>
+      <span class="rsABlock txtCent" data-move-effect="left" data-delay="2000" data-move-offset="500" data-speed="1000" data-fade-effect="none">speed</span>
+      <span class="rsABlock txtCent" data-move-effect="left" data-delay="2500" data-move-offset="50" data-fade-effect="true">move offset</span>
+    </div>
+  </div>
 
 
 
-                  </section>
-                  <section class = "info-area">
 
-
-                  </section>
-              </div>  <!-- Wrapper content ends here -->
-
-            
-
-
-              <div class = "deals-container">
-      
+              </div>
+<!-- Slider -->
+              <div class = "showCase">
                 <ul>
+
+                  <li>
+                    <a href="#">
+                    <img src="images/showcase/men.jpg" alt="" >
+                      <div>
+                        <span class="showcase_title">MEN</span>
+                        <span class="showcase_button hvr-bounce-to-right">View More</span>
+                      </div>
+                    </a>
+                  </li>
+    
+                  <li>
+                    <a href="#">
+                    <img src="images/showcase/women.jpg" alt="">
+                      <div>
+                        <span class="showcase_title">WOMEN</span>
+                        <span class="showcase_button hvr-bounce-to-right">View More</span>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                    <img src="images/showcase/footwear.jpg" alt="" >
+                      <div>
+                        <span class="showcase_title">FOOTWEAR</span>
+                        <span class="showcase_button hvr-bounce-to-right">View More</span>
+                      </div>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                    <img src="images/showcase/traditional.jpg" alt="">
+                      <div>
+                        <span class="showcase_title">TRADITIONAL</span>
+                        <span class="showcase_button hvr-bounce-to-right">View More</span>
+                      </div>
+                     </a>
+                  </li>              
+                </ul>
+              </div>  <!--Show-case ends -->
+
+            <div id="lst-section">
+              <section>
+
+                        <span class="lp-text">
+                          <img src="images/icons/agreement2.svg" style="height:100px;">
+                        </span>
+
+                        <h2>DESIGNER ! LOOKING TO SELL YOUR PEODUCTS ONLINE AND BUILD RELATIONSHIP WITH CUSTOMERS ALL OVER THE WORLD ?</h2>
+
+                        <p>MyTailor Turns out Twenty was the best I could come up with. Anyway, lame name aside, it's minimally designed, fully responsive, built on HTML5/CSS3/skel, and, like all my stuff, released for free under the Creative Commons 3.0 license. Have fun!</p>
                   
-                    <li id="Slide-item_tdeals-one">
-                      <div class = "Slidecont-wraps" >
-                        <span><h1>Top Deals from top Designers</h1></span>
-                        <span><h2>Just $20 Free Shipping From all over ther world. Dummy text me</h2></span>
                         <div>
-                    </li>
-                    <li>
-                       <div class = "Slidecont-wraps">
-                        <span><h1>Top Deals from top Designers</h1></span>
-                        <span><h2>Just $20 Free Shipping From all over ther world. Dummy text me</h2></span>
-                        <div>
-                    </li>
-                    <li>
-                       <div class = "Slidecont-wraps">
-                        <span><h1>Top Deals from top Designers</h1></span>
-                        <span><h2>Just $20 Free Shipping From all over ther world. Dummy text me</h2></span>
-                        <div>
-                    </li>
-                    <li>
-                       <div class = "Slidecont-wraps">
-                        <span><h1>Top Deals from top Designers</h1></span>
-                        <span><h2>Just $20 Free Shipping From all over ther world. Dummy text me</h2></span>
-                        <div>
-                    </li>
-
-                </ul> <!-- Slider ends here -->
-              </div> <!-- Large container for the deals ends -->
-
-
-              <div id = "last-section">
-
-                    <div><h1>Categories</h1></div>
-
-                  <ul class= "categories_container">
-                      <li class="large-cnt">
-                        <div class="Panel-ct">
-                          <a href="#"><img src="images/sbanner1.jpg" style="width: 300px;"></a></div></li>
-                      <li class="large-cnt">
-                        <div class="Panel-ct">
-                          <a href="#"><img src="images/sbanner2.jpg" style="width: 300px;"></a></div></li>
-                      <li class="large-cnt">
-                        <div class="Panel-ct">
-                          <a href="#"><img src="images/sbanner1.jpg" style="width: 300px;"></a></div></li>
-                          <li class="large-cnt">
-                        <div class="Panel-ct">
-                          <a href="#"><img src="images/sbanner3.jpg" style="width: 300px;"></a></div></li>
-                  </ul>
+                          
+                          <span class="button_09 hvr-border-fade" id="sn-button">Sign Up</span>
+                        </div>
+              </section>
 
               </div>
 
-
    </div>   <!--Page Container  -->
-  </div>  
+  </div>   <!-- page wrapper  -->
 
 <footer class = "footerContainerWrapper">
+
+        <ul class="icons">
+            <li><a href="#" class="fa fa-twitter"><span class="label"></span></a></li>
+            <li><a href="#" class="fa fa-facebook"><span class="label"></span></a></li>
+            <li><a href="#" class="fa fa-instagram"><span class="label"></span></a></li>
+            <li><a href="#" class="fa fa-google-plus"><span class="label"></span></a></li>
+        <div></div>    
+          </ul>
+          <ul class="copyright">
+            <li>&copy; 2016 MyTailor. All rights reserved.</li>
+          </ul>
+
 
 </footer>
            
@@ -318,9 +461,8 @@
 
         <script src="assets/js/jquery-2.1.4.min.js"></script>
         <script src="assets/js/script.js"></script>
-        <script src="assets/js/unslider.js"></script>
+        <script src="assets/js/jquery.royalslider.min.js"></script>
+
 
 </body>
-
-
 </html>
