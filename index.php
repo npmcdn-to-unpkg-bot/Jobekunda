@@ -9,68 +9,15 @@
 </head>
 
 <body>
-              <!-- Start Special Centered Box -->
-    <div id="overlay" style="
-    visibility: hidden;" >
-          <div class="signin-wrapper">
-                      <div id="header-form">
-                      <div id = "form-logo">
-                                  
-                        <span style="margin:0;"><a href="#"><img src="images/logo.png" id="logo-image" style="
-    margin-top: 4em;"></a></span>
-                
-
-                      </div>
-                      </div>
-            <div id="body-form">
-
-
-            <div id="social-sign">
-            <div class="panel-sn" >
-              <div  class="social-connets facebook-p">
-              <a href="#">
-                <span><img src="images/icons/fb-art.png"></span>
-                <span>Login with Facebook</span></a>
-            </div></div>
-
-            </div> 
-
-                <!-- Signup Form -->
-        <form id="signin-form" method="post" action="#">
-
-        <input type="text" name="username" Placeholder="username or Email">
-        <input type="password" name="pswd" id="password" placeholder="Password" />
-
-
-        <input type="submit" value="Log In" class="sg-but" />
-      </form>
-
-          </div> <!-- Body form eds -->
-
-         <div id = "footer-form">
-                      <span class="links-sign" id="lgin"><a href="#">Sign Up</a></span>
-                      <span class="links-sign" id="fpass"><a href="#">Forgot my Password</a></span>
-            
-                      </div>  
-                </div>
-
-
-
-
-
-      </div>  <!-- Div signin wrapper ends here -->
-       
-
 
     <div class="SideMenu">
-
-     <nav id="main-nav">
+      <nav id="main-nav">
+              <h1 class="hidden">Main Navigation</h1>
               <ul>
                 <div class="actionsMain">
                   <a href="#" class="closeTrigger"><span class="icon-close">X</span></a>
-               <a href="signup.php" class="signupSideM">Sign up</a>
-               <a href="#" class="signinSideM">Member</a>
-
+                  <a href="signup.php" class="signupSideM">Sign up</a>
+                  <a href="#" class="signinSideM">Member</a>
                 </div>
                 
                   <li><a href="#" id="nav-home" class="nav-option">Home</a></li>
@@ -88,89 +35,65 @@
 
               </ul>
               
-          </nav></div>
+     </nav></div>
 
                 <!-- Header -->
 
-  <header class = "headerContainerWrapper">
-
-      <!-- VIDEO CAROUSEL
-    ======================================================= -->
-    <div class="header-container">
-
-      <div class="Banner_fu">
-      
-                <ul class="slieshow-09ms">
-                  
-                    <li class="Slide-item_bgt"></li>
-
-                </ul> <!-- Slider ends here -->
-
-
-       
-      </div>
-
+  <header class = "headerContainerWrapper wrap" role='banner' itemscope itemtype='https://schema.org/WPHeader'>
 
         <div class = "Bar-main">
+
                  <div class = "pull-left">
                      <a href = "#" class = "sideTrigger">
-
-                          <span class = "menu-icon">
+                        <span class = "menu-icon">
                             <img src="images/icons/menu.svg"  style="width: 29px; height: 30px;">
                         </span> <!-- Menu Icon ends here -->
                       <span class = "menu-text">Menu</span>
-
                      </a>
                  </div>
-            
-
-                  <div class="box-search">
-                                     
-                      <div class = "container-1">
+      
+                  <div class="box-search">               
+                    <div class = "container-1">
                       <input type = "search" id = "search" placeholder = "" />
-                      </div>
+                    </div>
+                    <div class="hu904">
+                      <button class = "helo6" value = "Search" name = "btgg" type = "submit">
+                        <span class = "icon"><i class ="fa fa-search"></i></span>
+                      </button>
+                    </div>
 
-                      <div class="hu904">
-                                   <button class = "helo6" value = "Search" name = "btgg" type = "submit">
-                                    <span class = "icon"><i class ="fa fa-search"></i></span>
-                                  </button>
-
-                            </div>
-                      </div>
-
-<!-- 
-                      <div class="logo-panel">
-                        <span style="margin:0;"><a href="#"><img src="images/logo.png" id="logo-image"></a></span>
-                      </div> -->
+                  </div>
         </div>   <!-- Main bar ends -->
 
-                 <div class = "elementsBanner">
-                    <ul class = "actions">
-                      <li id="signup">
-                        <a href="signup.php" class="button_09 special" >SIGN UP</a>
-                      </li>
-                      <li>
-                        <a href="#" class="button_09" onmousedown="toggleOverlay()" >LOG IN</a>
-                      </li>
-
-                    </ul>
-
-
-
-                 </div>
-
  </header>
-   
-  <div class = "pagewrapper"> 
+                      <!-- Hero cover -->
+
+  <div class = "pagewrapper" style="top: 80px;"> 
         <div class = "pageContainer">
-         
+          <section class="hero" style="margin-top:0px;">
+            <div class="cover-container">
+                <div class="hero-viewport">
+                  <div class="hero-viewport-image"></div>
+                </div>
+
+                <div class="hero-content">
+                    <ul class = "hero-actions">
+                        <li id="signup"><a href="signup.php" class="button_09 special" >SIGN UP</a></li>
+                        <li><a href="#" class="button_09" onmousedown="toggleOverlay()" >LOG IN</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+          </section>
+
               <div class="link-02-rt">
 
                   <section class="kilama-01">
                       <a class="_kilama 057_f" href="#" title="Top-deals">
                           <div class="kilama-div">
                             <div class="kilalma-ico">
-                              <img class="kilama-img"  style="height:100px;" src="images/icons/t-deals.svg" alt>
+                              <img class="kilama-img"  style="height:6.25rem;" src="images/icons/t-deals.svg" alt>
                             </div>
                             <div class="kilama-tit">Top Deals</div>
                             <div class="kilama-inf">Dummy text do<br> whatever it wants</div>
@@ -181,7 +104,7 @@
                       <a class="_kilama 057_f" href="#" title="Local-designers">
                           <div class="kilama-div">
                             <div class="kilalma-ico">
-                              <img class="kilama-img"  style="height:100px;" src="images/icons/local.svg" alt>
+                              <img class="kilama-img"  style="height:6.25rem;" src="images/icons/local.svg" alt>
                             </div>
                             <div class="kilama-tit">Local Designers</div>
                             <div class="kilama-inf">Dummy text do<br> whatever it wants</div>
@@ -191,7 +114,7 @@
                          <a class="_kilama 057_f" href="#" title="Local-designers">
                           <div class="kilama-div">
                             <div class="kilalma-ico">
-                              <img class="kilama-img"  style="height:100px;" src="images/icons/partner.svg" alt>
+                              <img class="kilama-img"  style="height:6.25rem;" src="images/icons/partner.svg" alt>
                             </div>
                             <div class="kilama-tit">Become a Partner</div>
                             <div class="kilama-inf">Dummy text do<br> whatever it wants</div>
@@ -201,7 +124,7 @@
                          <a class="_kilama 057_f" href="#" title="Local-designers">
                           <div class="kilama-div">
                             <div class="kilalma-ico">
-                              <img class="kilama-img"  style="height:100px;" src="images/icons/community.svg" alt>
+                              <img class="kilama-img"  style="height:6.25rem;" src="images/icons/community.svg" alt>
                             </div>
                             <div class="kilama-tit">Community</div>
                             <div class="kilama-inf">Dummy text do<br> whatever it wants</div>
@@ -342,14 +265,14 @@
 
               <div class="slider-cover" id="slider-cover1">
                   <div class="rsContent slide1">
-                      <div class="bContainer">
-                          <strong class="rsABlock txtCent blockHeadline">This is an animated block</strong>
+                      <div class="bContainer slide-content">
+                          <strong class="text-contrast">This is an animated block</strong>
                         <span class="rsABlock txtCent" data-move-effect="none">you can place it on any type of slide</span>
                       </div>
                  </div>
 
                  <div class="rsContent slide2">
-    <div class="bContainer">
+    <div class="bContainer slide-content">
       <strong class="rsABlock txtCent blockSubHeadline" data-move-effect="none">Transition Types</strong>
       <span class="rsABlock txtCent" data-move-effect="top">from top  ↓</span>
       <span class="rsABlock txtCent" data-move-effect="bottom">from bottom ↑</span>
@@ -423,7 +346,7 @@
               <section>
 
                         <span class="lp-text">
-                          <img src="images/icons/agreement2.svg" style="height:100px;">
+                          <img src="images/icons/agreement2.svg" style="height:6.25rem;">
                         </span>
 
                         <h2>DESIGNER ! LOOKING TO SELL YOUR PEODUCTS ONLINE AND BUILD RELATIONSHIP WITH CUSTOMERS ALL OVER THE WORLD ?</h2>
