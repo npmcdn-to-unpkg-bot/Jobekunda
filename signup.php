@@ -11,33 +11,29 @@
 <body>
       
 
-<div id="page">
+<div id="page signup-page" >
+	   <!-- Header -->
 
-	<div class="" id="sigup-header-p">
-		
-		<span style="margin:0;"><img src="images/logo.png" id="logo-image" style="
-    margin-top: 4em;"></span>
-	</div>
+ 
+
 
 	<div class="signup-wrapper">
 			<section id="ui-head">
 				<legend>Sign Up</legend>
 			</section>	
-			<form id="signup-form">
+			<form id="signup-form" style="text-align: center;">
 				<input type="text" name="f-name" placeholder="Full-Name">
 				<input type="email" name="email-ad" placeholder="Email Address">
-				<input type="email" name="email-ad2" placeholder="Re-enter Email">
 				<input type="password" name="password-09i" placeholder="Password">
 				<input type="submit" name="signup" value="Sign up">
-
- 
-
-
 			</form>	
-	
-
-
+			<p>By signing up, you agree to the <a href="#">Terms of Service</a></p>
 	</div>
+
+		<div>
+			<p>Already have an account?<a href="#">Log In</a></p>
+
+		</div>
 
 
 

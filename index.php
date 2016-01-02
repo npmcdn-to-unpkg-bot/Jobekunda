@@ -6,6 +6,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="assets/css/Style.css" type="text/css"/>
    <link rel="shortcut icon" href="images/favicon.png" />
+
 </head>
 
 <body>
@@ -63,12 +64,14 @@
                     </div>
 
                   </div>
+
+                 
         </div>   <!-- Main bar ends -->
 
  </header>
                       <!-- Hero cover -->
 
-  <div class = "pagewrapper" style="top: 80px;"> 
+  <div class = "pagewrapper"> 
         <div class = "pageContainer">
           <section class="hero" style="margin-top:0px;">
             <div class="cover-container">
@@ -382,10 +385,9 @@
            
     <!-- Scripts -->
 
-        <script src="assets/js/jquery-2.1.4.min.js"></script>
-        <script src="assets/js/script.js"></script>
         <script src="assets/js/jquery.royalslider.min.js"></script>
-
+           <script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
+   <script type="text/javascript" src="assets/js/script.js"></script>
 
 </body>
 </html>
