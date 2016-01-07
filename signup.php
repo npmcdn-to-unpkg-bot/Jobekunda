@@ -1,3 +1,5 @@
+<?php include 'config/setup.php';?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -23,8 +25,8 @@
 			</section>	
 			<form id="signup-form" style="text-align: center;">
 				<input type="text" name="f-name" placeholder="Full-Name">
-				<input type="email" name="email-ad" placeholder="Email Address">
-				<input type="password" name="password-09i" placeholder="Password">
+				<input type="email" name="email" placeholder="Email Address">
+				<input type="password" name="password" placeholder="Password">
 				<input type="submit" name="signup" value="Sign up">
 			</form>	
 			<p>By signing up, you agree to the <a href="#">Terms of Service</a></p>

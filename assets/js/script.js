@@ -1,5 +1,5 @@
 
-
+// Mytailor.me compyright
 
 	// Side Menu Trigger Function
 	$('a.sideTrigger').click(function() {
@@ -13,8 +13,7 @@
 		return false;
 	});
 
-
-//Slider
+              //Slider
 
 
 jQuery(document).ready(function($) {
@@ -53,4 +52,24 @@ function toggleOverlay(){
   }
 }
 
+      // Notification drawer
+
+    $(document).ready(function(){
+      $("#notificationLink").click(function(){
+        $("#notificationContainer").fadeToggle(300);
+        $("#notification_count").fadeOut("slow");
+        return false;
+    });
+
+    //Document Click
+
+      $(document).click(function(){
+        $("#notificationContainer").hide();
+      });
+          //Popup Click
+      $("#notificationContainer").click(function(){
+        return false
+    });
+
+    });
     
