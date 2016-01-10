@@ -12,18 +12,20 @@
                       <span class = "menu-text">Menu</span>
                      </a>
                  </div>
-      
-                  <div class="box-search">               
-                    <div class = "container-1">
-                      <input type = "search" id = "search" placeholder = "" />
-                    </div>
-                    <div class="hu904">
-                      <button class = "helo6" value = "Search" name = "btgg" type = "submit">
-                        <span class = "icon"><i class ="fa fa-search"></i></span>
-                      </button>
-                    </div>
 
-                  </div>
+                <div class="call-icons-container">
+                    <ul class="call-icons">
+                        <li>
+                            <a href="#" title="Settings"><img src="images/icons/top03/setting.svg" width="20px"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="images/icons/top03/button8.svg" width="20px"></a>
+                        </li>
+                    </ul>
+
+
+                </div>
+
 
                  
         </div>   <!-- Main bar ends -->

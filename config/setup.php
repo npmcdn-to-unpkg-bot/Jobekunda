@@ -23,7 +23,7 @@
         #function files:
     include ('functions/data.php');
     include ('functions/template.php');
-
+include 'functions/function.php';
 
 if (isset($_GET['page']) ) {
     # code...

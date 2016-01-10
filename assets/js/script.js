@@ -82,7 +82,7 @@ jQuery(document).ready(function($) {
 
         '<form id="signin-form" method="post" action="login.php">' +
 
-        '<input type="text" name="username" Placeholder="username or Email" required pattern="[A-Za-z]" title="Invalid characters">' +
+        '<input type="text" name="username" Placeholder="username or Email" required title="Invalid characters">' +
         '<input type="password" name="passwd" id="password" placeholder="Password" required>' +
 
 

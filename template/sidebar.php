@@ -11,8 +11,7 @@
                 <?php nav_main($dbc, $pageid); ?>
 
                             
-                      
-              ?>
+
 
                   <li><a href="#" class="nav-option">Features</a></li>
                   <li><a href="#" class="nav-option">Tracking</a></li>

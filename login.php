@@ -2,7 +2,7 @@
 
 
 include 'config/setup.php';
-include 'functions/function.php';
+
 
 
 session_start();

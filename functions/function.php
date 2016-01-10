@@ -1,5 +1,4 @@
 <?php
-include 'config/setup.php';
 
 
 function logged_in(){
