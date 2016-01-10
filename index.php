@@ -1,10 +1,13 @@
-<?php include 'config/setup.php';?>
+<?php include 'config/setup.php';
+include('session.php');
+
+?>
 
 
 <!DOCTYPE html>
 <html>
 <head>
-   <title><?php echo $site_title .' | '. $page_title;?></title>
+   <title><?php echo $site_title .' | '. $page['pageTitle'];?></title>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="assets/css/Style.css" type="text/css"/>
@@ -14,11 +17,11 @@
 
 <body>
 
-    <?php include 'template/sidebar.php'; 
+    <?php include D_TEMPLATE.'/sidebar.php'; 
 
-          include 'template/header.php'; 
+          include D_TEMPLATE.'/header.php'; 
 
-      include 'template/signin-form.php';?>
+      include D_TEMPLATE.'/signin-form.php';?>
 
                       <!-- Hero cover -->
 
@@ -33,7 +36,7 @@
                 <div class="hero-content">
                     <ul class = "hero-actions">
                         <li id="signup"><a href="signup.php" class="button_09 special" >SIGN UP</a></li>
-                        <li><a href="#" class="button_09" onmousedown="toggleOverlay()" >LOG IN</a></li>
+                        <li><a href="#" class="button_09 login">LOG IN</a></li>
                     </ul>
                 </div>
 
@@ -319,7 +322,7 @@
    </div>   <!--Page Container  -->
   </div>   <!-- page wrapper  -->
 
-  <?php include 'template/footer.php'; ?>
+  <?php include D_TEMPLATE.'/footer.php'; ?>
            
     <!-- Scripts -->
 

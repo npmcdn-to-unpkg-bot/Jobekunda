@@ -7,10 +7,12 @@
  */
      $site_title = 'MyTailor';
                                             #Database Conncection
-        $hostname = 'localhost';$username = 'developer';$password = '';$DB_name = "mytailor";
+   $hostname = 'localhost';$username = 'developer';$password = '';$DB_name = "mytailor";
+
 
     try {
             $dbc = new PDO("mysql:host=$hostname;dbname=$DB_name", $username, $password);
+
     }
     catch(PDOException $e)
         {
@@ -18,6 +20,7 @@
     }
 
         # Constaints :
+
         define('D_TEMPLATE', 'template');
 
         #function files:

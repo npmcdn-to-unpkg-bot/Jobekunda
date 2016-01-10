@@ -1,3 +1,8 @@
+<?php
+include('session.php');
+include 'functions/function.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,7 +23,7 @@
               <ul>
                 <div class="actionsMain">
                   <a href="#" class="closeTrigger"><span class="icon-close">X</span></a>
-                  <a href="#" class="signupSideM">Log out</a>
+                  <a href="logout.php" class="signupSideM">Log out</a>
                 </div>
 
 

@@ -7,13 +7,12 @@
                   <a href="signup.php" class="signupSideM">Sign up</a>
                   <a href="#" class="signinSideM login">Member</a>
                 </div>
-                                  
-                <?php nav_main($dbc, $pageid); ?>
 
-                            
-                      
-              ?>
+                <?php //nav_main($dbc, $pageid); ?>
 
+
+                  <li><a href="#" class="nav-option">Dashboard</a></li>
+                  <li><a href="#" class="nav-option">Features</a></li>
                   <li><a href="#" class="nav-option">Features</a></li>
                   <li><a href="#" class="nav-option">Tracking</a></li>
                   <li><a href="#" class="nav-option">Help Center</a></li>
