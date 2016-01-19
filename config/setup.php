@@ -1,10 +1,5 @@
 <?php
-/**
-    Setup file
- * User: Jobizzness
- * Date: 12/31/2015
- * Time: 12:21 PM
- */
+
      $site_title = 'MyTailor';
                                             #Database Conncection
         $hostname = 'localhost';$username = 'developer';$password = '';$DB_name = "mytailor";
@@ -23,7 +18,7 @@
         #function files:
     include ('functions/data.php');
     include ('functions/template.php');
-include 'functions/function.php';
+    include 'functions/function.php';
 
 if (isset($_GET['page']) ) {
     # code...
@@ -33,6 +28,13 @@ if (isset($_GET['page']) ) {
 
 }
 
+
+
     #page Setup
 $page = data_page($dbc, $pageid);
 
+#User Setup
+
+if (isset ($_SESSION['user_id']) ){
+    $user_data = user_data($dbc, $_SESSION['user_id']);
+}else {$user_data= [];}

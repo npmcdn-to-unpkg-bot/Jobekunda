@@ -4,14 +4,10 @@
               <ul>
                 <div class="actionsMain">
                   <a href="#" class="closeTrigger"><span class="icon-close">X</span></a>
-                  <a href="signup.php" class="signupSideM">Sign up</a>
-                  <a href="#" class="signinSideM login">Member</a>
-                </div>
-                                  
-                <?php nav_main($dbc, $pageid); ?>
 
-                            
 
+                    <?php sidebar_data($user_data); ?>
+                        <?php nav_main($dbc, $pageid); ?>
 
                   <li><a href="#" class="nav-option">Features</a></li>
                   <li><a href="#" class="nav-option">Tracking</a></li>

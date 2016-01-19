@@ -16,9 +16,6 @@ function validate_userinput(){
 		elseif(strlen( $_POST['passwd']) > 20 || strlen($_POST['passwd']) < 4){
 			return false;
 	}
-		elseif(ctype_alnum($_POST['username']) != true){
-			return false;
-	}
 		elseif (ctype_alnum($_POST['passwd']) != true){
 			return false;
 	}
@@ -26,3 +23,8 @@ function validate_userinput(){
 			return true;
 		}
 	}
+
+function login_fail($message){
+		$_SESSION['message'] = $message;
+		
+}	

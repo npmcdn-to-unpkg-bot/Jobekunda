@@ -99,10 +99,6 @@ tr, td {
   height: 100%;
   overflow-y: scroll; }
 
-.body_uniform {
-  position: fixed !important;
-  width: 100%; }
-
 .footerContainerWrapper {
   clear: both;
   width: 100%; }
@@ -259,57 +255,55 @@ tr, td {
 
 /*Search Box*/
 .box-search {
-  background: #fff;
-  border-radius: 2px;
-  display: inline-block;
-  margin: 0 40px;
-  margin-left: 12em;
-  margin-top: -11px;
-  max-width: 872px;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+  width: 45%;
+  float: left;
+  height: 3em;
+  margin-top: -1em;
+  margin-left: 12em; }
+
+.container-1 {
+  text-align: left;
   position: relative;
-  transition: background .2s;
-  vertical-align: top;
-  width: calc(100% - 682px); }
+  display: block;
+  color: #eee;
+  float: left;
+  width: 94%;
+  height: 100%; }
 
-.top-search > input[type="search"] {
-  font: 16px/20px Roboto,sans-serif;
-  color: #676666;
-  background: 0;
-  border: 0;
-  -ms-flex: 1;
-  -webkit-flex: 1;
-  flex: 1;
-  height: 36px;
-  margin: 0;
-  padding: 8px 8px 8px 37px;
-  transition: color .2s;
-  width: 100%; }
-
-.sg-popup {
-  background: #fff;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.24);
-  margin-top: 10px;
-  max-height: calc(100vh - 56px);
-  overflow-y: auto;
-  position: absolute;
-  transition: transform .2s,visibility .2s;
-  transform: translateY(0);
+#search {
   width: 100%;
-  z-index: -1; }
+  margin: 0;
+  height: 86%;
+  font: 88% arial,sans-serif;
+  line-height: 26px !important;
+  border: 0;
+  margin-top: 5px;
+  background: #fff;
+  border: 1px solid; }
 
 .hu904 {
-  position: absolute;
-  right: 0;
-  top: 0%;
-  height: 100%;
-  width: 6%; }
+  margin-top: 0.375rem;
+  height: 2em;
+  width: 6%;
+  float: right;
+  display: inline-block; }
 
 .helo6 {
   border: 0;
   height: 100%;
   cursor: pointer;
   background: #C4C4C4;
-  width: 4em; }
+  width: 3em; }
+
+.container-1 input[type="search"]:focus {
+  -moz-animation: focus 0.1s;
+  -webkit-animation: focus 0.1s;
+  -ms-animation: focus 0.1s;
+  animation: focus 0.1s;
+  background-color: #eaeae8 !important;
+  border-color: #33A4FF !important; }
 
 .icon {
   font-size: 0.9375rem;
@@ -321,7 +315,8 @@ button.helo6:focus {
 /*Front Bar*/
 .pull-left {
   position: relative;
-  display: inline-block; }
+  display: block;
+  float: left; }
 
 .pull-left a {
   color: #fff;
@@ -1016,22 +1011,6 @@ ul.icons li {
   font-size: 11px; }
 
 /*Single Product Overlay*/
-.sp-bg {
-  background: #eee; }
-
-.sp-box {
-  margin: 0 auto;
-  width: 920px;
-  padding: 40px 95px;
-  background: #eee;
-  background-position: fixed;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-border-radius: 6px;
-  -moz-border-radius: 6px;
-  border-radius: 6px; }
-
 .sp-overlay {
   background: #111;
   background: rgba(0, 0, 0, 0.63);
@@ -1372,14 +1351,85 @@ p {
   color: #2196F3;
   font-size: 98%; }
 
-.norm-text {
-  font-size: 100%; }
-
 /*Wide Screen*/
+@media screen and (max-width: 105rem) {
+  #first-sectionP {
+    width: 80em; } }
 /*Laptop Screen*/
+@media screen and (max-width: 80rem) {
+  p {
+    font-size: 100%; }
+
+  h1 {
+    font-size: 200%; }
+
+  .menu-text {
+    font-size: 90%; }
+
+  #ico-menu {
+    width: 1.8em; }
+
+  .button_09 {
+    font-size: 98%; }
+
+  .kilama-tit {
+    font-size: 100%; }
+
+  .kilama-inf {
+    font-size: 100%; }
+
+  p, a, h3, h5, h6, em, li {
+    font-size: 90%; }
+
+  #main-nav ul li > a {
+    font-size: 90%; }
+
+  .actionsMain a {
+    font-size: 70%; }
+
+  .row, .link-02-rt {
+    width: 60em; }
+
+  #lst-section section {
+    width: 90%; } }
 /*Taplet Screen*/
+@media screen and (max-width: 61.25rem) {
+  .lth-col-1 {
+    width: 31%; }
+
+  .lth-col-4 {
+    width: 64%; }
+
+  #ico-menu {
+    width: 1.8em; }
+
+  .row, .link-02-rt {
+    width: 60em; }
+
+  .box-search {
+    margin-left: 10em; } }
 /*Tablet port*/
+@media screen and (max-width: 52.5rem) {
+  .Banner-563u img {
+    height: 21em; }
+
+  .lth-col-1 {
+    width: 47%; }
+
+  #lrg-item {
+    display: none; }
+
+  .box-search {
+    min-width: 25em;
+    margin-left: 6em; }
+
+  .kilama-01 {
+    min-width: 139%; } }
 /*Small Tablet*/
+@media screen and (max-width: 46.5625rem) {
+  .box-search {
+    min-width: 25em;
+    margin-left: 5em; } }
 /*Phone Moblie*/
 @-moz-keyframes focus {
   0% {

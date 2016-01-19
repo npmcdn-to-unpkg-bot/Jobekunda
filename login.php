@@ -1,14 +1,16 @@
 <?php
-
-
 include 'config/setup.php';
-
-
-
 session_start();
 
+if(!empty($_SESSION['message'])) {
+
+   $message = $_SESSION['message'];
+}else{$message = "";}
+
 if (!validate_userinput() ){
-    $message = 'The username or password you’ve entered doesn’t match any account. Sign up for an account.';   
+
+        login_fail($message = 'The username or password you’ve entered doesn’t match any account. Sign up for an account.'); 
+
 
 } else{
 
@@ -26,7 +28,9 @@ if (!validate_userinput() ){
 
             //select statement
             $stmt = $dbc->prepare("SELECT user_id, username, password FROM members 
-                WHERE username = :username AND password = :password");
+                WHERE username = :username or email=:username AND password = :password");
+
+
 
                 #bind parameters 
 
@@ -41,24 +45,76 @@ if (!validate_userinput() ){
             // no result then fail
             if($user_id == false)
             {
-                    $message = 'Login Failed';
+                login_fail($message = 'The username or password you’ve entered doesn’t match any account. Sign up for an account.');
             }
         
             else
             {
                     //set the session user_id variable
+
                     $_SESSION['user_id'] = $user_id;
 
-                        header("location: index.php"); // Redirecting To Other Page
+                        header("location: index.php"); // Redirecting To home Page
             }
         }          
 
     catch(Exception $e)
     {
          #database error
-        $message = 'We are unable to process your request. Please try again later"';
+        login_fail($message = 'We are unable to process your request. Please try again later');
+
     }
 
 }
 
 
+
+?>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+   <title>MyTailor | Login</title>
+   <meta charset="UTF-8">
+   <link rel="stylesheet" href="assets/css/Style.css" type="text/css"/>
+   <link rel="shortcut icon" href="images/favicon.png" />
+   <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="page signup-page" >
+
+          <div id="overlay">
+            <div class="signin-wrapper">
+              <div id="header-form">
+              <div id = "form-logo"> 
+                <span style="margin:0;">
+                <img src="images/logo.png" style="width: 200px;">
+                   </span> </div> </div>
+                  <div id="body-form">
+                <div id="social-sign">
+            <div class="panel-sn" >
+              <div  class="social-connets facebook-p">
+              <a href="#">
+               <img src="images/icons/fb-art.png">
+                <span style="margin: 1em;">Login with Facebook</span></a>
+            </div></div></div> 
+
+        <form id="signin-form" method="post" action="login.php">
+
+        <input type="text" name="username" Placeholder="username or Email" required title="Invalid characters">
+        <input type="password" name="passwd" id="password" placeholder="Password" required>
+        <input type="submit" value="Log In" class="sg-but" />
+      </form>
+          </div>
+
+         <div id = "footer-form">
+                     <span class="links-sign" id="lgin"><a href="signup.php">Sign Up</a></span>
+                      <span class="links-sign" id="fpass"><a href="#">Forgot my Password</a></span>
+            
+                      </div></div></div>
+
+       </body>
+       </html>               

@@ -6,13 +6,13 @@
 	// Side Menu Trigger Function
 	$('a.sideTrigger').click(function() {
 		$('body').toggleClass('sideOpen');
-		return false;
+		
 	});
 
 	// Close Menu Trigger Function
 	$('a.closeTrigger').click(function() {
 		$('body').removeClass('sideOpen');
-		return false;
+		
 	});
 
               //Slider
@@ -42,6 +42,7 @@ jQuery(document).ready(function($) {
       // Notification drawer
 
     $(document).ready(function(){
+      
       $("#notificationLink").click(function(){
         $("#notificationContainer").fadeToggle(300);
         $("#notification_count").fadeOut("slow");
@@ -63,6 +64,7 @@ jQuery(document).ready(function($) {
 
     // Sigin Overlay
 
+
       var _overlay = $(
           '<div id="overlay">' +
             '<div class="signin-wrapper">' +
@@ -79,23 +81,16 @@ jQuery(document).ready(function($) {
                '<img src="images/icons/fb-art.png">' +
                 '<span style="margin: 1em;">Login with Facebook</span></a>' +
             '</div></div></div> ' +
-
         '<form id="signin-form" method="post" action="login.php">' +
-
-        '<input type="text" name="username" Placeholder="username or Email" required title="Invalid characters">' +
-        '<input type="password" name="passwd" id="password" placeholder="Password" required>' +
-
-
-        '<input type="submit" value="Log In" class="sg-but" />' +
-      '</form>' +
+            '<input type="text" name="username" Placeholder="username or Email" required title="Invalid characters">' +
+            '<input type="password" name="passwd" id="password" placeholder="Password" required>' +
+            '<input type="submit" value="Log In" class="sg-but" />' +
+        '</form>' +
           '</div>' +
-
          '<div id = "footer-form">' +
-                     '<span class="links-sign" id="lgin"><a href="#">Sign Up</a></span>' +
-                      '<span class="links-sign" id="fpass"><a href="#">Forgot my Password</a></span>' +
-            
-                      '</div></div></div>' 
-    
+           '<span class="links-sign" id="lgin"><a href="#">Sign Up</a></span>' +
+            '<span class="links-sign" id="fpass"><a href="#">Forgot my Password</a></span>' +
+            '</div></div></div>' 
         ),
 
       _overlay_modal = _overlay.find('.signin-wrapper'),
@@ -115,7 +110,9 @@ jQuery(document).ready(function($) {
 
 
       _overlay.h5u_open = function() {
+
         window.clearTimeout(_dialog_timeout);
+
         _dialog_locked = true;
         _overlay
           .fadeTo('fast', 1.0, function() {
@@ -143,6 +140,67 @@ jQuery(document).ready(function($) {
 
         var t = $(this);
         _overlay.h5u_open();
+
+        return false;
+
+      });
+
+        // Single Product
+
+
+
+  var sp_overlay = $('.sp-overlay'),
+        sp_overlay_box = sp_overlay.find('.sp-content-box'),
+        offsetY = window.pageYOffset,
+        _dialog_timeout, _dialog_locked = false;
+
+        sp_overlay.hide().appendTo($body).click(function() {
+          sp_overlay.h5u_close();
+          return true;
+        });
+
+      sp_overlay_box
+        .click(function(e) {
+          e.stopPropagation();
+        });
+
+
+      sp_overlay.h5u_open = function() {
+         offsetY = window.pageYOffset;
+          $body.css({'position': 'fixed','top': -offsetY + 'px'
+        });
+
+
+        window.clearTimeout(_dialog_timeout);
+        _dialog_locked = true;
+        sp_overlay
+          .fadeTo('fast', 1.0, function() {
+            if (typeof FB !== 'undefined'
+            &&  typeof FB.XFBML !== 'undefined')
+              FB.XFBML.parse();
+            _dialog_locked = false;
+          });
+      };
+
+      sp_overlay.h5u_close = function() {
+         $body.css({'position': 'static'});
+         $(window).scrollTop(offsetY);
+
+        if (!sp_overlay.is(':visible'))
+          return false;
+        window.clearTimeout(_dialog_timeout);
+        _dialog_locked = true;
+        sp_overlay
+          .fadeTo('fast', 0, function() {
+            sp_overlay.hide();
+            _dialog_locked = false;
+          });
+      };
+
+        $('.sp-view').on('click', function() {
+
+        var t = $(this);
+        sp_overlay.h5u_open();
 
         return false;
 
