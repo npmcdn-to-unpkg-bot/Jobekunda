@@ -20,6 +20,7 @@ if (!validate_userinput() ){
 
     #encrypt password 
     $passwd = sha1($passwd);
+    $timestamp = date('Y-m-d h:i:s');
 
     try
         {
@@ -27,8 +28,8 @@ if (!validate_userinput() ){
             $dbc->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
             //select statement
-            $stmt = $dbc->prepare("SELECT user_id, username, password FROM members 
-                WHERE username = :username or email=:username AND password = :password");
+            $stmt = $dbc->prepare("SELECT member_id, username, password FROM members 
+                WHERE username = :username or email = :username AND password = :password");
 
 
 
@@ -50,11 +51,17 @@ if (!validate_userinput() ){
         
             else
             {
-                    //set the session user_id variable
 
+            $stmt = $dbc->prepare("UPDATE members SET last_logged_in = :time WHERE member_id = $user_id");
+            $stmt->bindParam(':time', $timestamp );
+            $stmt->execute();
+
+                    //set the session user_id variable
                     $_SESSION['user_id'] = $user_id;
 
-                        header("location: index.php"); // Redirecting To home Page
+                    //select statement
+               header("location: index.php"); // Redirecting To home Page
+
             }
         }          
 
@@ -66,7 +73,6 @@ if (!validate_userinput() ){
     }
 
 }
-
 
 
 ?>
@@ -91,8 +97,10 @@ if (!validate_userinput() ){
               <div id="header-form">
               <div id = "form-logo"> 
                 <span style="margin:0;">
-                <img src="images/logo.png" style="width: 200px;">
-                   </span> </div> </div>
+                  <a href="index.php" class="m-0"><img src="images/logo.png" style="width: 200px;"></a>
+                </span>
+                 </div>
+               </div>
                   <div id="body-form">
                 <div id="social-sign">
             <div class="panel-sn" >
@@ -104,9 +112,9 @@ if (!validate_userinput() ){
 
         <form id="signin-form" method="post" action="login.php">
 
-        <input type="text" name="username" Placeholder="username or Email" required title="Invalid characters">
+        <input type="text" name="username" Placeholder="username or Email" required title="Invalid characters" autofocus>
         <input type="password" name="passwd" id="password" placeholder="Password" required>
-        <input type="submit" value="Log In" class="sg-but" />
+        <input type="submit" value="Log In" class="sg-but" >
       </form>
           </div>
 
@@ -115,6 +123,12 @@ if (!validate_userinput() ){
                       <span class="links-sign" id="fpass"><a href="#">Forgot my Password</a></span>
             
                       </div></div></div>
+
+                                <!-- Scripts -->
+          
+        <script src="assets/js/jquery-2.1.4.min.js"></script>
+        <script src="assets/js/jquery.royalslider.min.js"></script>
+        <script src="assets/js/script.js"></script>
 
        </body>
        </html>               

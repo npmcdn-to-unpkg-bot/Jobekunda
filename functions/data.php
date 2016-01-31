@@ -10,7 +10,7 @@
 
     function user_data($dbc, $id){
         $stmt = $dbc->prepare("SELECT * FROM members
-        WHERE user_id = $id");
+        WHERE member_id = $id");
             $stmt->execute();
             $user_data = $stmt->fetch();
         $user_data['fullname'] = $user_data['firstname']. ' '.$user_data['lastname'];

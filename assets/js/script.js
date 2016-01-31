@@ -6,14 +6,23 @@
 	// Side Menu Trigger Function
 	$('a.sideTrigger').click(function() {
 		$('body').toggleClass('sideOpen');
+    $('.mt-layout-black__cover').addClass('is-visible');
 		
 	});
 
 	// Close Menu Trigger Function
 	$('a.closeTrigger').click(function() {
 		$('body').removeClass('sideOpen');
+    $('.mt-layout-black__cover').removeClass('is-visible'); 
 		
 	});
+
+  // Close Menu Trigger Function
+  $('.mt-layout-black__cover').click(function() {
+    $('.mt-layout-black__cover').removeClass('is-visible');
+        $('body').removeClass('sideOpen');
+    
+  });  
 
               //Slider
 
@@ -82,7 +91,7 @@ jQuery(document).ready(function($) {
                 '<span style="margin: 1em;">Login with Facebook</span></a>' +
             '</div></div></div> ' +
         '<form id="signin-form" method="post" action="login.php">' +
-            '<input type="text" name="username" Placeholder="username or Email" required title="Invalid characters">' +
+            '<input type="text" id="username" name="username" Placeholder="username or Email" required title="Invalid characters">' +
             '<input type="password" name="passwd" id="password" placeholder="Password" required>' +
             '<input type="submit" value="Log In" class="sg-but" />' +
         '</form>' +
@@ -205,3 +214,119 @@ jQuery(document).ready(function($) {
         return false;
 
       });
+
+
+
+
+
+Waves.attach('.btn', ['waves-button', 'waves-float']);
+Waves.init();
+
+  //Side Bar Scroller
+
+    (function($){
+    $(window).load(function(){
+        $(".mt-sidebar").mCustomScrollbar();
+    });
+})(jQuery);
+
+
+
+
+// Content Loader
+$(document).ready(function(){
+
+//set trigger and content variable
+    var trigger = $('.snd-navigation a'),
+        container = $('#_5h60');
+
+        //Fire on click
+
+        trigger.on('click', function(){
+
+          //set $this for re-use. Set trigger from data attribute
+
+          var $this = $(this),
+            target = $this.data('target');
+          if (!$(this).hasClass("n-active")) {
+            // Remove the class from anything that is active
+            $("a.n-active").removeClass("n-active");
+            // And make this active
+            $(this).addClass("n-active");
+  }
+
+        $('#bread').text(target);
+
+            //Load target page into container
+
+            container.load('template/user/' + target + '.php');
+
+            //stop link
+            return false;
+        });
+
+});
+
+
+//Login effect
+
+(function($){
+
+    var Login =  {
+
+        init: function(){
+            var self = this;
+
+            this.eventHandling.sopie.call(self);
+        },
+
+        eventHandling: {
+            sopie: function(){
+              var self = this;
+
+              $('#username')
+                  .on('change',this.checkpassword)
+                  .next()
+                  .on('keydown', this.styleProcessor);
+              
+            },
+
+        },
+
+        styleProcessor: function(){
+          var $this = $(this);
+          if(Boolean($this.val())){
+            $(".sg-but")
+              .css({"border":"2px solid #F23054","color":"#F23054"})
+              .end()
+              .prop( "disabled", false);
+          }else{
+
+           $(".sg-but")
+              .attr('style', '')
+              .end()
+              .attr('disabled', 'disabled');
+          }
+          
+          console.log("you are styling");
+
+              
+              
+        },
+
+        checkpassword: function(){
+
+           $(".sg-but")
+              .attr('style', '')
+              .end()
+              .attr('disabled', 'disabled');
+
+          // $('#password').on('keydown',this.styleProcessor);
+        }
+
+    };
+
+    Login.init();
+
+
+})(jQuery)

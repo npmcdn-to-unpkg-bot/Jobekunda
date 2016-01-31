@@ -1,30 +1,34 @@
 <?php
 
 function nav_main($dbc, $pageid){
-	 $stmt = $dbc->prepare("SELECT * FROM pages");
+	 $stmt = $dbc->prepare("SELECT * FROM pages WHERE pageLabel <> '' ");
           $stmt->execute();
              while ($nav = $stmt -> fetch()) { ?>
-          		 <li><a href="?page=<?=$nav['pageID']; ?>" class="nav-option"><?=$nav['pageLabel'];?></a></li>     
-         <?php }        
+                    <li<?php if ($nav['pageID'] == $pageid) {echo ' class="mt-list-active"' ;} ?>><a href="<?=$nav['pageLabel']; ?>" class="mt-sidebar-link btn"><?=$nav['pageLabel'];?></a></li><?php }        
 }
 
+
    function sidebar_data($user_data){
-        if(!isset($_SESSION['user_id'])){
-              echo '<a href="signup.php" class="signupSideM">Sign up</a>
-                    <a href="login.php" class="signinSideM login">Member</a></div>';
-        }else{ ?>
-             <a href="logout.php" class="signupSideM">Log out</a></div><section class="nav-profile">
+        if(!isset($_SESSION['user_id'])){ ?>
+                    <a href="signup.php" class="signupSideM">Sign up</a>
+                    <a href="login.php" class="signinSideM login">Member</a>
+                </div>
+       <?php }else{ ?>
+             <a href="logout.php" class="signupSideM">Log out</a>
+         </div>
+             <section class="nav-profile">
              <a href="#" class="nav-pro-elemnts">
              <img src="images/profilepix/place-holder.png">
              <h3><?=$user_data['fullname'];?></h3></a>
-            </section>';
+            </section>
                         <?php }
 }
 
-       function header_data(){
-            if(isset($_SESSION['user_id'])){
 
-        echo '<section class="header-notification-wrapper">
+       function header_data(){
+            if(isset($_SESSION['user_id'])){?> 
+
+             <section class="header-notification-wrapper">
                 <ul class="header-notification">
                     <li   id="notification_li">
                         <a href="#" class="notification-items" id="notificationLink">
@@ -46,6 +50,7 @@ function nav_main($dbc, $pageid){
                 <div class="bar-profile-image">
                     <a href="#"><img src="images/profilepix/11698517_10205466839968531_5750592294516276713_n.jpg" style="width: 40px;"></a>
                 </div>
-            </section>';
-        }
-     }
+            </section>
+
+        <?php }
+   }

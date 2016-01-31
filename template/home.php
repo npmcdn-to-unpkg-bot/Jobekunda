@@ -1,31 +1,25 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Jobizzness
- * Date: 1/14/2016
- * Time: 7:49 PM
- */?>
+
+
 <div class = "pagewrapper">
         <div class = "pageContainer">
           <section class="hero" style="margin-top:0px;">
             <div class="cover-container">
                 <div class="hero-viewport">
-                  <div class="hero-viewport-image"></div>
-                </div>
-
-                <div class="hero-content">
+                  <div class="hero-viewport-image">
+                     <div class="hero-content">
                     <?php
                     if(!isset($_SESSION['user_id'])){
                         echo ' <ul class = "hero-actions">
-                        <li id="signup"><a href="signup.php" class="button_09 special" >SIGN UP</a></li>
-                        <li><a href="#" class="button_09 login">LOG IN</a></li>
+                        <li id="signup"><a href="get.mytailor.me" class="button_09 special" >SIGN UP</a></li>
+                        <li><a href="login.php" class="button_09 login">LOG IN</a></li>
                     </ul>';
 
                     }
 
 
 ?>
-
+                  </div>
+                </div>
                 </div>
 
             </div>
@@ -41,7 +35,7 @@
                               <img class="kilama-img"  style="height:6.25rem;" src="images/icons/t-deals.svg" alt>
                             </div>
                             <div class="kilama-tit">Top Deals</div>
-                            <div class="kilama-inf">Dummy text do<br> whatever it wants</div>
+                            <div class="kilama-inf">Shop today's Deals.<br> Affordable limited offer</div>
                           </div>
                       </a>
 
@@ -52,27 +46,27 @@
                               <img class="kilama-img"  style="height:6.25rem;" src="images/icons/local.svg" alt>
                             </div>
                             <div class="kilama-tit">Local Designers</div>
-                            <div class="kilama-inf">Dummy text do<br> whatever it wants</div>
+                            <div class="kilama-inf">Learn about designers<br>from your area</div>
                           </div>
                       </a>
 
-                         <a class="_kilama 057_f" href="#" title="Local-designers">
+                         <a class="_kilama 057_f" href="#" title="Partner">
                           <div class="kilama-div">
                             <div class="kilalma-ico">
                               <img class="kilama-img"  style="height:6.25rem;" src="images/icons/partner.svg" alt>
                             </div>
                             <div class="kilama-tit">Become a Partner</div>
-                            <div class="kilama-inf">Dummy text do<br> whatever it wants</div>
+                            <div class="kilama-inf">great opportunities<br>for young businesses.</div>
                           </div>
                       </a>
 
-                         <a class="_kilama 057_f" href="#" title="Local-designers">
+                         <a class="_kilama 057_f" href="#" title="Community">
                           <div class="kilama-div">
                             <div class="kilalma-ico">
                               <img class="kilama-img"  style="height:6.25rem;" src="images/icons/community.svg" alt>
                             </div>
                             <div class="kilama-tit">Community</div>
-                            <div class="kilama-inf">Dummy text do<br> whatever it wants</div>
+                            <div class="kilama-inf">wide network of tailors<br>all around Africa</div>
                           </div>
                       </a>
 
@@ -81,14 +75,14 @@
 
 
                       <div class="v-090">
-                      <a href="?page=2" class="norm-text"><span class="button_09" id="vp-but0">View Products</span></a>
+                      <a href="products" class="norm-text"><span class="button_09" id="vp-but0">View Products</span></a>
                       </div>
 
               </div><!-- short banner -->
 
                 <div class="row clearfix">
 
-                    <div class ="lth-col-1 ht-col-4 all-container">
+                    <div class ="lth-col-1 ht-col-1 all-container">
                         <div class="lth-wrapper" style="background:url('images/thums/imme04.jpg');background-size: cover;">
                           <a href="#" class="sp-view">
                             <div class="overlay-items">
@@ -145,7 +139,6 @@
                         </div>
                        </div>
 
-                            <!-- Secon layer -->
 
                         <div class="lth-col-1 ht-col-1 all-container">
                           <div class="lth-wrapper" style="background:url('images/thums/05.jpg');background-size: cover;">
@@ -158,7 +151,7 @@
                         </div>
                        </div>
 
-                         <div class="lth-col-4 ht-col-1 all-container" id="lrg-item">
+                         <div class="lth-col-1 ht-col-1 all-container" id="lrg-item">
                           <div class="lth-wrapper" style="background:url('images/thums/06.jpg');background-size: cover;">
                           <a href="#" class="sp-view">
                              <div class="overlay-items">
@@ -199,16 +192,38 @@
                           </a>
                         </div>
                        </div>
+
+                      <div class="lth-col-1 ht-col-1 all-container">
+                      <div class="lth-wrapper" style="background:url('images/thums/10.jpg');background-size: cover;">
+                      <a href="#" class="sp-view">
+                         <div class="overlay-items">
+                        </div>
+                      </a>
+                    </div>
+                   </div>
+
+                   <div class="lth-col-1 ht-col-1 all-container" >
+                          <div class="lth-wrapper" style="background:url('images/thums/01.jpg');background-size: cover;">
+                          <a href="#" class="sp-view">
+                             <div class="overlay-items">
+
+
+                            </div>
+                          </a>
+                        </div>
+                    </div>
                        <div style="clear: both;"></div>
               </div>   <!-- Latest products ends -->
 
 
               <div class="about-container">
+                  <div class="wrap">
                     <span class="lp-text"><h1>About MyTailor</h1></span>
 
                     <div class="text-09kl">
                           <p>We're a fast-growing, New York-based cloud infrastructure  provider, and our talented team is at the center We're a fast-growing, New York-based cloud infrastructure  provider, and our talented team is at the center of everything we do. Our philosophy is collaboration-focused, remote-friendly, and flexible. We care deeply about supporting the growth of all our employees and making sure they feel professionally fulfilled. We're a fast-growing, New York-based cloud infrastructure  provider, and our talented team is at the center of everything we do. Our philosophy is collaboration-focused, remote-friendly, and flexible. We care deeply about supporting the growth of all our employees and making sure they feel professionally fulfilled.</p>
                     </div>
+                  </div>  
               </div> <!-- About Container ended -->
 
               <div class="slider-cover" id="slider-cover1">

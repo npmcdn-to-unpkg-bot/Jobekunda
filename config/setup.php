@@ -1,19 +1,13 @@
 <?php
 
      $site_title = 'MyTailor';
-                                            #Database Conncection
-        $hostname = 'localhost';$username = 'developer';$password = '';$DB_name = "mytailor";
 
-    try {
-            $dbc = new PDO("mysql:host=$hostname;dbname=$DB_name", $username, $password);
-    }
-    catch(PDOException $e)
-        {
-            echo $e->getMessage();
-    }
+    #Database Conncection
+     include 'connection.php';
 
         # Constaints :
         define('D_TEMPLATE', 'template');
+         define('U_TEMPLATE', 'template/user');
 
         #function files:
     include ('functions/data.php');
@@ -27,8 +21,6 @@ if (isset($_GET['page']) ) {
 } else {$pageid = 1;
 
 }
-
-
 
     #page Setup
 $page = data_page($dbc, $pageid);
