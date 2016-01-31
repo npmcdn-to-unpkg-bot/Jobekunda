@@ -2,42 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0b0863e-b6c5-45fd-8ca2-4f1ff588877f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/New folder/register.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/New folder/register.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/profile.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/reg.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/signup.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/template/signin-form.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/.sass-cache/82ba2c87d2b1dd2ac751e48f24e23cc274a71fd4/style.scssc" afterPath="$PROJECT_DIR$/assets/.sass-cache/82ba2c87d2b1dd2ac751e48f24e23cc274a71fd4/style.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/favicon.png" afterPath="$PROJECT_DIR$/images/favicon.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/logo.png" afterPath="$PROJECT_DIR$/images/logo.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/thums/01.jpg" afterPath="$PROJECT_DIR$/images/thums/01.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/thums/02.jpg" afterPath="$PROJECT_DIR$/images/thums/02.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/thums/03.jpg" afterPath="$PROJECT_DIR$/images/thums/03.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/thums/04.jpg" afterPath="$PROJECT_DIR$/images/thums/04.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/thums/05.jpg" afterPath="$PROJECT_DIR$/images/thums/05.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/thums/06.jpg" afterPath="$PROJECT_DIR$/images/thums/06.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/thums/07.jpg" afterPath="$PROJECT_DIR$/images/thums/07.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/thums/08.jpg" afterPath="$PROJECT_DIR$/images/thums/08.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/thums/09.jpg" afterPath="$PROJECT_DIR$/images/thums/09.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Document.rtf" afterPath="$PROJECT_DIR$/Document.rtf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/Style.css" afterPath="$PROJECT_DIR$/assets/css/Style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/style.css.map" afterPath="$PROJECT_DIR$/assets/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/script.js" afterPath="$PROJECT_DIR$/assets/js/script.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/sass/style.css" afterPath="$PROJECT_DIR$/assets/sass/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/sass/style.css.map" afterPath="$PROJECT_DIR$/assets/sass/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/sass/style.scss" afterPath="$PROJECT_DIR$/assets/sass/style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/setup.php" afterPath="$PROJECT_DIR$/config/setup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions/data.php" afterPath="$PROJECT_DIR$/functions/data.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/functions/template.php" afterPath="$PROJECT_DIR$/functions/template.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/icons/partner.svg" afterPath="$PROJECT_DIR$/images/icons/partner.svg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/login.php" afterPath="$PROJECT_DIR$/login.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/header.php" afterPath="$PROJECT_DIR$/template/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/home.php" afterPath="$PROJECT_DIR$/template/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/product.php" afterPath="$PROJECT_DIR$/template/product.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/template/sidebar.php" afterPath="$PROJECT_DIR$/template/sidebar.php" />
     </list>
     <ignored path="mytailor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -218,14 +183,22 @@
       <option name="number" value="Default" />
       <updated>1452427630259</updated>
     </task>
+    <task id="LOCAL-00001" summary="mytailor UI design">
+      <created>1454254260968</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1454254260968</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17203514" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.329653" sideWeight="0.5087848" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -253,6 +226,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mytailor UI design" />
+    <option name="LAST_COMMIT_MESSAGE" value="mytailor UI design" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -286,6 +263,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -293,6 +271,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -308,6 +287,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -330,6 +310,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -435,6 +416,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7266436">
           <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -478,6 +460,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07588076">
           <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -485,6 +468,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.07588076">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

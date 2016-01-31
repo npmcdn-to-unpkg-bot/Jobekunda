@@ -1,0 +1,10 @@
+#Turn Rewrite Engine on
+RewriteEngine on
+
+#Rewrite for products
+
+RewriteRule ^products index.php?page=2 [NC,L]
+
+RewriteRule ^home index.php [NC,L]
+
+RewriteRule ^profile index.php?page=4 [NC,L]
