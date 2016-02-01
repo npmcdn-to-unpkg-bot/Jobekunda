@@ -1,20 +1,21 @@
 
-
 <div class = "pagewrapper">
         <div class = "pageContainer">
           <section class="hero" style="margin-top:0px;">
             <div class="cover-container">
                 <div class="hero-viewport">
                   <div class="hero-viewport-image">
-                     <div class="hero-content">
+                     <div class="hero-content" style="">
                     <?php
-                    if(!isset($_SESSION['user_id'])){
-                        echo ' <ul class = "hero-actions">
-                        <li id="signup"><a href="get.mytailor.me" class="button_09 special" >SIGN UP</a></li>
-                        <li><a href="login.php" class="button_09 login">LOG IN</a></li>
-                    </ul>';
+                  echo '  <div class="mt-hero-textwrap">
+                        <h1 class="mt-heading-text">SHOP WITH MYTAILOR</h1>
+                        <h2 class="mt-subheading-text">SAVE BIG AND EARN FREE SHIPPING.</h2>
+                    </div>
+                          <div class="mt-hero-button">
 
-                    }
+                          <a href="/products" class="norm-text"><span class="button_09 special" id="sn-button">Shop</span></a>
+                        </div>
+                    ';
 
 
 ?>
@@ -24,59 +25,7 @@
 
             </div>
 
-          </section>
 
-              <div class="link-02-rt">
-
-                  <section class="kilama-01">
-                      <a class="_kilama 057_f" href="#" title="Top-deals">
-                          <div class="kilama-div">
-                            <div class="kilalma-ico">
-                              <img class="kilama-img"  style="height:6.25rem;" src="images/icons/t-deals.svg" alt>
-                            </div>
-                            <div class="kilama-tit">Top Deals</div>
-                            <div class="kilama-inf">Shop today's Deals.<br> Affordable limited offer</div>
-                          </div>
-                      </a>
-
-
-                      <a class="_kilama 057_f" href="#" title="Local-designers">
-                          <div class="kilama-div">
-                            <div class="kilalma-ico">
-                              <img class="kilama-img"  style="height:6.25rem;" src="images/icons/local.svg" alt>
-                            </div>
-                            <div class="kilama-tit">Local Designers</div>
-                            <div class="kilama-inf">Learn about designers<br>from your area</div>
-                          </div>
-                      </a>
-
-                         <a class="_kilama 057_f" href="#" title="Partner">
-                          <div class="kilama-div">
-                            <div class="kilalma-ico">
-                              <img class="kilama-img"  style="height:6.25rem;" src="images/icons/partner.svg" alt>
-                            </div>
-                            <div class="kilama-tit">Become a Partner</div>
-                            <div class="kilama-inf">great opportunities<br>for young businesses.</div>
-                          </div>
-                      </a>
-
-                         <a class="_kilama 057_f" href="#" title="Community">
-                          <div class="kilama-div">
-                            <div class="kilalma-ico">
-                              <img class="kilama-img"  style="height:6.25rem;" src="images/icons/community.svg" alt>
-                            </div>
-                            <div class="kilama-tit">Community</div>
-                            <div class="kilama-inf">wide network of tailors<br>all around Africa</div>
-                          </div>
-                      </a>
-
-                    <div style="clear: both;"></div>
-                  </section>
-
-
-                      <div class="v-090">
-                      <a href="products" class="norm-text"><span class="button_09" id="vp-but0">View Products</span></a>
-                      </div>
 
               </div><!-- short banner -->
 
@@ -229,8 +178,12 @@
               <div class="slider-cover" id="slider-cover1">
                   <div class="rsContent slide1">
                       <div class="bContainer slide-content">
-                          <strong class="text-contrast">This is an animated block</strong>
-                        <span class="rsABlock txtCent" data-move-effect="none">you can place it on any type of slide</span>
+                          <span class="rsABlock txtCent"  data-move-effect="left" data-delay="500"><strong class="text-contrast" data-move-effect="left" >Design & Inspire</strong></span>
+                        <span class="rsABlock txtCent"  data-move-effect="left" data-delay="700">you can place it on any type of slide</span>
+                        <div class="mt-slide-button rsABlock" data-move-effect="none" data-delay="1100" data-move-offset="450">
+
+                          <a href="signup.php" class="norm-text"><span class="button_09 special" id="sn-button">Learn More</span></a>
+                        </div>
                       </div>
                  </div>
 
@@ -257,54 +210,8 @@
 
               </div>
 
-                <!-- Slider -->
-              <div class = "showCase">
-                <ul>
 
-                  <li>
-                    <a href="#">
-                    <img src="images/showcase/men.jpg" alt="" >
-                      <div>
-                        <span class="showcase_title">MEN</span>
-                        <span class="showcase_button hvr-bounce-to-right">View More</span>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#">
-                    <img src="images/showcase/women.jpg" alt="">
-                      <div>
-                        <span class="showcase_title">WOMEN</span>
-                        <span class="showcase_button hvr-bounce-to-right">View More</span>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#">
-                    <img src="images/showcase/footwear.jpg" alt="" >
-                      <div>
-                        <span class="showcase_title">FOOTWEAR</span>
-                        <span class="showcase_button hvr-bounce-to-right">View More</span>
-                      </div>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a href="#">
-                    <img src="images/showcase/traditional.jpg" alt="">
-                      <div>
-                        <span class="showcase_title">TRADITIONAL</span>
-                        <span class="showcase_button hvr-bounce-to-right">View More</span>
-                      </div>
-                     </a>
-                  </li>
-                   <div style="clear: both;"></div>
-                </ul>
-
-              </div>  <!--Show-case ends -->
-
+                
             <div id="lst-section">
               <section>
 
@@ -316,10 +223,6 @@
 
                         <p>MyTailor Turns out Twenty was the best I could come up with. Anyway, lame name aside, it's minimally designed, fully responsive, built on HTML5/CSS3/skel, and, like all my stuff, released for free under the Creative Commons 3.0 license. Have fun!</p>
 
-                        <div>
-
-                          <a href="signup.php" class="norm-text"><span class="button_09 hvr-border-fade" id="sn-button">Sign Up</span></a>
-                        </div>
               </section>
 
               </div>

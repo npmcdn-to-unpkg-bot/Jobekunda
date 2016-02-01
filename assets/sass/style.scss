@@ -5,7 +5,6 @@
 @import "reset.scss";
 @import "waves.sass";
 @import "../css/font-awesome.min.css";
-@import "../css/rs-default.css";
 
   /*Variables*/
 
@@ -513,7 +512,7 @@ width: 6%;}
 
 .hero-content{
     color: #fff;
-    padding: 15.5em 0;
+padding: 12.5em 0;
     width: 100%;
     z-index: 100;
     text-align: center;
@@ -521,7 +520,8 @@ width: 6%;}
 ul.hero-actions {
     cursor: default;
     list-style: none;
-    padding-left: 0;}
+    padding: 3em;
+}
 
 .Buts_02{    padding: 0.9em 3.9em;
     margin-left: 0.5em;
@@ -533,12 +533,29 @@ ul.hero-actions {
     display: inline-block;
     padding: 0 1em 0 0;
     vertical-align: middle;
+}
+
+.mt-hero-textwrap{
+        text-align: left;
 }                  
 
+.mt-heading-text{
+        margin: 0 1em;
+    color: #fff;
+        font-weight: 600;
+}
+.mt-subheading-text{
+        margin: 0.5em 2.5em;
+}
+
+.mt-hero-button{
+        text-align: left;
+    margin: 2em 6em;
+}
   .button_09{
     transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
     background-color: #666;
-    border-radius: 6px;
+    border-radius: 2px;
     border: 0;
     cursor: pointer;
     display: inline-block;
@@ -564,6 +581,10 @@ ul.hero-actions {
 .special{background-color: #F23054;
 
 
+}
+.mt-slide-button{
+
+    margin: 2em 2em;
 }
 .hero-actions>li#signup :hover{background-color: #FD3056;}
 
@@ -900,12 +921,17 @@ text-align: left;}
               /*Slider Part*/
 .slider-cover {
     width: 100%;
-    height: 78vh;
+    height: 92vh;
     position: relative;
 }
-.slide1{    background-color: #2196F3;
-    height: 100%;}
-.rsContainer, .rsSlide{height: 100%;}
+.slide1{    
+    background: url("../../images/background/banner02.jpg");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.rsContainer, .rsSlide{height: 100%;
+}
 
 .slide-content{position: absolute;
     top: 45%;
@@ -1637,6 +1663,22 @@ cursor: pointer;
 
 }
 
+
+.rsArrow{
+    position: absolute;
+    top: 40%;
+    display: block;
+    z-index: 21;
+    padding: 1em;
+}
+.rsArrowIcn>i{
+        font-size: 6em;
+    color: rgba(255, 255, 255, 0.58);
+}
+
+.rsArrowRight{
+    right:0;
+}
             /*Activity Styles*/
 
  .activity-wrapper{

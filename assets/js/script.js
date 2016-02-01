@@ -34,7 +34,7 @@ jQuery(document).ready(function($) {
     arrowsNavAutoHide: false,
     fadeinLoadedSlide: false,
     controlNavigationSpacing: 0,
-    controlNavigation: 'bullets',
+    controlNavigation: 'none',
     imageScaleMode: 'none',
     imageAlignCenter:false,
     blockLoop: true,
@@ -47,6 +47,14 @@ jQuery(document).ready(function($) {
     }
   });
 });
+
+$(document).ready(function(){
+  $('.rsArrowRight .rsArrowIcn').html('<i class="fa fa-x3 fa-angle-right"></i>')
+    $('.rsArrowLeft .rsArrowIcn').html('<i class="fa fa-x3 fa-angle-left"></i>')
+
+});
+
+
 
       // Notification drawer
 
@@ -93,7 +101,7 @@ jQuery(document).ready(function($) {
         '<form id="signin-form" method="post" action="login.php">' +
             '<input type="text" id="username" name="username" Placeholder="username or Email" required title="Invalid characters">' +
             '<input type="password" name="passwd" id="password" placeholder="Password" required>' +
-            '<input type="submit" value="Log In" class="sg-but" />' +
+            '<input type="submit" value="Log In" class="sg-but" style disabled />' +
         '</form>' +
           '</div>' +
          '<div id = "footer-form">' +
@@ -282,50 +290,53 @@ $(document).ready(function(){
 
         eventHandling: {
             sopie: function(){
+              'use strict';
+              
               var self = this;
 
               $('#username')
-                  .on('change',this.checkpassword)
+                  .on('input',this.checker)
                   .next()
-                  .on('keydown', this.styleProcessor);
+                  .on('input', this.checker);
               
             },
 
         },
 
-        styleProcessor: function(){
-          var $this = $(this);
-          if(Boolean($this.val())){
+
+        checker: function(){
+
+        
+  var input=$('#username');
+  var is_name=input.val();
+    var input=$('#password');
+  var is_pass=input.val();
+
+  if(is_name){
+
+    if (is_pass) {
             $(".sg-but")
               .css({"border":"2px solid #F23054","color":"#F23054"})
-              .end()
+
               .prop( "disabled", false);
-          }else{
-
-           $(".sg-but")
+           
+      }else{
+    
+              $(".sg-but")
               .attr('style', '')
-              .end()
-              .attr('disabled', 'disabled');
-          }
-          
-          console.log("you are styling");
+              .prop( "disabled", true);
+           };
 
-              
-              
-        },
-
-        checkpassword: function(){
-
-           $(".sg-but")
+  }else{
+                    $(".sg-but")
               .attr('style', '')
-              .end()
-              .attr('disabled', 'disabled');
+              .prop( "disabled", true);
 
-          // $('#password').on('keydown',this.styleProcessor);
-        }
+  }
 
-    };
 
+  }
+}
     Login.init();
 
 
