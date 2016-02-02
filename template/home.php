@@ -1,4 +1,3 @@
-
 <div class = "pagewrapper">
         <div class = "pageContainer">
           <section class="hero" style="margin-top:0px;">
@@ -170,7 +169,7 @@
                     <span class="lp-text"><h1>About MyTailor</h1></span>
 
                     <div class="text-09kl">
-                          <p>We're a fast-growing, New York-based cloud infrastructure  provider, and our talented team is at the center We're a fast-growing, New York-based cloud infrastructure  provider, and our talented team is at the center of everything we do. Our philosophy is collaboration-focused, remote-friendly, and flexible. We care deeply about supporting the growth of all our employees and making sure they feel professionally fulfilled. We're a fast-growing, New York-based cloud infrastructure  provider, and our talented team is at the center of everything we do. Our philosophy is collaboration-focused, remote-friendly, and flexible. We care deeply about supporting the growth of all our employees and making sure they feel professionally fulfilled.</p>
+                          <p>MyTailor is a place where users can access quality designer African clothes, share with their friends and buy the products directly from the designers.</p>
                     </div>
                   </div>  
               </div> <!-- About Container ended -->
@@ -221,7 +220,7 @@
 
                         <h2>DESIGNER ! LOOKING TO SELL YOUR PEODUCTS ONLINE AND BUILD RELATIONSHIP WITH CUSTOMERS ALL OVER THE WORLD ?</h2>
 
-                        <p>MyTailor Turns out Twenty was the best I could come up with. Anyway, lame name aside, it's minimally designed, fully responsive, built on HTML5/CSS3/skel, and, like all my stuff, released for free under the Creative Commons 3.0 license. Have fun!</p>
+                        <p>myTailor allow users to make a wardrobe collection of their latest trendy design and show off to friends on social media. You can have your favorites custom made from the best designers in The Gambia.</p>
 
               </section>
 
