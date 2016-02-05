@@ -1020,7 +1020,13 @@ p {
 /*Wide Screen*/
 /*Laptop Screen*/
 /*Taplet Screen*/
+@media screen and (max-width: 73.5rem) {
+  body {
+    font-size: 88%; } }
 /*Tablet port*/
+@media screen and (max-width: 52.5rem) {
+  body {
+    font-size: 80%; } }
 /*Small Tablet*/
 /*Phone Moblie*/
 @-moz-keyframes focus {
