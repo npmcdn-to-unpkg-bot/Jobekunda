@@ -7,7 +7,7 @@
  */
 
 #Database Conncection
-$hostname = 'localhost';$username = 'root';$password = '';$DB_name = "mytailor";
+$hostname = 'localhost';$username = 'mtdeveloper';$password = 'MTLkf&4v903*%^$juicjio';$DB_name = "mytailor";
 
 try {
     $dbc = new PDO("mysql:host=$hostname;dbname=$DB_name", $username, $password);
