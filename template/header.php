@@ -1,5 +1,19 @@
+
+
+
+
               <!-- Header -->
 <header class="mt-header" itemscope itemtype='https://schema.org/WPHeader'>
+
+<div class="mt-info-wrapper">
+
+  <div class="mt-info clearfix">
+    <p class="mt-info-text">Hi, Please note this site is still under development. Thanks for visiting.</p>
+    
+    <a href="#" title="close" id="mt-header-close"><img src="images/icons/close42.svg"></a>
+  </div>
+
+</div>
   <div class="mt-global-header">
 
      <div class="pull-left">
@@ -10,7 +24,7 @@
           <span class="mt-menu-text">Menu</span>
          </a>
      </div>
-      <div class="mt-search-wrapper">
+     <!--  <div class="mt-search-wrapper">
         <form action="#" method="Get" id="search-form">
           <div class="mt-search-box">
             <input type="search" id="search" name="q" value autocomplete="off"/>
@@ -26,6 +40,6 @@
           </div>
         </form>
       </div>
-      <?php header_data(); ?>
+ -->
   </div><!-- Main bar ends -->  
 </header>
