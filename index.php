@@ -29,7 +29,7 @@ include 'config/page.php';
         <script src="assets/js/waves.min.js"></script>
              <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
         <script src="assets/js/script.js"></script>
-   
+   <script src="assets/js/masonry.pkgd.min.js"></script>
 
                 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
@@ -40,6 +40,18 @@ include 'config/page.php';
 
   ga('create', 'UA-56825866-2', 'auto');
   ga('send', 'pageview');
+
+$(window).on('load', function(){
+
+
+$('.grid').masonry({
+  // options
+    columnWidth: '.grid-item',
+  itemSelector: '.grid-item'
+
+});
+
+});
 
 </script>
   

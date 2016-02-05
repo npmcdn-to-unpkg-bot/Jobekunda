@@ -5,19 +5,14 @@
                 <div class="hero-viewport">
                   <div class="hero-viewport-image">
                      <div class="hero-content" style="">
-                    <?php
-                  echo '  <div class="mt-hero-textwrap">
+                    <div class="mt-hero-textwrap">
                         <h1 class="mt-heading-text">SHOP WITH MYTAILOR</h1>
-                        <h2 class="mt-subheading-text">SAVE BIG AND EARN FREE SHIPPING.</h2>
+                        <h2 class="mt-subheading-text">WE HAVE THE BEST AFRICAN DRESSES</h2>
                     </div>
                           <div class="mt-hero-button">
 
-                          <a href="/products" class="norm-text"><span class="button_09 special" id="sn-button">Shop</span></a>
+                          <a href="shots" class="norm-text"><span class="button_09 special" id="sn-button">Explore</span></a>
                         </div>
-                    ';
-
-
-?>
                   </div>
                 </div>
                 </div>
@@ -178,7 +173,7 @@
                   <div class="rsContent slide1">
                       <div class="bContainer slide-content">
                           <span class="rsABlock txtCent"  data-move-effect="left" data-delay="500"><strong class="text-contrast" data-move-effect="left" >Design & Inspire</strong></span>
-                        <span class="rsABlock txtCent"  data-move-effect="left" data-delay="700">you can place it on any type of slide</span>
+                        <span class="rsABlock txtCent"  data-move-effect="left" data-delay="700">your designs can inspire millions.</span>
                         <div class="mt-slide-button rsABlock" data-move-effect="none" data-delay="1100" data-move-offset="450">
 
                           <a href="signup.php" class="norm-text"><span class="button_09 special" id="sn-button">Learn More</span></a>

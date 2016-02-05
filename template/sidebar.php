@@ -3,7 +3,9 @@
       <h1 class="hidden">Main Navigation</h1>
         <div class="mt-navAction-wrapper">
           <a class="closeTrigger"><span class="icon-close">X</span></a>
-          <?php sidebar_data($user_data); ?>
+
+        </div>
+
 
       <ul class="mt-sidebar-list">
           <?php nav_main($dbc, $pageid); ?>
