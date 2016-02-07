@@ -1,6 +1,6 @@
 <?php
 session_start();
-include 'config/setup.php';
+require_once 'config/setup.php';
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +17,7 @@ include 'config/setup.php';
 <body class="mt-layout">
 
 <?php
-include 'config/page.php';
+require_once 'config/page.php';
 
 ?>
 

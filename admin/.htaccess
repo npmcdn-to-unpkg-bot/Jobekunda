@@ -1,9 +1,0 @@
-# Apache Rewrite Rules 
-
-RewriteEngine On 
-
-RewriteRule ^shots index.php?page=2 [NC]
-RewriteRule ^home index.php [NC]
-
-RewriteRule ^profile index.php?page=4 [NC]
-
