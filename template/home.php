@@ -26,7 +26,7 @@
                 <div class="row clearfix">
 
                     <div class ="lth-col-1 ht-col-1 all-container">
-                        <div class="lth-wrapper" style="background:url('images/thums/imme04.jpg');background-size: cover;">
+                        <div class="lth-wrapper" style="background:url('images/shots/thumb/imme04.jpg');background-size: cover;">
                           <a href="#" class="sp-view">
                             <div class="overlay-items">
 
@@ -38,7 +38,7 @@
                     </div>
 
                     <div class="lth-col-1 ht-col-1 all-container" >
-                          <div class="lth-wrapper" style="background:url('images/thums/01.jpg');background-size: cover;">
+                          <div class="lth-wrapper" style="background:url('images/shots/thumb/01.jpg');background-size: cover;">
                           <a href="#" class="sp-view">
                              <div class="overlay-items">
 
@@ -49,7 +49,7 @@
                     </div>
 
                        <div class="lth-col-1 ht-col-1 all-container">
-                          <div class="lth-wrapper" style="background:url('images/thums/02.jpg');background-size: cover;">
+                          <div class="lth-wrapper" style="background:url('images/shots/thumb/02.jpg');background-size: cover;">
                           <a href="#" class="sp-view">
                              <div class="overlay-items">
 
@@ -61,7 +61,7 @@
                        </div>
 
                       <div class="lth-col-1 ht-col-1 all-container">
-                          <div class="lth-wrapper" style="background:url('images/thums/03.jpg');background-size: cover;">
+                          <div class="lth-wrapper" style="background:url('images/shots/thumb/03.jpg');background-size: cover;">
                           <a href="#" class="sp-view">
                              <div class="overlay-items">
 
@@ -72,7 +72,7 @@
                     </div>
 
                        <div class="lth-col-1 ht-col-1 all-container">
-                          <div class="lth-wrapper" style="background:url('images/thums/04.jpg');background-size: cover;">
+                          <div class="lth-wrapper" style="background:url('images/shots/thumb/04.jpg');background-size: cover;">
                           <a href="#" class="sp-view">
                              <div class="overlay-items">
 
@@ -84,7 +84,7 @@
 
 
                         <div class="lth-col-1 ht-col-1 all-container">
-                          <div class="lth-wrapper" style="background:url('images/thums/05.jpg');background-size: cover;">
+                          <div class="lth-wrapper" style="background:url('images/shots/thumb/05.jpg');background-size: cover;">
                           <a href="#" class="sp-view">
                              <div class="overlay-items">
 
@@ -95,7 +95,7 @@
                        </div>
 
                          <div class="lth-col-1 ht-col-1 all-container" id="lrg-item">
-                          <div class="lth-wrapper" style="background:url('images/thums/06.jpg');background-size: cover;">
+                          <div class="lth-wrapper" style="background:url('images/shots/thumb/06.jpg');background-size: cover;">
                           <a href="#" class="sp-view">
                              <div class="overlay-items">
 
@@ -106,7 +106,7 @@
                        </div>
 
                           <div class="lth-col-1 ht-col-1 all-container">
-                          <div class="lth-wrapper" style="background:url('images/thums/07.jpg');background-size: cover;">
+                          <div class="lth-wrapper" style="background:url('images/shots/thumb/07.jpg');background-size: cover;">
                           <a href="#" class="sp-view">
                              <div class="overlay-items">
 
@@ -117,7 +117,7 @@
                        </div>
 
                           <div class="lth-col-1 ht-col-1 all-container">
-                          <div class="lth-wrapper" style="background:url('images/thums/08.jpg');background-size: cover;">
+                          <div class="lth-wrapper" style="background:url('images/shots/thumb/08.jpg');background-size: cover;">
                           <a href="#" class="sp-view">
                              <div class="overlay-items">
 
@@ -128,7 +128,7 @@
                        </div>
 
                           <div class="lth-col-1 ht-col-1 all-container">
-                          <div class="lth-wrapper" style="background:url('images/thums/09.jpg');background-size: cover;">
+                          <div class="lth-wrapper" style="background:url('images/shots/thumb/09.jpg');background-size: cover;">
                           <a href="#" class="sp-view">
                              <div class="overlay-items">
                             </div>
@@ -137,7 +137,7 @@
                        </div>
 
                       <div class="lth-col-1 ht-col-1 all-container">
-                      <div class="lth-wrapper" style="background:url('images/thums/10.jpg');background-size: cover;">
+                      <div class="lth-wrapper" style="background:url('images/shots/thumb/10.jpg');background-size: cover;">
                       <a href="#" class="sp-view">
                          <div class="overlay-items">
                         </div>
@@ -146,7 +146,7 @@
                    </div>
 
                    <div class="lth-col-1 ht-col-1 all-container" >
-                          <div class="lth-wrapper" style="background:url('images/thums/01.jpg');background-size: cover;">
+                          <div class="lth-wrapper" style="background:url('images/shots/thumb/01.jpg');background-size: cover;">
                           <a href="#" class="sp-view">
                              <div class="overlay-items">
 
