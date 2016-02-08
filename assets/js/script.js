@@ -1,5 +1,5 @@
 
-// Mytailor.me compyright
+// Mytailor.me copyright
 
       var $body = $('body');
 
@@ -68,13 +68,28 @@ Waves.init();
     });
 })(jQuery);
 
-
+//Aleart Box
 $(document).ready(function(){
 
+if (!Cookies('alert')) {
+        $('.mt-info-wrapper').show();
   $('#mt-header-close').click(function() {
-      $('.mt-info-wrapper').hide();
+    $( ".mt-info-wrapper" ).slideUp( "slow" );
+     Cookies.set('alert', 'true', { expires: 1 });
+});
+
+};
+  });
+
+//Respomsive shots
+$(window).on('load', function(){
+
+
+$('.grid').masonry({
+  // options
+    columnWidth: '.grid-item',
+  itemSelector: '.grid-item'
 
 });
 
-
-  });
+});

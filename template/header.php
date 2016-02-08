@@ -1,11 +1,6 @@
-
-
-
-
-              <!-- Header -->
 <header class="mt-header" itemscope itemtype='https://schema.org/WPHeader'>
 
-<div class="mt-info-wrapper">
+<div class="mt-info-wrapper" style="display:none;">
 
   <div class="mt-info clearfix">
     <p class="mt-info-text">Hi, Please note this site is still under development. Thanks for visiting.</p>
@@ -24,22 +19,5 @@
           <span class="mt-menu-text">Menu</span>
          </a>
      </div>
-     <!--  <div class="mt-search-wrapper">
-        <form action="#" method="Get" id="search-form">
-          <div class="mt-search-box">
-            <input type="search" id="search" name="q" value autocomplete="off"/>
-            <div class="mt-search-icon">
-            <button class="mt-button-search" value="Search" name ="b" type ="submit">
-                <span class="icon"><i class="fa fa-search"></i></span>
-              </button>
-            </div>
-          </div> 
-          
-          <div class="mt-search-popup">
-          <div class="mt-search-suggester"></div>
-          </div>
-        </form>
-      </div>
- -->
   </div><!-- Main bar ends -->  
 </header>
