@@ -6,6 +6,7 @@
    <title><?php echo $site_title .' | '. $page['pageTitle'];?></title>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="<?=$page['metaDesc'];?>">
    <link rel="stylesheet" href="assets/css/Style.css" type="text/css"/>
    <link rel="shortcut icon" href="images/favicon.png" />
    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css" />
@@ -19,12 +20,11 @@
     <div class="mt-layout-black__cover"></div>
 
     <!-- Apps Script -->
-    <script src="assets/js/apps/jquery.royalslider.min.js"></script>
+
     <script src="assets/js/apps/waves.min.js"></script>
     <script src="assets/js/apps/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/apps/js.cookie.js"></script>
     <script src="assets/js/apps/masonry.pkgd.min.js"></script>
-
     <script src="assets/js/script.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
