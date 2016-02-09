@@ -2,10 +2,7 @@
 
 $images = glob('images/shots/thumb{/*jpg,jpeg,png}', GLOB_BRACE)
  
-
-
-
- ?>
+?>
 
 <div class = "pagewrapper">
     <div class = "pageContainer">
@@ -23,11 +20,9 @@ $images = glob('images/shots/thumb{/*jpg,jpeg,png}', GLOB_BRACE)
                             <img src="<?=$image?>">
                         </div>
                         <div class="dimOverlay"></div>
-
                         <figcaption>
                             <span><img src="images/icons/search67.svg"></span>
-
-                    </figcaption>
+                        </figcaption>
                     </a>
                 </figure>
 
@@ -37,9 +32,8 @@ $images = glob('images/shots/thumb{/*jpg,jpeg,png}', GLOB_BRACE)
 
             ?>
 
-
+        </div>
     </div> <!-- Product wrapper -->
-
 
     <!-- Load More -->
 <!-- 

@@ -14,7 +14,7 @@
 
 <body class="mt-layout">
 
-<?php   require_once '../config/page.php';?>
+<?php  require_once '../config/page.php';   ?>
 
     <div class="mt-layout-black__cover"></div>
 

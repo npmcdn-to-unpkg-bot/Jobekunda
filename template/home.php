@@ -1,3 +1,10 @@
+<?php
+
+$images = glob('images/shots/thumb/imme*{*jpg,jpeg,png}', GLOB_BRACE)
+ 
+?>
+
+
 <div class = "pagewrapper">
         <div class = "pageContainer">
           <section class="hero" style="margin-top:0px;">
@@ -6,8 +13,8 @@
                   <div class="hero-viewport-image">
                      <div class="hero-content" style="">
                     <div class="mt-hero-textwrap">
-                        <h1 class="mt-heading-text">SHOP WITH MYTAILOR</h1>
-                        <h2 class="mt-subheading-text">WE HAVE THE BEST AFRICAN DRESSES</h2>
+                        <h1 class="mt-heading-text">MYTAILOR AFRICA</h1>
+                        <h2 class="mt-subheading-text">FIND THE BEST AFRICAN DRESSES HERE.</h2>
                     </div>
                           <div class="mt-hero-button">
 
@@ -19,147 +26,34 @@
 
             </div>
 
-
-
               </div><!-- short banner -->
 
                 <div class="row clearfix">
 
+
+            <?php
+                foreach ($images as $image) { ?>
+
                     <div class ="lth-col-1 ht-col-1 all-container">
-                        <div class="lth-wrapper" style="background:url('images/shots/thumb/imme04.jpg');background-size: cover;">
-                          <a href="#" class="sp-view">
+                        <figure class="lth-wrapper" style="background:url('<?=$image?>');background-size: cover;">
+                          <a href="<?=$image?>" class="sp-view">
                             <div class="overlay-items">
-
-
+                              <figcaption>
+                            <span><img src="images/icons/search67.svg"></span>
+                              </figcaption>
                             </div>
                           </a>
-                        </div>
+                        </figure>
 
                     </div>
 
-                    <div class="lth-col-1 ht-col-1 all-container" >
-                          <div class="lth-wrapper" style="background:url('images/shots/thumb/01.jpg');background-size: cover;">
-                          <a href="#" class="sp-view">
-                             <div class="overlay-items">
+                <?php  } ?>
+
+                 
+              </div>   <!-- Feature Products Ends -->
 
 
-                            </div>
-                          </a>
-                        </div>
-                    </div>
-
-                       <div class="lth-col-1 ht-col-1 all-container">
-                          <div class="lth-wrapper" style="background:url('images/shots/thumb/02.jpg');background-size: cover;">
-                          <a href="#" class="sp-view">
-                             <div class="overlay-items">
-
-
-                            </div>
-
-                          </a>
-                        </div>
-                       </div>
-
-                      <div class="lth-col-1 ht-col-1 all-container">
-                          <div class="lth-wrapper" style="background:url('images/shots/thumb/03.jpg');background-size: cover;">
-                          <a href="#" class="sp-view">
-                             <div class="overlay-items">
-
-
-                            </div>
-                          </a>
-                        </div>
-                    </div>
-
-                       <div class="lth-col-1 ht-col-1 all-container">
-                          <div class="lth-wrapper" style="background:url('images/shots/thumb/04.jpg');background-size: cover;">
-                          <a href="#" class="sp-view">
-                             <div class="overlay-items">
-
-
-                            </div>
-                          </a>
-                        </div>
-                       </div>
-
-
-                        <div class="lth-col-1 ht-col-1 all-container">
-                          <div class="lth-wrapper" style="background:url('images/shots/thumb/05.jpg');background-size: cover;">
-                          <a href="#" class="sp-view">
-                             <div class="overlay-items">
-
-
-                            </div>
-                          </a>
-                        </div>
-                       </div>
-
-                         <div class="lth-col-1 ht-col-1 all-container" id="lrg-item">
-                          <div class="lth-wrapper" style="background:url('images/shots/thumb/06.jpg');background-size: cover;">
-                          <a href="#" class="sp-view">
-                             <div class="overlay-items">
-
-
-                            </div>
-                          </a>
-                        </div>
-                       </div>
-
-                          <div class="lth-col-1 ht-col-1 all-container">
-                          <div class="lth-wrapper" style="background:url('images/shots/thumb/07.jpg');background-size: cover;">
-                          <a href="#" class="sp-view">
-                             <div class="overlay-items">
-
-
-                            </div>
-                          </a>
-                        </div>
-                       </div>
-
-                          <div class="lth-col-1 ht-col-1 all-container">
-                          <div class="lth-wrapper" style="background:url('images/shots/thumb/08.jpg');background-size: cover;">
-                          <a href="#" class="sp-view">
-                             <div class="overlay-items">
-
-
-                            </div>
-                          </a>
-                        </div>
-                       </div>
-
-                          <div class="lth-col-1 ht-col-1 all-container">
-                          <div class="lth-wrapper" style="background:url('images/shots/thumb/09.jpg');background-size: cover;">
-                          <a href="#" class="sp-view">
-                             <div class="overlay-items">
-                            </div>
-                          </a>
-                        </div>
-                       </div>
-
-                      <div class="lth-col-1 ht-col-1 all-container">
-                      <div class="lth-wrapper" style="background:url('images/shots/thumb/10.jpg');background-size: cover;">
-                      <a href="#" class="sp-view">
-                         <div class="overlay-items">
-                        </div>
-                      </a>
-                    </div>
-                   </div>
-
-                   <div class="lth-col-1 ht-col-1 all-container" >
-                          <div class="lth-wrapper" style="background:url('images/shots/thumb/01.jpg');background-size: cover;">
-                          <a href="#" class="sp-view">
-                             <div class="overlay-items">
-
-
-                            </div>
-                          </a>
-                        </div>
-                    </div>
-                       <div style="clear: both;"></div>
-              </div>   <!-- Latest products ends -->
-
-
-              <div class="about-container">
+              <!-- <div class="about-container">
                   <div class="wrap">
                     <span class="lp-text"><h1>About MyTailor</h1></span>
 
@@ -167,9 +61,9 @@
                           <p>MyTailor is a place where users can access quality designer African clothes, share with their friends and buy the products directly from the designers.</p>
                     </div>
                   </div>  
-              </div> <!-- About Container ended -->
+              </div> --> <!-- About Container ended -->
 
-              <div class="slider-cover" id="slider-cover1">
+<!--               <div class="slider-cover" id="slider-cover1">
                   <div class="rsContent slide1">
                       <div class="bContainer slide-content">
                           <span class="rsABlock txtCent"  data-move-effect="left" data-delay="500"><strong class="text-contrast" data-move-effect="left" >Design & Inspire</strong></span>
@@ -202,24 +96,23 @@
                         </div>
                   </div>
 
-              </div>
+              </div> -->
 
 
                 
             <div id="lst-section">
               <section>
-
                         <span class="lp-text">
                           <img src="images/icons/agreement2.svg" style="height:6.25rem;">
                         </span>
 
-                        <h2>DESIGNER ! LOOKING TO SELL YOUR PEODUCTS ONLINE AND BUILD RELATIONSHIP WITH CUSTOMERS ALL OVER THE WORLD ?</h2>
+                        <h2>DESIGNER ! LOOKING TO ADVERTISE YOUR PEODUCTS TO THE WORLD ? WE CAN HELP. CONTACT US TODAY.</h2>
 
-                        <p>myTailor allow users to make a wardrobe collection of their latest trendy design and show off to friends on social media. You can have your favorites custom made from the best designers in The Gambia.</p>
+                        <p>MyTailor allows users to make a wardrope collection of latest trendy African Fashion dresses. Designs on this site will inspire your. Designs on this site will inspire your life. We feature latest clothing from designers all around africa. Discover style & beauty with MyTailor.</p>
 
               </section>
 
-              </div>
+            </div>
 
 
 
