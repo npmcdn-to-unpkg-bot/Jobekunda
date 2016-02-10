@@ -28,7 +28,7 @@ $images = glob('images/shots/thumb/imme*{*jpg,jpeg,png}', GLOB_BRACE)
 
               </div><!-- short banner -->
 
-                <div class="row clearfix">
+                <div class="mt-row-wrapper clearfix">
 
 
             <?php

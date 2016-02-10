@@ -10,9 +10,8 @@ $images = glob('images/shots/thumb{/*jpg,jpeg,png}', GLOB_BRACE)
 <div class="clearfix mt-product-wrapper transit-3 grid">
 
             <?php
+
                 foreach ($images as $image) { ?>
-
-
                       <div class="product-item grid-item grid-item">
                 <figure class="product-thumb-image">
                     <a href="<?=$image?>" class="sp-view">
@@ -35,6 +34,8 @@ $images = glob('images/shots/thumb{/*jpg,jpeg,png}', GLOB_BRACE)
         </div>
     </div> <!-- Product wrapper -->
 
+</div>     <!-- Page wrapper -->
+
     <!-- Load More -->
 <!-- 
     <div class="load-wrapper">
@@ -47,5 +48,3 @@ $images = glob('images/shots/thumb{/*jpg,jpeg,png}', GLOB_BRACE)
     </div>
 
 </div> -->
-</div>     <!-- Page wrapper -->
-

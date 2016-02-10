@@ -479,7 +479,7 @@ a.mt-sidebar-link:hover {
   margin-right: 0 !important;
 }
 
-/*Animation*/
+/******TRANSITIONS*******/
 .transit-4, .mt-header,
 .pagewrapper,
 .footerContainerWrapper {
@@ -717,7 +717,7 @@ ul.hero-actions li {
      Featured SHOTS
 
 *********************************************************************************************/
-.row {
+.mt-row-wrapper {
   width: 80%;
   min-width: 70em;
   margin-left: auto;
@@ -726,7 +726,7 @@ ul.hero-actions li {
   margin-top: 2em;
 }
 
-.row:before {
+.mt-row-wrapper:before {
   content: "";
   display: table;
 }
@@ -763,39 +763,39 @@ ul.hero-actions li {
 }
 
 @media screen and (max-width: 1000px) {
-  .row {
+  .mt-row-wrapper {
     min-width: auto;
     width: 99%;
     padding-right: 1em;
   }
-  .row > * {
+  .mt-row-wrapper > * {
     width: 33%;
   }
 }
 
 @media screen and (max-width: 840px) {
-  .row {
+  .mt-row-wrapper {
     min-width: 55em;
     width: 90%;
   }
-  .row > * {
+  .mt-row-wrapper > * {
     width: 50%;
   }
 }
 
 @media screen and (max-width: 720px) {
-  .row {
+  .mt-row-wrapper {
     min-width: auto;
     width: 99%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .row {
+  .mt-row-wrapper {
     min-width: 20em;
     width: 95%;
   }
-  .row > * {
+  .mt-row-wrapper > * {
     width: 100%;
     min-height: 32em;
   }
@@ -875,6 +875,29 @@ ul.icons li a {
 }
 
 /*Svg icons*/
+/*********************************************************************************************
+
+     Shots Page
+
+*********************************************************************************************/
+.mt-product-wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  list-style: none;
+  margin: -2px 2px;
+  padding: 0px;
+}
+
 .overlay-items figcaption {
   position: absolute;
   top: 0;
@@ -914,29 +937,6 @@ ul.icons li a {
 .grid-item figure:hover figcaption {
   transform: translatex(0);
   opacity: 1;
-}
-
-/*********************************************************************************************
-
-     Shots Page
-
-*********************************************************************************************/
-.mt-product-wrapper {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow-y: hidden;
-  overflow-x: hidden;
-  position: relative;
-  -webkit-overflow-scrolling: touch;
-  list-style: none;
-  margin: -2px 2px;
-  padding: 0px;
 }
 
 .image-holder > img {
@@ -1071,8 +1071,8 @@ ul.icons li a {
   text-align: center;
 }
 
-.sp-content-box > img {
-  max-height: 35em;
+.sp-content-box > a > img {
+  max-height: 39em;
 }
 
 /* Texts*/
