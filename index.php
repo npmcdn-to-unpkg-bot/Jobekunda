@@ -25,6 +25,7 @@
     <script src="assets/js/apps/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="assets/js/apps/js.cookie.js"></script>
     <script src="assets/js/apps/masonry.pkgd.min.js"></script>
+      <script src="assets/js/jquery.poptrox.min.js"></script>
     <script src="assets/js/script.js"></script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

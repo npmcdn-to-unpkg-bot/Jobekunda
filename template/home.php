@@ -1,9 +1,4 @@
-<?php
-
-$images = glob('images/shots/thumb/imme*{*jpg,jpeg,png}', GLOB_BRACE)
- 
-?>
-
+<?php $image_path = "images/shots/thumb/"; ?>
 
 <div class = "pagewrapper">
         <div class = "pageContainer">
@@ -11,15 +6,14 @@ $images = glob('images/shots/thumb/imme*{*jpg,jpeg,png}', GLOB_BRACE)
             <div class="cover-container">
                 <div class="hero-viewport">
                   <div class="hero-viewport-image">
-                     <div class="hero-content" style="">
+                    <div class="hero-content" style="">
                     <div class="mt-hero-textwrap">
                         <h1 class="mt-heading-text">MYTAILOR AFRICA</h1>
                         <h2 class="mt-subheading-text">FIND THE BEST AFRICAN DRESSES HERE.</h2>
                     </div>
-                          <div class="mt-hero-button">
-
-                          <a href="shots" class="norm-text"><span class="button_09 special" id="sn-button">Explore</span></a>
-                        </div>
+                    <div class="mt-hero-button">
+                    <a href="shots" class="norm-text"><span class="button_09 special" id="sn-button">Explore</span></a>
+                  </div>
                   </div>
                 </div>
                 </div>
@@ -29,26 +23,10 @@ $images = glob('images/shots/thumb/imme*{*jpg,jpeg,png}', GLOB_BRACE)
               </div><!-- short banner -->
 
                 <div class="mt-row-wrapper clearfix">
-
-
             <?php
-                foreach ($images as $image) { ?>
+                  featured_images($dbc, $image_path);
 
-                    <div class ="lth-col-1 ht-col-1 all-container">
-                        <figure class="lth-wrapper" style="background:url('<?=$image?>');background-size: cover;">
-                          <a href="<?=$image?>" class="sp-view">
-                            <div class="overlay-items">
-                              <figcaption>
-                            <span><img src="images/icons/search67.svg"></span>
-                              </figcaption>
-                            </div>
-                          </a>
-                        </figure>
-
-                    </div>
-
-                <?php  } ?>
-
+                ?>
                  
               </div>   <!-- Feature Products Ends -->
 
@@ -62,60 +40,16 @@ $images = glob('images/shots/thumb/imme*{*jpg,jpeg,png}', GLOB_BRACE)
                     </div>
                   </div>  
               </div> --> <!-- About Container ended -->
-
-<!--               <div class="slider-cover" id="slider-cover1">
-                  <div class="rsContent slide1">
-                      <div class="bContainer slide-content">
-                          <span class="rsABlock txtCent"  data-move-effect="left" data-delay="500"><strong class="text-contrast" data-move-effect="left" >Design & Inspire</strong></span>
-                        <span class="rsABlock txtCent"  data-move-effect="left" data-delay="700">your designs can inspire millions.</span>
-                        <div class="mt-slide-button rsABlock" data-move-effect="none" data-delay="1100" data-move-offset="450">
-
-                          <a href="signup.php" class="norm-text"><span class="button_09 special" id="sn-button">Learn More</span></a>
-                        </div>
-                      </div>
-                 </div>
-
-                 <div class="rsContent slide2">
-                        <div class="bContainer slide-content">
-                          <strong class="rsABlock txtCent blockSubHeadline" data-move-effect="none">Transition Types</strong>
-                          <span class="rsABlock txtCent" data-move-effect="top">from top  ↓</span>
-                          <span class="rsABlock txtCent" data-move-effect="bottom">from bottom ↑</span>
-                          <span class="rsABlock txtCent" data-move-effect="left">from left →</span>
-                          <span class="rsABlock txtCent" data-move-effect="right">from right ←</span>
-                          <span class="rsABlock txtCent" data-move-effect="none">just fade</span>
-                        </div>
-                      </div>
-
-                        <div class="rsContent slide3">
-                        <div class="bContainer">
-                          <strong class="rsABlock txtCent blockSubHeadline" data-move-effect="none" data-delay="0">Customizable Animation</strong>
-                          <span class="rsABlock txtCent" data-move-effect="left" data-delay="1000" data-move-offset="500" data-easing="easeOutBack" data-fade-effect="none">easing</span>
-                          <span class="rsABlock txtCent" data-move-effect="left" data-delay="1500" data-move-offset="500" data-fade-effect="none">delay</span>
-                          <span class="rsABlock txtCent" data-move-effect="left" data-delay="2000" data-move-offset="500" data-speed="1000" data-fade-effect="none">speed</span>
-                          <span class="rsABlock txtCent" data-move-effect="left" data-delay="2500" data-move-offset="50" data-fade-effect="true">move offset</span>
-                        </div>
-                  </div>
-
-              </div> -->
-
-
                 
-            <div id="lst-section">
-              <section>
-                        <span class="lp-text">
-                          <img src="images/icons/agreement2.svg" style="height:6.25rem;">
-                        </span>
+        <div id="lst-section">
+          <section>
+              <span class="lp-text">
+                <img src="images/icons/agreement2.svg" style="height:6.25rem;">
+              </span>
+                <h2>DESIGNER ! LOOKING TO ADVERTISE YOUR PEODUCTS TO THE WORLD ? WE CAN HELP. CONTACT US TODAY.</h2>
+                <p>MyTailor allows users to make a wardrope collection of latest trendy African Fashion dresses. Designs on this site will inspire your. Designs on this site will inspire your life. We feature latest clothing from designers all around africa. Discover style & beauty with MyTailor.</p>
+          </section>
 
-                        <h2>DESIGNER ! LOOKING TO ADVERTISE YOUR PEODUCTS TO THE WORLD ? WE CAN HELP. CONTACT US TODAY.</h2>
-
-                        <p>MyTailor allows users to make a wardrope collection of latest trendy African Fashion dresses. Designs on this site will inspire your. Designs on this site will inspire your life. We feature latest clothing from designers all around africa. Discover style & beauty with MyTailor.</p>
-
-              </section>
-
-            </div>
-
-
-
-
+        </div>
    </div>   <!--Page Container  -->
   </div>   <!-- page wrapper  -->
