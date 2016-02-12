@@ -12,3 +12,13 @@
      </div>
   </div><!-- Main bar ends -->  
 </header>
+
+<main class="content-wrapper">
+            <section class="main-feed-header">
+                  <div>
+                     <ul class="breadcrump">
+                         <li><a href="index.php">Mytailor</a></li>
+                         <li id="bread"><?=$page['pageLabel']?></li>
+                     </ul>
+                  </div>
+               </section>

@@ -511,7 +511,7 @@ a.mt-sidebar-link:hover {
   background-color: #202024;
   line-height: 0.625rem;
   padding: 22px 25px;
-  border-bottom: 1px solid rgba(51, 51, 51, 0.69);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .pull-left {
@@ -569,6 +569,39 @@ a.mt-sidebar-link:hover {
   .link-02-rt {
     width: 90% !important;
   }
+}
+
+/*Header breadcrump*/
+.main-feed-header {
+  background: #Fff;
+  padding: 1em 0;
+  -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.breadcrump {
+  padding: 8px 15px;
+  margin: 12px 0;
+  list-style: none;
+  background-color: inherit;
+  white-space: nowrap;
+}
+
+.breadcrump > li {
+  display: inline-block;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.breadcrump > li + li:before {
+  content: "/ ";
+  padding: 0 5px;
+  color: #424141;
+}
+
+.breadcrump > li > a {
+  color: #2196F3;
+  font-size: 98%;
 }
 
 /*********************************************************************************************
@@ -985,7 +1018,7 @@ ul.icons li a {
 @media screen and (max-width: 490px) {
   .grid-item {
     width: 100%;
-    max-height: 350px;
+    max-height: 450px;
   }
 }
 
