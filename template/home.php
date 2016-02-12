@@ -47,7 +47,7 @@
                 <img src="images/icons/agreement2.svg" style="height:6.25rem;">
               </span>
                 <h2>DESIGNER ! LOOKING TO ADVERTISE YOUR PEODUCTS TO THE WORLD ? WE CAN HELP. CONTACT US TODAY.</h2>
-                <p>MyTailor allows users to make a wardrope collection of latest trendy African Fashion dresses. Designs on this site will inspire your. Designs on this site will inspire your life. We feature latest clothing from designers all around africa. Discover style & beauty with MyTailor.</p>
+                <p>MyTailor allows users to make a wardrope collection of latest trendy African Fashion dresses. Designs on this site will inspire your life. We feature latest clothing from designers all around africa. Discover style & beauty with MyTailor.</p>
           </section>
 
         </div>

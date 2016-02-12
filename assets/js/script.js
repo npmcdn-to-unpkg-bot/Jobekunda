@@ -192,3 +192,7 @@ function(){
 });
 
     
+$(window).on('load', function(){
+$('.mt-transit-loader').delay(600).fadeOut('fast');
+
+});
