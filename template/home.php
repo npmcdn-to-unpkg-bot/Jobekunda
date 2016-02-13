@@ -1,6 +1,6 @@
 <?php $image_path = "images/shots/thumb/"; ?>
 
-<div class = "pagewrapper">
+<div class = "pagewrapper dark">
         <div class = "pageContainer">
           <section class="hero" style="margin-top:0px;">
             <div class="cover-container">
@@ -21,7 +21,7 @@
             </div>
 
               </div><!-- short banner -->
-
+                <div>
                 <div class="mt-row-wrapper clearfix">
             <?php
                   featured_images($dbc, $image_path);
@@ -29,6 +29,7 @@
                 ?>
                  
               </div>   <!-- Feature Products Ends -->
+              </div>
 
 
               <!-- <div class="about-container">

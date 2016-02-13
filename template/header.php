@@ -10,15 +10,42 @@
           <span class="mt-menu-text">Menu</span>
          </a>
      </div>
-  </div><!-- Main bar ends -->  
-</header>
 
-<main class="content-wrapper">
-            <section class="main-feed-header">
-                  <div>
+
+  </div><!-- Main bar ends -->  
+
+
+              <?php
+
+              if ($pageid == 2 ) {?>
+                            <section class="main-feed-header clearfix">
+                  <div class="mt-breadcrump-wrapper">
                      <ul class="breadcrump">
-                         <li><a href="index.php">Mytailor</a></li>
+                         <li><a href="http://www.mytailor.me" title="home">Mytailor</a></li>
                          <li id="bread"><?=$page['pageLabel']?></li>
                      </ul>
                   </div>
+
+                  <div class="mt-shots-nav-wrapper">
+                    <ul class="mt-shots-nav clearfix">
+
+                      <li class="mt-list-item">
+                        <a href="#"><span>Trending</span></a>
+                      </li>
+                         <li class="mt-list-item __active">
+                        <a href="#"><span>Latest</span></a>
+                      </li>
+
+                        <li class="mt-list-item">
+                        <a href="#"><span>Featured</span></a>
+                      </li>
+
+                    </ul>
+             <?php } 
+
+
+?>
+                  </div>
                </section>
+</header>
+
