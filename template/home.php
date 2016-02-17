@@ -1,7 +1,6 @@
 <?php $image_path = "images/shots/thumb/"; ?>
 
-<div class = "pagewrapper dark">
-        <div class = "pageContainer">
+        <div class = "pageContainer dark">
           <section class="hero" style="margin-top:0px;">
             <div class="cover-container">
                 <div class="hero-viewport">
@@ -19,8 +18,9 @@
                 </div>
 
             </div>
+          </section>
 
-              </div><!-- short banner -->
+
                 <div>
                 <div class="mt-row-wrapper clearfix">
             <?php
@@ -53,4 +53,3 @@
 
         </div>
    </div>   <!--Page Container  -->
-  </div>   <!-- page wrapper  -->

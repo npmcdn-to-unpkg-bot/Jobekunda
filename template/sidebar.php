@@ -9,9 +9,6 @@
 
       <ul class="mt-sidebar-list">
           <?php nav_main($dbc, $pageid); ?>
-          <li><a href="#" class="mt-sidebar-link btn">Brands</a></li>
-          <li><a href="#" class="mt-sidebar-link btn">Trending</a></li>
-          <li><a href="#" class="mt-sidebar-link btn">Help Center</a></li>
       </ul>
       <div class="mt-smallnav-wrapper">
         <p><a href="#" class="mt-smallnav-link">Shipment</a></p>
