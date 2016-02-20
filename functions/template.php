@@ -44,7 +44,4 @@ function load_shots($dbc, $image_path){
 		            </div>
 
               <?php  }
-
-
-
 }

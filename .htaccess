@@ -5,5 +5,8 @@ RewriteEngine On
 RewriteRule ^shots index.php?page=2 [NC]
 RewriteRule ^home index.php [NC]
 
-RewriteRule ^profile index.php?page=4 [NC]
+RewriteRule ^brands index.php?page=3 [NC]
+RewriteRule ^trending index.php?page=5 [NC]
+RewriteRule ^accessories index.php?page=6 [NC]
+RewriteRule ^contact index.php?page=8 [NC]
 
