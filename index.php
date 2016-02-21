@@ -1,8 +1,8 @@
-<?php   session_start();  require_once '../config/setup.php';  ?>
+<?php   session_start();  require_once '../config/setup.php'; 
 
-<?php require_once('loadmore.php'); ?>
-<?php $row_count = row_count($dbc); ?>
+$row_count = row_count($dbc);
 
+ ?>
 
 <!DOCTYPE html>
 <html>

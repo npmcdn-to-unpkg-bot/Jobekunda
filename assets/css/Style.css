@@ -1131,6 +1131,15 @@ ul.icons li a {
 
 *********************************************************************************************/
 .mt-product-wrapper {
+  /*    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;*/
   overflow-y: hidden;
   overflow-x: hidden;
   position: relative;
@@ -1429,7 +1438,7 @@ ul.icons li a {
 }
 
 .sp-overlay {
-  background: rgba(236, 236, 236, 0.94);
+  background: rgba(23, 21, 21, 0.94);
   top: 0;
   left: 0;
   z-index: 9997;

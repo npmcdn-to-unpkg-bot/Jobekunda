@@ -43,10 +43,8 @@ $("#search-form").submit(function (event) {
       sp_overlay.h5u_open = function(image) {
         $('.sp-cover>img').attr('src', image);
          offsetY = window.pageYOffset;
-               // sp_overlay_box.css({'min-height': (offsetY / 2) + 'px'});
-          $body.css({'position': 'fixed','top': -offsetY + 'px'});
+          $body.css({'position': 'static','top': -offsetY + 'px', 'overflow-y': 'hidden'});
 
-//
         window.clearTimeout(_dialog_timeout);
         _dialog_locked = true;
         sp_overlay
@@ -59,7 +57,7 @@ $("#search-form").submit(function (event) {
   };
 
       sp_overlay.h5u_close = function() {
-         $body.css({'position': 'static'});
+         $body.css({'position': 'static', 'overflow-y': 'auto'});
          $(window).scrollTop(offsetY);
 
         if (!sp_overlay.is(':visible'))

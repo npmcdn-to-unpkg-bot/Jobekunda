@@ -68,12 +68,6 @@ Mytailor.me
 
   });
 
-
-
-
-
-
-
       if ($header.hasClass('normal')
       &&  $banner.length > 0) {
 
@@ -85,7 +79,7 @@ Mytailor.me
             anchor:   'top',
             on:     function() { $header.addClass('mt-header show').removeClass('mt-header-animate'); },
             off:    function() { $header.removeClass('show').addClass('mt-header-animate'); }
-          });0
+          });
 
         });
 
@@ -95,14 +89,19 @@ Mytailor.me
 
 
             //Initializa all plugins
-                $(document).ready(function(){
+                 $window.on('load', function(){
                   //Waves Buttons
                     Waves.attach('.btn', ['waves-button', 'waves-float']);
                     Waves.init();
                   //Scroller
                     $(".mt-sidebar").mCustomScrollbar();
 
+                    $('.grid').masonry({
+                  // options
+                    columnWidth: '.grid-item',
+                    itemSelector: '.grid-item'
 
+                    });
 
                   });
 })(jQuery);
