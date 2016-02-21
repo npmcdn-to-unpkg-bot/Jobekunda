@@ -70,22 +70,7 @@ Mytailor.me
 
 
 
-            //Initializa all plugins
-                $(window).load(function(){
-                  //Waves Buttons
-                    Waves.attach('.btn', ['waves-button', 'waves-float']);
-                    Waves.init();
-                  //Scroller
-                    $(".mt-sidebar").mCustomScrollbar();
 
-                    $('.grid').masonry({
-                  // options
-                    columnWidth: '.grid-item',
-                    itemSelector: '.grid-item'
-
-                    });
-
-                  });
 
 
 
@@ -105,4 +90,19 @@ Mytailor.me
         });
 
       }
+
+       
+
+
+            //Initializa all plugins
+                $(document).ready(function(){
+                  //Waves Buttons
+                    Waves.attach('.btn', ['waves-button', 'waves-float']);
+                    Waves.init();
+                  //Scroller
+                    $(".mt-sidebar").mCustomScrollbar();
+
+
+
+                  });
 })(jQuery);

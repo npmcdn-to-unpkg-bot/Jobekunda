@@ -1,5 +1,9 @@
 <?php   session_start();  require_once '../config/setup.php';  ?>
 
+<?php require_once('loadmore.php'); ?>
+<?php $row_count = row_count($dbc); ?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +14,6 @@
    <link rel="stylesheet" href="assets/css/Style.css" type="text/css"/>
    <link rel="shortcut icon" href="images/favicon.png" />
    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css" />
-       <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css">
    <script src="assets/js/jquery-2.1.4.min.js"></script>
 </head>
 
