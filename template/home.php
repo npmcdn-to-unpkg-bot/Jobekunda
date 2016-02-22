@@ -1,5 +1,4 @@
 <?php $image_path = "images/shots/thumb/"; ?>
-
         <div class = "pageContainer dark" id="landing">
           <section class="hero" style="margin-top:0px;">
             <div class="cover-container">

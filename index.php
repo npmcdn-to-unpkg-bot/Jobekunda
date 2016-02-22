@@ -3,7 +3,6 @@
 $row_count = row_count($dbc);
 
  ?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,9 +15,7 @@ $row_count = row_count($dbc);
    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css" />
    <script src="assets/js/jquery-2.1.4.min.js"></script>
 </head>
-
-<body class="mt-layout">
-
+  <body class="mt-layout">
 <?php  require_once '../config/page.php';   ?>
       <!-- Transfer later -->
     <div class="mt-layout-black__cover"></div>
