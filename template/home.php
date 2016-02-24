@@ -1,4 +1,5 @@
-<?php $image_path = "images/shots/thumb/"; ?>
+<?php $image_path = "images/shots/"; ?>
+        
         <div class = "pageContainer dark" id="landing">
           <section class="hero" style="margin-top:0px;">
             <div class="cover-container">
@@ -15,31 +16,17 @@
                   </div>
                 </div>
                 </div>
-
             </div>
           </section>
-
-
                 <div>
                 <div class="mt-row-wrapper clearfix">
             <?php
-                  featured_images($dbc, $image_path);
+                  /**Load featured shots**/
+                  load_featured_shots($dbc, $image_path);
 
                 ?>
-                 
-              </div>   <!-- Feature Products Ends -->
-              </div>
-
-
-              <!-- <div class="about-container">
-                  <div class="wrap">
-                    <span class="lp-text"><h1>About MyTailor</h1></span>
-
-                    <div class="text-09kl">
-                          <p>MyTailor is a place where users can access quality designer African clothes, share with their friends and buy the products directly from the designers.</p>
-                    </div>
-                  </div>  
-              </div> --> <!-- About Container ended -->
+  </div>
+    </div>
                 
         <div id="lst-section">
           <section>
@@ -49,6 +36,5 @@
                 <h2>DESIGNER ! LOOKING TO ADVERTISE YOUR PEODUCTS TO THE WORLD ? WE CAN HELP. CONTACT US TODAY.</h2>
                 <p>MyTailor allows users to make a wardrope collection of latest trendy African Fashion dresses. Designs on this site will inspire your life. We feature latest clothing from designers all around africa. Discover style & beauty with MyTailor.</p>
           </section>
-
         </div>
-   </div>   <!--Page Container  -->
+      </div>
