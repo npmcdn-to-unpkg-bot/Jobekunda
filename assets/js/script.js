@@ -45,8 +45,9 @@ Mytailor.me
           $('.sp-view').on('click', function() {
               var shot_img = $(this).find('img').first().attr('src');
                   sp_overlay.h5u_open(shot_img);
-
+                     // $window.navigator(shot_img);
                     return false;
+
 
         });
 
@@ -96,7 +97,7 @@ Mytailor.me
                   //Scroller
                     $(".mt-sidebar").mCustomScrollbar();
 
-                    $('.grid').masonry({
+                    var $grid = $('.grid').masonry({
                   // options
                     columnWidth: '.grid-item',
                     itemSelector: '.grid-item'

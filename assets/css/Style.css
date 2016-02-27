@@ -781,7 +781,7 @@ button.mt-button-search:focus {
 
 .mt-breadcrump-wrapper {
   width: 305px;
-  margin-right: 100px;
+  margin-right: 5em;
   display: inline-block;
   float: left;
   padding: 0.4em;
@@ -789,7 +789,7 @@ button.mt-button-search:focus {
 
 .mt-shots-nav-wrapper {
   margin-left: 25px;
-  width: 375px;
+  width: calc(100% - 63.625rem);
   display: inline-block;
   float: left;
 }
@@ -1243,21 +1243,23 @@ ul.icons li a {
   position: relative;
 }
 
-.int-product {
-  float: right;
-  -webkit-transition: all, 0.3s, ease-in-out;
-  transition: all, 0.3s, ease-in-out;
-  padding: 22px 10px;
-  width: 50%;
+/*.int-product{    
+    float: right;
+    -webkit-transition: all, 0.3s, ease-in-out;
+    transition: all, 0.3s, ease-in-out;
+    padding: 22px 10px;
+    width: 50%;
 }
 
-.int-product li {
-  width: 50%;
-  float: left;
-  margin: 1em 0;
-  display: inline-block;
-}
 
+
+.int-product li{    
+    width: 50%;
+    float: left;
+    margin: 1em 0;
+    display: inline-block;
+
+}*/
 .sp-view {
   margin: 0;
 }
@@ -1537,18 +1539,6 @@ img.scale, img.responsive {
 /*Wide Screen*/
 /*Laptop Screen*/
 /*Taplet Screen*/
-@media screen and (max-width: 73.5rem) {
-  body {
-    font-size: 88%;
-  }
-}
-
 /*Tablet port*/
-@media screen and (max-width: 52.5rem) {
-  body {
-    font-size: 80%;
-  }
-}
-
 /*Small Tablet*/
 /*Phone Moblie*/

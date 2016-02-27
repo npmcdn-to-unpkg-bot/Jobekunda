@@ -1,12 +1,7 @@
-# Apache Rewrite Rules 
-
-RewriteEngine On 
-
-RewriteRule ^shots index.php?page=2 [NC]
-RewriteRule ^home index.php [NC]
-
-RewriteRule ^brands index.php?page=3 [NC]
-RewriteRule ^trending index.php?page=5 [NC]
-RewriteRule ^accessories index.php?page=6 [NC]
-RewriteRule ^contact index.php?page=8 [NC]
-
+# Apache Rewrite Rules
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ index.php [L]
+</IfModule>

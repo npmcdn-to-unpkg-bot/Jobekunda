@@ -618,7 +618,7 @@ a.mt-sidebar-link{
 
 .mt-breadcrump-wrapper{
     width: 305px;
-    margin-right: 100px;
+    margin-right: 5em;
     display: inline-block;
     float: left;
     padding: 0.4em;
@@ -626,7 +626,7 @@ a.mt-sidebar-link{
 
 .mt-shots-nav-wrapper{
     margin-left: 25px;
-    width: 375px;
+    width: calc(100% - 63.625rem);
     display: inline-block;
     float: left;
 }
@@ -1109,25 +1109,29 @@ ul.icons li{
     position: relative;
 }
 
-.int-product{    float: right;
-        -webkit-transition: all, 0.3s, ease-in-out;
+/*.int-product{    
+    float: right;
+    -webkit-transition: all, 0.3s, ease-in-out;
     transition: all, 0.3s, ease-in-out;
-        padding: 22px 10px;
-    width: 50%;}
+    padding: 22px 10px;
+    width: 50%;
+}
 
 
 
-.int-product li{    width: 50%;
+.int-product li{    
+    width: 50%;
     float: left;
     margin: 1em 0;
     display: inline-block;
 
-}
+}*/
 .sp-view{
     margin: 0;
 }
 
-.dimOverlay{    background-color: #000;
+.dimOverlay{
+    background-color: #000;
     background-color: rgba(0,0,0,0.15);
     background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0,0,0,0.3)));
     background: -webkit-linear-gradient(transparent, rgba(0,0,0,0.3));
@@ -1139,8 +1143,9 @@ ul.icons li{
     right: 0;
     opacity: 0;
     filter:alpha(opacity=0);
--webkit-transition: all, 0.3s, ease-in-out;
-    transition: all, 0.3s, ease-in-out;}
+    -webkit-transition: all, 0.3s, ease-in-out;
+    transition: all, 0.3s, ease-in-out;
+}
 
 .product-thumb-image a:hover .dimOverlay{
     opacity: 1;
@@ -1371,7 +1376,7 @@ img.scale, img.responsive {
             /*Taplet Screen*/
 
      @media screen and (max-width: 73.5rem){
-        body{font-size:88%}
+   
 
 }
 
@@ -1382,7 +1387,6 @@ img.scale, img.responsive {
                /*Tablet port*/
 
      @media screen and (max-width: 52.5rem){
-         body{font-size:80%}
 
                }
                                          
