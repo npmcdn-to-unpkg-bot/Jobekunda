@@ -1,7 +1,7 @@
 <?php   session_start();  require_once '../config/setup.php'; 
 
 $row_count = row_count($dbc);
-//print_r($path);
+
  ?>
 <!DOCTYPE html>
 <html>

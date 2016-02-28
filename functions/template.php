@@ -7,11 +7,11 @@
 /* -------------------------------------------------------------------------------- */
 /* Dynamic Navigation
 /* -------------------------------------------------------------------------------- */
-function main_nav($dbc, $pageid){
+function main_nav($dbc, $path){
 	 $stmt = $dbc->prepare("SELECT * FROM pages WHERE pageLabel <> '' ");
           $stmt->execute();
              while ($nav = $stmt -> fetch()) { ?>
-  <li<?php if ($nav['slug'] == $pageid) {echo ' class="mt-list-active"' ;} ?>><a href="<?='?page='.$nav['slug'] ?>" class="mt-sidebar-link btn"><?=$nav['pageLabel'];?></a></li>
+  <li<?php selected_page($path['call_parts'][0], $nav['slug'], ' class="mt-list-active"') ?>><a href="<?=$nav['slug'] ?>" class="mt-sidebar-link btn"><?=$nav['pageLabel'];?></a></li>
   <?php }        
 }
 

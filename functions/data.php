@@ -7,9 +7,9 @@
 /* -------------------------------------------------------------------------------- */
 /* gets all data about a page
 /* -------------------------------------------------------------------------------- */
-	function data_page($dbc, $id){
-			$stmt = $dbc->prepare('SELECT * FROM pages WHERE pageID = :id');
-		$stmt->bindParam(':id', $id, PDO::PARAM_INT);
+	function data_page($dbc, $slug){
+			$stmt = $dbc->prepare("SELECT * FROM pages WHERE slug = :slug");
+		$stmt->bindParam(':slug', $slug, PDO::PARAM_INT);
         $stmt->execute();
         $data = $stmt -> fetch();
         	return $data;

@@ -5,6 +5,10 @@
  * Date: 2/27/2016
  * Time: 5:56 PM
  */
+
+/* -------------------------------------------------------------------------------- */
+/* gets url path and break into a multi dimensional array
+/* -------------------------------------------------------------------------------- */
 function get_path() {
     $path = array();
     if (isset($_SERVER['REQUEST_URI'])) {
@@ -30,4 +34,15 @@ function get_path() {
         }
     }
     return $path;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* checks if page is active
+/* -------------------------------------------------------------------------------- */
+
+function selected_page($value1, $value2, $value3){
+
+    if($value1 == $value2) {
+        echo $value3;
+    }
 }

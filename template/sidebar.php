@@ -12,7 +12,7 @@
       <a class="closeTrigger"><span class="icon-close">X</span></a>
       </div>
   <ul class="mt-sidebar-list">
-  <?php main_nav($dbc, $pageid); ?>
+  <?php main_nav($dbc, $path); ?>
 </ul>
   <div class="mt-smallnav-wrapper">
     <p><a href="#" class="mt-smallnav-link">MEN</a></p>
