@@ -12,7 +12,11 @@
 		$stmt->bindParam(':slug', $slug, PDO::PARAM_INT);
         $stmt->execute();
         $data = $stmt -> fetch();
-        	return $data;
+            if ($data) {
+                return $data;
+            }
+        return false;
+
 	}
 /* -------------------------------------------------------------------------------- */
 /* gets featured shots randomly

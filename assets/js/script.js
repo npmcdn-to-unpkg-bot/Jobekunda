@@ -41,15 +41,18 @@ Mytailor.me
                     $('.mt-layout-black__cover').removeClass('is-visible'); 
       		
       	 });
-
-          $('.sp-view').on('click', function() {
+              function init_sp () {
+                        $('.sp-view').on('click', function() {
               var shot_img = $(this).find('img').first().attr('src');
                   sp_overlay.h5u_open(shot_img);
-                     // $window.navigator(shot_img);
                     return false;
+                            });
+              }
+
+              init_sp ();
 
 
-        });
+
 
 
               // Page

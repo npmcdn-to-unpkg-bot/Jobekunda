@@ -779,7 +779,8 @@ button.mt-button-search:focus {
 }
 
 .mt-breadcrump-wrapper {
-  width: 305px;
+  min-width: 11rem;
+  width: calc(100% - 60rem);
   margin-right: 5em;
   display: inline-block;
   float: left;
@@ -816,6 +817,12 @@ button.mt-button-search:focus {
 .breadcrump > li > a {
   color: #2196F3;
   font-size: 98%;
+}
+
+@media (max-width: 600px) {
+  .mt-breadcrump-wrapper {
+    display: none;
+  }
 }
 
 /*********************************************************************************************
@@ -1445,6 +1452,37 @@ ul.icons li a {
 .mt-sp-img-wrapper {
   margin: auto;
   cursor: pointer;
+}
+
+.mt-close-buton {
+  background: url("../../images/icons/arrow/close.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 18px;
+  height: 24px;
+  background-position: 50% 52%;
+}
+
+.mt-close-anchor {
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: inline-block;
+  cursor: pointer;
+  width: 18px;
+  height: 24px;
+  background-position: 50% 52%;
+  line-height: normal;
+  opacity: .4;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  transition: opacity 1s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 2;
+}
+
+a.mt-close-anchor:hover {
+  opacity: 1;
 }
 
 /*********************************************************************************************

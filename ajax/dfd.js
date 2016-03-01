@@ -1,3 +1,10 @@
+              function init_sp () {
+                        $('.sp-view').on('click', function() {
+              var shot_img = $(this).find('img').first().attr('src');
+                  sp_overlay.h5u_open(shot_img);
+                    return false;
+                            });
+              }
      var ready = true;
  $(document).ready(function(){
   // Global Variables
@@ -27,15 +34,17 @@
                     itemSelector: '.grid-item'
                     });
 
+
                  //Append newly added shots...
                  $(".load").hide(1000).remove();
                 $(response).each(function(index){
                   var $items = $("<div class='product-item grid-item grid-item'><figure class='product-thumb-image'><a href='"+$image_path+response[index].shotFileName+'.'+response[index].shotFileType+"' class='sp-view'><div class='image-holder'><img src='"+$image_path+response[index].shotFileName+'.'+response[index].shotFileType+"'></div><div class='dimOverlay'></div><figcaption><span><img src='images/icons/search67.svg'></span></figcaption></a></figure></div>")
                 $('#lastID').html(response[index].shotID);
                   $grid.append($items).masonry( 'appended', $items);
-
                     setTimeout("ready=true;", 1000);
+
                 });
+                  init_sp ();
 
               }
           });

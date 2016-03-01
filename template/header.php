@@ -10,7 +10,7 @@
     </div>
   <div class="mt-search-wrapper">
     <form method="Get" id="search-box">
-      <div class="mt-search-box">
+      <div class="mt-search-box hidden">
         <input type="search" id="search" name="q" autocapitalize="off" autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="text" value="" placeholder="search for items like men, women, shirts, shoes and more ..."/>
         <div class="mt-search-icon">
           <button class="mt-button-search" value="search" name ="b" type ="submit" disabled>

@@ -10,7 +10,7 @@
 /* gets url path and break into a multi dimensional array
 /* -------------------------------------------------------------------------------- */
 function get_path() {
-    $path = array();
+    $path = [];
     if (isset($_SERVER['REQUEST_URI'])) {
 
         $request_path = explode('?', $_SERVER['REQUEST_URI']);
