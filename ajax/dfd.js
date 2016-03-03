@@ -40,9 +40,13 @@
                 $(response).each(function(index){
                   var $items = $("<div class='product-item grid-item grid-item'><figure class='product-thumb-image'><a href='"+$image_path+response[index].shotFileName+'.'+response[index].shotFileType+"' class='sp-view'><div class='image-holder'><img src='"+$image_path+response[index].shotFileName+'.'+response[index].shotFileType+"'></div><div class='dimOverlay'></div><figcaption><span><img src='images/icons/search67.svg'></span></figcaption></a></figure></div>")
                 $('#lastID').html(response[index].shotID);
-                  $grid.append($items).masonry( 'appended', $items);
-                    setTimeout("ready=true;", 1000);
 
+                $grid.imagesLoaded(function(){
+                    $grid.append($items).masonry( 'appended', $items, 'reloadItems');
+                    
+                    });
+
+                    setTimeout("ready=true;", 1000);
                 });
                   init_sp ();
 
