@@ -42,7 +42,7 @@
                 $('#lastID').html(response[index].shotID);
 
                 $grid.imagesLoaded(function(){
-                    $grid.append($items).masonry( 'appended', $items, 'reloadItems');
+                    $('.grid').append($items).masonry( 'appended', $items, 'reloadItems');
                     
                     });
 

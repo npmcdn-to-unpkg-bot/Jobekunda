@@ -38,3 +38,8 @@
           </section>
         </div>
       </div>
+    <div class="mt-transit-loader">
+      <div class="mt-page-loader-icon">
+          <div id="preloader_3"></div>
+      </div>
+    </div>

@@ -1266,6 +1266,7 @@ ul.icons li{
     
 .sp-content-box{
     z-index: 9997;
+    min-height: 630px;
     width: 628px;
     margin: 20px auto;
     padding: 40px 95px;
@@ -1283,6 +1284,9 @@ ul.icons li{
     margin: auto;
     cursor: pointer;
 }                                        
+.mt-sp-img-wrapper>.sp-cover{
+        text-align: center;
+}
 
 .mt-close-buton{
 

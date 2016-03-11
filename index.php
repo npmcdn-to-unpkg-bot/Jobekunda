@@ -19,11 +19,7 @@ $row_count = row_count($dbc);
 <?php  require_once '../config/page.php';   ?>
       <!-- Transfer later -->
     <div class="mt-layout-black__cover"></div>
-    <div class="mt-transit-loader">
-      <div class="mt-page-loader-icon">
-          <div id="preloader_3"></div>
-      </div>
-    </div>
+
 
     <!-- Apps Script -->
 
