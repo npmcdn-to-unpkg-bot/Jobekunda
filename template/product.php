@@ -92,7 +92,7 @@
 
 
                     $(response).each(function(index){
-                      var $items = $("<div class='product-item grid-item grid-item'><figure class='product-thumb-image'><a href='"+'<?= base($path);?>/shot/'+response[index].shotFileName+'/'+"' class='sp-view'><div class='image-holder'><img src='"+$image_path+response[index].shotFileName+'.'+response[index].shotFileType+"'></div><div class='dimOverlay'></div><figcaption><span><img src='images/icons/search67.svg'></span></figcaption></a></figure></div>")
+                      var $items = $("<div class='product-item grid-item grid-item'><figure class='product-thumb-image'><a href='"+'<?= base($path);?>/shot/'+response[index].shotFileName+'/'+"' class='sp-view'><div class='image-holder'><img src='"+'<?= base($path);?>/'+$image_path+response[index].shotFileName+'.'+response[index].shotFileType+"'></div><div class='dimOverlay'></div><figcaption><span><img src='<?= base($path);?>/images/icons/search67.svg'></span></figcaption></a></figure></div>")
 
                               //Set the last id
                             $('#lastID').html(response[index].shotID);

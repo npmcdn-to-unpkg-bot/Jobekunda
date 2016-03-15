@@ -1508,6 +1508,42 @@ a.mt-close-anchor:hover {
   opacity: 1;
 }
 
+.mt-arrows-anchor {
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: inline-block;
+  cursor: pointer;
+  width: 60px;
+  height: 543px;
+  background-position: 50% 52%;
+  line-height: normal;
+  opacity: .4;
+  position: absolute;
+  transition: opacity 1s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 2;
+}
+
+.a-left {
+  left: -15em;
+}
+
+.a-right {
+  right: -40em;
+  -webkit-transform: rotate(180deg);
+}
+
+.mt-arrows-icon {
+  background: url("../../images/icons/arrow/arrowhead7.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 55px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  background-position: 50% 52%;
+}
+
 /*********************************************************************************************
 
       Search results
