@@ -3,7 +3,7 @@
     <div class="pull-left">
       <a class="sideTrigger">
         <span class="mt-menu-icon">
-          <img src="images/icons/menu.svg"  style="width: 25px; height: 30px;">
+          <img src="<?=base($path)?>/images/icons/menu.svg"  style="width: 25px; height: 30px;">
         </span>
         <span class="mt-menu-text">Menu</span>
       </a>

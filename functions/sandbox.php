@@ -46,3 +46,10 @@ function selected_page($value1, $value2, $value3){
         echo $value3;
     }
 }
+
+/* -------------------------------------------------------------------------------- */
+/* Dumbs the base url of the site
+/* -------------------------------------------------------------------------------- */
+function base($path){
+    return $path['base'];
+}

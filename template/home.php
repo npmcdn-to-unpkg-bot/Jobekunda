@@ -11,7 +11,7 @@
                         <h2 class="mt-subheading-text">FIND THE BEST AFRICAN DRESSES HERE.</h2>
                     </div>
                     <div class="mt-hero-button">
-                    <a href="shots" class="norm-text"><span class="button_09 special" id="sn-button">Explore</span></a>
+                    <a href="<?=base($path)?>/shots" class="norm-text"><span class="button_09 special" id="sn-button">Explore</span></a>
                   </div>
                   </div>
                 </div>
@@ -22,7 +22,7 @@
                 <div class="mt-row-wrapper clearfix">
             <?php
                   /**Load featured shots**/
-                  load_featured_shots($dbc, $image_path);
+                  load_featured_shots($dbc, $image_path, $path);
 
                 ?>
   </div>
@@ -31,7 +31,7 @@
         <div id="lst-section">
           <section>
               <span class="lp-text">
-                <img src="images/icons/agreement2.svg" style="height:6.25rem;">
+                <img src="<?=base($path)?>/images/icons/agreement2.svg" style="height:6.25rem;">
               </span>
                 <h2>DESIGNER ! LOOKING TO ADVERTISE YOUR PEODUCTS TO THE WORLD ? WE CAN HELP. CONTACT US TODAY.</h2>
                 <p>MyTailor allows users to make a wardrope collection of latest trendy African Fashion dresses. We feature latest clothing from designers all around africa. Discover style & beauty with MyTailor.</p>

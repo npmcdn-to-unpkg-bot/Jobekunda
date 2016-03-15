@@ -9,89 +9,151 @@ Mytailor.me
     // Global variables
 
         var $body = $('body'),
-            $window = $(window);
-            id = $('.pageContainer').attr('id');
+            $window = $(window),
+            id = $('.pageContainer').attr('id'),
             $header = $('.mt-header'),
-           $banner = $('.hero-viewport');
+            $banner = $('.hero-viewport');
 
-  $(function() {
+        $(function() {
 
-          //Animation Loader
+                //========== Animation Loader ==========
 
-                $(window).on('load', function(){
-                $('.mt-transit-loader').fadeOut('fast');
+                      $(window).on('load', function(){
 
-            });
+                          $('.mt-transit-loader').fadeOut('fast');
+
+                    });
 
 
-      	// Side Bar
+              	//=========== Side Bar ==========
 
-          //Open
-        	$('a.sideTrigger').click(function() {
-            	$('body').toggleClass('sideOpen');
-              $('.mt-layout-black__cover').addClass('is-visible');
-      		
-      	});
+                    //Open
+                  	  $('a.sideTrigger').click(function() {
 
-      	// Close
-      	    $('a.closeTrigger'),
-            $('.mt-layout-black__cover')
-                .click(function() {
-      		          $('body').removeClass('sideOpen');
-                    $('.mt-layout-black__cover').removeClass('is-visible'); 
-      		
-      	 });
-              function init_sp () {
-                        $('.sp-view').on('click', function() {
-              var shot_img = $(this).find('img').first().attr('src');
-                  sp_overlay.h5u_open(shot_img);
-                    return false;
+                          	$('body').toggleClass('sideOpen');
+
+                            $('.mt-layout-black__cover').addClass('is-visible');
+
+                	    });
+
+                	  // Close
+                	    $('a.closeTrigger'),$('.mt-layout-black__cover').click(function() {
+
+          		              $('body').removeClass('sideOpen');
+
+                            $('.mt-layout-black__cover').removeClass('is-visible'); 
+                	    });
+
+                //========== sp Overlay ==========
+
+
+                      $(document).on('click', '.sp-view', function() {
+                              var shot_img = $(this)
+                                    .parent()
+                                    .find('a')
+                                    .attr('href'),
+
+                                  shot_img_location = $(this)
+                                    .first()
+                                    .find('img')
+                                    .attr('src');
+
+                                  $sp_overlay.mt_OpenOval(shot_img_location, shot_img);
+                                    return false;
+
                             });
-              }
-
-              init_sp ();
 
 
 
+                          //vars
+                            var $sp_overlay = $('.sp-overlay'),
+                                $sp_overlay_box = $sp_overlay.find('.sp-content-box'),
+                                offsetY = window.pageYOffset;
+                            
+                            // Close overlay on click
+                                $sp_overlay
+                                    .hide()
+                                    .appendTo($body)
+                                    .click(function() {
+                                        $sp_overlay.mt_CloseOval();
+                                        return true;
+
+                                    });
+
+                            // stop box click from closing overlay
+                                $sp_overlay_box
+                                    .click(function(e){ 
+                                      e.stopPropagation(); 
+                                    });
 
 
-              // Page
-      switch (id) {
+                            //=====Open Overlay
+                            $sp_overlay.mt_OpenOval = function(image, name) {
+                                      $('.sp-cover>img').attr('src', image);
+                                      $body.css({'position': 'static','top': -offsetY + 'px', 'overflow-y': 'hidden'});
+                                          $sp_overlay
+                                          .fadeTo('fast', 1.0, function() {
+                                                $sp_overlay.show();
+                                                history.pushState({}, '', name);
+                                            });
 
-        default:
-          break;
+                                      //listen for back button
+                                          window.addEventListener('popstate', function(event) {
+                                                $sp_overlay.mt_CloseOval(false);
 
-        case 'landing':
+                                          });
+                            };
 
-          var $bar = $('my-header'),
-            $items = $('#items');
+                            //=====Close Overlay
+                            $sp_overlay.mt_CloseOval = function(bTrigger) {
+                                       $body.css({'position': 'static', 'overflow-y': 'auto'});
+                                       $(window).scrollTop(offsetY);
 
-      }
+                                       if (bTrigger != false) {
+                                              history.back();
+                                          };
+                                          if (!$sp_overlay.is(':visible'))
+                                              return false;
+                                                $sp_overlay.fadeTo('fast', 0, function() {
+                                                    $sp_overlay.hide();
+                                            });
+                            };
 
 
 
-  });
 
-      if ($header.hasClass('normal')
-      &&  $banner.length > 0) {
 
-        $window.on('load', function() {
+                  //========== Page ==========
 
-          $banner.scrollwatch({
-            delay:    0,
-            range:    0.5,
-            anchor:   'top',
-            on:     function() { $header.addClass('mt-header show').removeClass('mt-header-animate'); },
-            off:    function() { $header.removeClass('show').addClass('mt-header-animate'); }
-          });
+                      switch (id) {
+                          
+                        case 'landing':
+
+                          var $bar = $('my-header'),
+                            $items = $('#items');
+
+                             if ($header.hasClass('normal')
+                                    &&  $banner.length > 0) {
+
+                                      $window.on('load', function() {
+                                        $banner.scrollwatch({
+                                          delay:    0,
+                                          range:    0.5,
+                                          anchor:   'top',
+                                          on:     function() { $header.addClass('mt-header show').removeClass('mt-header-animate'); },
+                                          off:    function() { $header.removeClass('show').addClass('mt-header-animate'); }
+                                        });
+
+                                      });
+
+                                    }
+
+                              break;
+                      }
+
 
         });
-
-      }
-
-       
-
-
+      
             //Initializa all plugins
                  $window.on('load', function(){
                   //Waves Buttons

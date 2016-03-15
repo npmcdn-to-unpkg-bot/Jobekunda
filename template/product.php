@@ -21,13 +21,13 @@
     <div class="mt-shots-nav-wrapper">
       <ul class="mt-shots-nav clearfix">
         <li class="mt-list-item">
-          <a href="#"><span>Trending</span></a>
+          <a href="<?= base($path);?>/shots/trending"><span>Trending</span></a>
         </li>
         <li class="mt-list-item __active">
-          <a href="#"><span>Latest</span></a>
+          <a href="<?= base($path);?>/shots/latest"><span>Latest</span></a>
         </li>
         <li class="mt-list-item">
-          <a href="#"><span>Featured</span></a>
+          <a href="<?= base($path);?>/shots/featured"><span>Featured</span></a>
         </li>
       </ul>
     </div>
@@ -39,13 +39,14 @@
                        /***** Load shots !! */
 
                     $image_path = 'images/shots/';
-                    $last_ID = load_shots($dbc, $image_path);
+                    $last_ID = load_shots($dbc, $image_path, $path);
                      
 
              ?>
         </div>
-        <div class="loadmore-wrapper" style="height:200px;">
+        <div class="loadmore-wrapper" style="display:none">
 
+          <span class="mt-loadmore"></span>
 
              </div>
     </div>
@@ -55,66 +56,70 @@
 /* -------------------------------------------------------------------------------- */
 ?>
 <script type="text/javascript">
-              function init_sp () {
-                        $('.sp-view').on('click', function() {
-              var shot_img = $(this).find('img').first().attr('src');
-                  sp_overlay.h5u_open(shot_img);
-                    return false;
-                            });
-              }
-     var ready = true;
- $(document).ready(function(){
-  // Global Variables
 
-      var $lastID = $('.lastID').html();
-      $totalRecords = "<?php echo $row_count; ?>";
-      $currentPage = 1;  
-      $recordsPerPage = 10;
-      $numberOfPages = Math.ceil(($totalRecords - 20) / $recordsPerPage);
+ $(document).ready(function(){
+
+
+  // Global Variables
+      var $lastID = $('.lastID').html(),
+      $totalRecords = "<?php echo $row_count; ?>",
+      $currentPage = 1,  
+      $recordsPerPage = 10,
+      $numberOfPages = Math.ceil(($totalRecords - 20) / $recordsPerPage),
       $image_path = 'images/shots/';
+      $ready = true;
 
     // fetch images function...
       function load_data($recordsPerPage, $lastID){
-         ready = false;
+         $ready = false;
           $.ajax({
-              url: "loadmore_shots.php",
+              url: "<?= base($path);?>/loadmore_shots.php",
               type: "get",
               data: {"recordsPerPage": $recordsPerPage, "lastID": $lastID},
               dataType: "json",
               beforeSend:function(){
-                $(".grid").append("<span class='load'>loading..</span>");
-            },
 
-               success:function(response){
-                 var $grid = $('.grid').masonry({
-                    columnWidth: '.grid-item',
-                    itemSelector: '.grid-item'
-                    });
+                
+                $(".loadmore-wrapper").show();
+              },
+
+              success:function(response){
+
+                  var $grid = $('.grid').masonry({
+                      columnWidth: '.grid-item',
+                      itemSelector: '.grid-item'
+                      });
 
 
-                 //Append newly added shots...
-                 $(".load").hide(1000).remove();
-                $(response).each(function(index){
-                  var $items = $("<div class='product-item grid-item grid-item'><figure class='product-thumb-image'><a href='"+$image_path+response[index].shotFileName+'.'+response[index].shotFileType+"' class='sp-view'><div class='image-holder'><img src='"+$image_path+response[index].shotFileName+'.'+response[index].shotFileType+"'></div><div class='dimOverlay'></div><figcaption><span><img src='images/icons/search67.svg'></span></figcaption></a></figure></div>")
-                $('#lastID').html(response[index].shotID);
+                    $(response).each(function(index){
+                      var $items = $("<div class='product-item grid-item grid-item'><figure class='product-thumb-image'><a href='"+'<?= base($path);?>/shot/'+response[index].shotFileName+'/'+"' class='sp-view'><div class='image-holder'><img src='"+$image_path+response[index].shotFileName+'.'+response[index].shotFileType+"'></div><div class='dimOverlay'></div><figcaption><span><img src='images/icons/search67.svg'></span></figcaption></a></figure></div>")
 
-               $('.grid').imagesLoaded(function(){
+                              //Set the last id
+                            $('#lastID').html(response[index].shotID);
 
-                    $grid.append($items).masonry( 'appended', $items, 'reloadItems');
-                    
-                    });
+                            $('.grid').imagesLoaded(function(){
 
-                    setTimeout("ready=true;", 1000);
-                });
-                  init_sp ();
+                                  $grid.append($items).masonry( 'appended', $items, 'reloadItems');
+                                  // $items.appendTo($grid) 
+                                  // console.log($grid);
+                                      
+                                
+                            });
+                                      
+                  });
+                                // init_overlay();
+                                setTimeout("$ready=true;", 1000);
+                                $(".loadmore-wrapper").hide();
 
               }
           });
       }
      
+      //Listen for scrolls
       (function($){
+
       $(window).scroll(function(){
-          if($(window).scrollTop() >= $(document).height() - 1500 & ready==true){
+          if($(window).scrollTop() >= $(document).height() - 1500 & $ready==true){
             if($currentPage <= $numberOfPages){
               $lastID = $('#lastID').html();
 

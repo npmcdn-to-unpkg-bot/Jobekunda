@@ -1016,7 +1016,7 @@ ul.icons li{
     position: relative;
     -webkit-overflow-scrolling: touch;
     list-style: none;
-    margin: 1em 2px;
+    margin: 1em 2px 9em 2px;
     padding: 0px;
 }
 
@@ -1235,6 +1235,23 @@ ul.icons li{
     100% {-webkit-transform: translateX(0px);transform: translateX(0px)}
 }
 
+.mt-loadmore{
+        background-image: url("../../images/icons/loadmore.gif");
+    height: 60px;
+    margin: 0 auto;
+    width: 60px;
+    display: block;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 0px 2px 1px rgba(64, 64, 64, 0.22);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.loadmore-wrapper{
+        padding: 6em;
+    text-align: center;
+}
 /*********************************************************************************************
 
     Overlay Pop Up
@@ -1247,9 +1264,9 @@ ul.icons li{
 
 }                                                
 
-
-
-
+.sp-page-wrapper{
+    @extend .sp-overlay;
+}
 .sp-overlay{
     background:rgba(8, 8, 8, 0.94);
     top: 0;
@@ -1298,6 +1315,7 @@ ul.icons li{
     height: 24px;
     background-position: 50% 52%;
 }
+
 .mt-close-anchor{
         background-size: auto;
     background-repeat: no-repeat;
