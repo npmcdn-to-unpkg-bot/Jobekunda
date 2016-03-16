@@ -58,6 +58,8 @@ Mytailor.me
                                     .find('img')
                                     .attr('src');
 
+                                  incr_view(shot_img);
+
                                   $sp_overlay.mt_OpenOval(shot_img_location, shot_img);
                                     return false;
 
@@ -118,6 +120,16 @@ Mytailor.me
                                                     $sp_overlay.hide();
                                             });
                             };
+
+                            function incr_view (image) {
+                              $.ajax({ url: 'img-views.php',
+                                     data: {"image": image},
+                                     type: 'post',
+                                     success: function() {
+                              
+                                    }
+                                  });
+                            }
 
 
 

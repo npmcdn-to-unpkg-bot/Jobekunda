@@ -31,7 +31,7 @@
 /* gets all shots with limit 20
 /* -------------------------------------------------------------------------------- */
 	function get_shots($dbc){
-			$stmt = $dbc->prepare("SELECT * FROM shots ORDER BY shotID DESC LIMIT 20");
+			$stmt = $dbc->prepare("SELECT * FROM shots ORDER BY views DESC LIMIT 20");
         $stmt->execute();
         $images = $stmt -> fetchAll();
         	return $images;

@@ -63,19 +63,19 @@
   // Global Variables
       var $lastID = $('.lastID').html(),
       $totalRecords = "<?php echo $row_count; ?>",
-      $currentPage = 1,  
+      $currentPage = 3,  
       $recordsPerPage = 10,
       $numberOfPages = Math.ceil(($totalRecords - 20) / $recordsPerPage),
-      $image_path = 'images/shots/';
-      $ready = true;
+      $image_path = 'images/shots/',
+      $busy = false,
+      $offset = 20;
 
     // fetch images function...
-      function load_data($recordsPerPage, $lastID){
-         $ready = false;
+      function load_data($offset){
           $.ajax({
               url: "<?= base($path);?>/loadmore_shots.php",
-              type: "get",
-              data: {"recordsPerPage": $recordsPerPage, "lastID": $lastID},
+              type: "post",
+              data: {"offset": $offset},
               dataType: "json",
               beforeSend:function(){
 
@@ -107,9 +107,7 @@
                             });
                                       
                   });
-                                // init_overlay();
-                                setTimeout("$ready=true;", 1000);
-                                $(".loadmore-wrapper").hide();
+                                      $busy=false;
 
               }
           });
@@ -119,13 +117,20 @@
       (function($){
 
       $(window).scroll(function(){
-          if($(window).scrollTop() >= $(document).height() - 1500 & $ready==true){
-            if($currentPage <= $numberOfPages){
-              $lastID = $('#lastID').html();
+          if($(window).scrollTop() >= $(document).height() - 1500 && !$busy){
 
-            load_data($recordsPerPage, $lastID);
+            $busy = true;
+            //We can tell browser we are working here..
+
+            if($currentPage <= $numberOfPages){
+
+
+
+            load_data($offset);
 
             $currentPage++;
+
+            $offset = $currentPage * 10;
             
          }
           }

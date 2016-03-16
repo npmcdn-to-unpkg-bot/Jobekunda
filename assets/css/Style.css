@@ -1504,7 +1504,7 @@ ul.icons li a {
   z-index: 2;
 }
 
-a.mt-close-anchor:hover {
+a.mt-close-anchor:hover, a.mt-arrows-anchor:hover {
   opacity: 1;
 }
 
@@ -1533,7 +1533,7 @@ a.mt-close-anchor:hover {
 }
 
 .mt-arrows-icon {
-  background: url("../../images/icons/arrow/arrowhead7.svg");
+  background: url("../../images/icons/arrow/arrows.svg");
   background-size: cover;
   background-repeat: no-repeat;
   display: inline-block;
