@@ -1266,34 +1266,6 @@ ul.icons li a {
   filter: alpha(opacity=100);
 }
 
-/*Load more*/
-.load-wrapper {
-  text-align: center;
-  margin-top: 1em;
-}
-
-#load-more-button {
-  background: #fff;
-  height: 100px;
-  width: 100px;
-  border-radius: 100%;
-  margin: 0 auto;
-  border: 2px solid #1B1B1B;
-  line-height: 5.5;
-}
-
-#load-more-button > a {
-  padding: 2em 1.5em;
-  text-align: Center;
-  color: #202024;
-  font-size: 106%;
-  margin: 0;
-}
-
-#load-more-button:hover {
-  background: #E2E2E2;
-}
-
 /*Transit Loader*/
 .mt-transit-loader {
   position: fixed;

@@ -40,15 +40,12 @@
 
                     $image_path = 'images/shots/';
                     $last_ID = load_shots($dbc, $image_path, $path);
+
+          
                      
 
              ?>
         </div>
-        <div class="loadmore-wrapper" style="display:none">
-
-          <span class="mt-loadmore"></span>
-
-             </div>
     </div>
 <?php
 /* -------------------------------------------------------------------------------- */
@@ -100,8 +97,6 @@
                             $('.grid').imagesLoaded(function(){
 
                                   $grid.append($items).masonry( 'appended', $items, 'reloadItems');
-                                  // $items.appendTo($grid) 
-                                  // console.log($grid);
                                       
                                 
                             });
@@ -124,13 +119,11 @@
 
             if($currentPage <= $numberOfPages){
 
+                load_data($offset);
 
+                $currentPage++;
 
-            load_data($offset);
-
-            $currentPage++;
-
-            $offset = $currentPage * 10;
+                $offset = $currentPage * 10;
             
          }
           }

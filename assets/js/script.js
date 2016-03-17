@@ -87,6 +87,13 @@ Mytailor.me
                                     .click(function(e){ 
                                       e.stopPropagation(); 
                                     });
+                            // Esc to close overlay
+                            $(document).keyup(function(e) {
+                                  if (e.keyCode == 27){
+                                    $sp_overlay.mt_CloseOval();
+                                        return true;
+                                  };
+                                });
 
 
                             //=====Open Overlay
