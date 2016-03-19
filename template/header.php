@@ -8,7 +8,7 @@
         <span class="mt-menu-text">Menu</span>
       </a>
     </div>
-  <div class="mt-search-wrapper">
+ <!--  <div class="mt-search-wrapper">
     <form method="Get" id="search-box">
       <div class="mt-search-box">
         <input type="search" id="search" name="q" autocapitalize="off" autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="text" value="" placeholder="search for items like men, women, shirts, shoes and more ..."/>
@@ -19,7 +19,7 @@
         </div>
       </div> 
     </form>
-  </div>
+  </div> -->
   </div><!-- Main bar ends -->  
 </header>
 

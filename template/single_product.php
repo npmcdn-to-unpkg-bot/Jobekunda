@@ -5,8 +5,8 @@
   <div class="sp-content-box">
           <main class="mt-sp-img-wrapper">
             <div>
-                    <a class="mt-arrows-anchor" role="button" title="Prev"><i class="mt-arrows-icon a-left"></i></a>
-                    <a class="mt-arrows-anchor" role="button" title="Next"><i class="mt-arrows-icon a-right"></i></a>
+                <a class="mt-arrows-anchor" id="prev" role="button" title="Prev"><i class="mt-arrows-icon a-left"></i></a>
+                <a class="mt-arrows-anchor" id="next" role="button" title="Next"><i class="mt-arrows-icon a-right"></i></a>
             </div>    
             <div class="sp-cover">
               <img src="">

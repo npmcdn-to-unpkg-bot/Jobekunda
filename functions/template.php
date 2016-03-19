@@ -57,8 +57,6 @@ function load_shots($dbc, $image_path, $path){
       </figure>
     </div>
 
-    <?php $lastID = $image['shotID'];
+    <?php }
 
-  }
-      echo "<span class='lastID hidden' id='lastID'>$lastID</span>";
 }

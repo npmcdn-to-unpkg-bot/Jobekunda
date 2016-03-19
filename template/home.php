@@ -33,7 +33,7 @@
               <span class="lp-text">
                 <img src="<?=base($path)?>/images/icons/agreement2.svg" style="height:6.25rem;">
               </span>
-                <h2>DESIGNER ! LOOKING TO ADVERTISE YOUR PEODUCTS TO THE WORLD ? WE CAN HELP. CONTACT US TODAY.</h2>
+                <h2>DESIGNER ! LOOKING TO ADVERTISE YOUR PRODUCTS TO THE WORLD ? WE CAN HELP. CONTACT US TODAY.</h2>
                 <p>MyTailor allows users to make a wardrope collection of latest trendy African Fashion dresses. We feature latest clothing from designers all around africa. Discover style & beauty with MyTailor.</p>
           </section>
         </div>

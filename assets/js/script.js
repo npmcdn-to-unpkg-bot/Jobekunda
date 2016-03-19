@@ -31,7 +31,6 @@ Mytailor.me
                   	  $('a.sideTrigger').click(function() {
 
                           	$('body').toggleClass('sideOpen');
-
                             $('.mt-layout-black__cover').addClass('is-visible');
 
                 	    });
@@ -40,7 +39,6 @@ Mytailor.me
                 	    $('a.closeTrigger'),$('.mt-layout-black__cover').click(function() {
 
           		              $('body').removeClass('sideOpen');
-
                             $('.mt-layout-black__cover').removeClass('is-visible'); 
                 	    });
 
@@ -57,13 +55,46 @@ Mytailor.me
                                     .first()
                                     .find('img')
                                     .attr('src');
-
+                                  $current_shot = $(this);
                                   incr_view(shot_img);
-
                                   $sp_overlay.mt_OpenOval(shot_img_location, shot_img);
+
                                     return false;
 
                             });
+
+                      $('#next').click(function() {
+                       var $next_shot = getNext($current_shot);
+                            loadshot($next_shot);
+                      });
+
+                      $('#prev').click(function() {
+                          var $prev_shot = getPrev($current_shot);
+                            loadshot($prev_shot);
+                      });
+
+
+
+
+                      function getNext(current) {
+                             $next = current.parent().parent().next();
+                             if ($next['length'] > 0) {
+                                return $next;
+                             };
+                              
+
+
+                          }
+
+
+                          function getPrev(current) {
+                            $prev = current.parent().parent().prev();
+                            if ($prev['length'] > 0) {
+                                return $prev;
+                             };
+                          
+
+                          }
 
 
 
@@ -89,10 +120,21 @@ Mytailor.me
                                     });
                             // Esc to close overlay
                             $(document).keyup(function(e) {
+
                                   if (e.keyCode == 27){
                                     $sp_overlay.mt_CloseOval();
-                                        return true;
-                                  };
+
+                                    } else if(e.keyCode == 39) {
+
+                                        var $next_shot = getNext($current_shot);
+                                        loadshot($next_shot);
+
+                                    } else if (e.keyCode == 37) {
+
+                                        var $prev_shot = getPrev($current_shot);
+                                        loadshot($prev_shot);
+
+                                      };
                                 });
 
 
@@ -110,8 +152,13 @@ Mytailor.me
                                           window.addEventListener('popstate', function(event) {
                                                 $sp_overlay.mt_CloseOval(false);
 
+
                                           });
                             };
+
+                             $sp_overlay.new_shot = function(image, name) {
+                              $('.sp-cover>img').attr('src', image);
+                             };
 
                             //=====Close Overlay
                             $sp_overlay.mt_CloseOval = function(bTrigger) {
@@ -138,8 +185,25 @@ Mytailor.me
                                   });
                             }
 
+                            function loadshot (shot){
+                              if (shot) {
+                                  var shot_img = (shot)
+                                    .parent()
+                                    .find('a')
+                                    .attr('href'),
 
+                                  shot_img_location = (shot)
+                                    .first()
+                                    .find('img')
+                                    .attr('src');
+                                  $current_shot = (shot.find('.sp-view'));
+                                  incr_view(shot_img);
+                                  $sp_overlay.new_shot(shot_img_location, shot_img);
 
+                              }
+                              return false;
+  
+                            }
 
 
                   //========== Page ==========
