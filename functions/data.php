@@ -44,3 +44,18 @@
  		 $row_count= $results->rowCount();
  			return $row_count;
  	}
+
+
+/* -------------------------------------------------------------------------------- */
+/* Gets all data about a single shot
+/*
+/* -------------------------------------------------------------------------------- */
+
+    function getShot_Data($dbc, $image){
+
+        $stmt = $dbc->prepare("SELECT * FROM shots WHERE shotFileName = :image");
+    $stmt->bindParam(':image', $image, PDO::PARAM_INT);
+    $stmt->execute();
+    $data = $stmt->fetch();
+        return $data;
+}

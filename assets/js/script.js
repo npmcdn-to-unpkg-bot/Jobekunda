@@ -42,6 +42,11 @@ Mytailor.me
                             $('.mt-layout-black__cover').removeClass('is-visible'); 
                 	    });
 
+                       $('#see-more').click(function() {
+                          $(".mt-load-bar").show();
+                          return false;
+                       });
+
                 //========== sp Overlay ==========
 
 
@@ -64,25 +69,22 @@ Mytailor.me
                             });
 
                       $('#next').click(function() {
-                       var $next_shot = getNext($current_shot);
-                            loadshot($next_shot);
+                            var $next_shot = getNext($current_shot);
+                                loadshot($next_shot);
                       });
 
                       $('#prev').click(function() {
-                          var $prev_shot = getPrev($current_shot);
-                            loadshot($prev_shot);
+                            var $prev_shot = getPrev($current_shot);
+                                loadshot($prev_shot);
                       });
 
 
-
-
                       function getNext(current) {
-                             $next = current.parent().parent().next();
-                             if ($next['length'] > 0) {
-                                return $next;
-                             };
+                               $next = current.parent().parent().next();
+                                 if ($next['length'] > 0) {
+                                    return $next;
+                                 };
                               
-
 
                           }
 

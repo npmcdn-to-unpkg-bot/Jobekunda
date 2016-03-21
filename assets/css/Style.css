@@ -374,6 +374,10 @@ textarea:focus, input:focus {
   left: 18.75rem;
 }
 
+.pageContainer {
+  min-height: 40em;
+}
+
 body.sideOpen {
   overflow-y: hidden;
 }
@@ -1567,6 +1571,111 @@ a.mt-close-anchor:hover, a.mt-arrows-anchor:hover {
   width: 90%;
   min-width: 1250px;
   margin: 0 auto;
+}
+
+/*********************************************************************************************
+
+      single Shot Page
+
+*********************************************************************************************/
+.mt-shot-wrapper {
+  min-height: 30em;
+  width: 60%;
+  min-width: 30em;
+  margin: 4em auto;
+  background: #fff;
+  box-shadow: 0px 0px 0px 1px rgba(140, 140, 140, 0.15);
+}
+
+.mt-shot-header {
+  width: 100%;
+  padding: 0.4em 0em;
+  border-bottom: 1px solid #eee;
+}
+
+.mt-shot-avatar-wrapper {
+  display: inline-block;
+  float: right;
+}
+
+.mt-shot-avatar {
+  margin: 1px 10px;
+  display: inline-block;
+}
+
+.mt-shot-avatar > img {
+  width: 30px;
+  border-radius: 27em;
+  border: 1px solid #eee;
+  display: inline-block;
+}
+
+.mt-avatar-name {
+  font-size: 84%;
+  color: #6D6D6D;
+  margin-right: 1em;
+  float: left;
+  text-transform: capitalize;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.mt-shot-cover {
+  padding: 2em 5em;
+  text-align: center;
+}
+
+.mt-shot-cover > img {
+  cursor: pointer;
+}
+
+.mt-shot-call-more-wrapper {
+  height: 7rem;
+  text-align: center;
+}
+
+.mt-shot-call-more {
+  background: #fff;
+  padding: 1.7em 3em;
+  text-align: center;
+  display: inline-block;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 0px 1px rgba(25, 25, 25, 0.16);
+}
+
+a.mt-more-anchor:hover span {
+  background-color: #F3F3F3;
+}
+
+.mt-shot-actions {
+  display: inline-block;
+}
+
+.mt-shot-actions-back-btn {
+  cursor: pointer;
+  background: #EEE;
+  width: 45px;
+}
+
+.mt-shot-actions-back-btn a {
+  display: block;
+  height: 35px;
+  margin: 0;
+  width: 45px;
+  padding: .4em .6em;
+}
+
+.mt-shot-actions-back-btn a:hover {
+  background: #E2E2E2;
+}
+
+.mt-back-btn {
+  background: url("../../images/icons/arrow/arrow-left.svg");
+  width: 25px;
+  background-repeat: no-repeat;
+  height: 25px;
+  display: block;
 }
 
 /* Texts*/
