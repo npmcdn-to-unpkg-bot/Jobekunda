@@ -36,7 +36,7 @@ Mytailor.me
                 	    });
 
                 	  // Close
-                	    $('a.closeTrigger'),$('.mt-layout-black__cover').click(function() {
+                	    $('a.closeTrigger'), $('.mt-layout-black__cover').click(function() {
 
           		              $('body').removeClass('sideOpen');
                             $('.mt-layout-black__cover').removeClass('is-visible'); 
