@@ -1,6 +1,6 @@
 <?php $image_path = "images/shots/"; ?>
         
-        <div class = "pageContainer dark" id="landing">
+        <div class = "pageContainer dark" id="landing" data-role="page">
           <section class="hero" style="margin-top:0px;">
             <div class="cover-container">
                 <div class="hero-viewport">

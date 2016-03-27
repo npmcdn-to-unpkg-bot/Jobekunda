@@ -1399,7 +1399,7 @@ a.mt-close-anchor:hover, a.mt-arrows-anchor:hover{
 .mt-shot-wrapper{
     min-height: 30em;
     width: 60%;
-    min-width: 30em;
+    min-width: 40em;
     margin: 4em auto;
     background: #fff;
     box-shadow: 0px 0px 0px 1px rgba(140, 140, 140, 0.15);
@@ -1494,6 +1494,48 @@ a.mt-more-anchor:hover span{
     height: 25px;
     display: block;
 }
+
+@media (max-width: 768px){
+    .mt-shot-wrapper{
+        width: 80%;
+        min-width: 25em;
+
+    }
+
+    .mt-shot-cover{
+        padding: 2em 2em;
+        }
+}
+
+@media (max-width: 425px){
+    .mt-shot-wrapper{
+        width: 100%;
+        min-width: 20em;
+        margin: 0 0 2em 0;
+    }
+
+    .mt-global-header{
+            padding: 10px 12px;
+    }
+
+
+}
+
+
+@media (max-width: 320px){
+    .mt-shot-cover {
+        padding: 0;
+
+    }
+}
+
+@media (max-width: 375px){
+    .mt-shot-cover {
+        padding: 1em;
+
+    }
+}
+
 /* Texts*/
 
 h3{    font: 15px/41px sans-serif;

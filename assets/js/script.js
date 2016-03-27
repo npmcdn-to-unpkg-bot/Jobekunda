@@ -47,6 +47,10 @@ Mytailor.me
                           return false;
                        });
 
+                       $('img').on('slideLeft', function  () {
+                            alert('tester');
+                       });
+
                 //========== sp Overlay ==========
 
 
@@ -62,9 +66,13 @@ Mytailor.me
                                     .attr('src');
                                   $current_shot = $(this);
                                   incr_view(shot_img);
-                                  $sp_overlay.mt_OpenOval(shot_img_location, shot_img);
 
-                                    return false;
+                                  if($(window).width() > 768){
+                                  $sp_overlay.mt_OpenOval(shot_img_location, shot_img);
+                                     return false;
+                                }
+
+                                 
 
                             });
 

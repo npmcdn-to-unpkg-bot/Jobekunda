@@ -14,6 +14,7 @@ $row_count = row_count($dbc);
    <link rel="shortcut icon" href="<?= base($path);?>/images/favicon.png" />
    <link rel="stylesheet" href="<?= base($path);?>/assets/css/jquery.mCustomScrollbar.min.css" />
    <script src="<?= base($path);?>/assets/js/jquery-2.1.4.min.js"></script>
+   <script src="<?= base($path);?>/assets/js/jquery-vmobile.js"></script>
 </head>
 <body class="mt-layout">
     <?php  require_once '../config/page.php';   ?>
