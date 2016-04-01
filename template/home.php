@@ -22,7 +22,7 @@
                 <div class="mt-row-wrapper clearfix">
             <?php
                   /**Load featured shots**/
-                  load_featured_shots($dbc, $image_path, $path);
+                  load_featured_shots($dbc, $image_path, $path, $query = 'features', $limit = 21);
 
                 ?>
   </div>

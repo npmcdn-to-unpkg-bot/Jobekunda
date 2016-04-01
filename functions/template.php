@@ -18,8 +18,8 @@ function main_nav($dbc, $path){
 /* -------------------------------------------------------------------------------- */
 /* Featured Shots
 /* -------------------------------------------------------------------------------- */
-function load_featured_shots($dbc, $image_path, $path){
-	 $images = get_featured_shots($dbc); 
+function load_featured_shots($dbc, $image_path, $path, $query, $limit){
+	 $images = get_shots($dbc, $query, $limit); 
     foreach ($images as $image) { 
     ?><div class ="lth-col-1 ht-col-1 all-container">
           <figure class="lth-wrapper" style="background:url('<?=base($path).'/'.$image_path  . $image['shotFileName'] . '.' . $image['shotFileType'] ?>');background-size: cover;">
@@ -40,8 +40,8 @@ function load_featured_shots($dbc, $image_path, $path){
 /* Load Shots Function
 /* -------------------------------------------------------------------------------- */
 
-function load_shots($dbc, $image_path, $path){
-    $images = get_shots($dbc);
+function load_shots($dbc, $image_path, $path, $query){
+    $images = get_shots($dbc, $query);
     foreach ($images as $image) { 
     ?><div class="product-item grid-item grid-item">
       <figure class="product-thumb-image">

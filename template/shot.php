@@ -1,9 +1,12 @@
 <?php
 
-if ($path['call_parts'][0] =  'shot' AND isset($path['call_parts'][1]) AND $path['call_parts'][1] != '') {
+if (isset($path['call_parts'][1]) AND $path['call_parts'][1] != '') {
 
 	$image = $path['call_parts'][1];
 	$shotData = getShot_data($dbc, $image);
+
+	$shot_name = $shotData['shotFileName'];
+	inc_view( $shot_name, $dbc);
 
 } else{
 

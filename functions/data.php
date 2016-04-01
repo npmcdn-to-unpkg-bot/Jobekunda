@@ -18,23 +18,17 @@
         return false;
 
 	}
-/* -------------------------------------------------------------------------------- */
-/* gets featured shots randomly
-/* -------------------------------------------------------------------------------- */
-	function get_featured_shots($dbc){
-		  $stmt = $dbc->prepare("SELECT * FROM shots WHERE featured = 1 ORDER BY RAND() LIMIT 12");
-        $stmt->execute();
-        $images = $stmt -> fetchAll();
-        	return $images;
-	}
+
 /* -------------------------------------------------------------------------------- */
 /* gets all shots with limit 20
 /* -------------------------------------------------------------------------------- */
-	function get_shots($dbc){
-			$stmt = $dbc->prepare("SELECT * FROM shots ORDER BY views DESC LIMIT 20");
+	function get_shots($dbc, $slug){
+
+        $queryString = generate_query($slug, 20, 0);
+        $stmt = $dbc->prepare("$queryString");
         $stmt->execute();
-        $images = $stmt -> fetchAll();
-        	return $images;
+        $data = $stmt -> fetchAll();
+        	return $data;
 	}
 /* -------------------------------------------------------------------------------- */
 /* tells you how many shots you have

@@ -5,11 +5,8 @@
 *
 */
 
+ $slug = $path['call_parts'][1];
 
-// switch($path['call_parts'][1]) {
-//   case 'trending': echo "string";
-//     break;
-//   }
 ?> 
     <section class="main-feed-header clearfix">
     <div class="mt-breadcrump-wrapper">
@@ -39,7 +36,7 @@
                        /***** Load shots !! */
 
                     $image_path = 'images/shots/';
-                    load_shots($dbc, $image_path, $path);
+                    load_shots($dbc, $image_path, $path, $slug);
 
           
                      
@@ -61,5 +58,77 @@
 /* -------------------------------------------------------------------------------- */
 ?>
 <script type="text/javascript">
-$(document).ready(function(){function e(e){$.ajax({url:"<?= base($path);?>/loadmore_shots.php",type:"post",data:{offset:e},dataType:"json",success:function(e){var a=$(".grid").masonry({columnWidth:".grid-item",itemSelector:".grid-item"});$(e).each(function(i){var o=$("<div class='product-item grid-item grid-item'><figure class='product-thumb-image'><a href='<?= base($path);?>/shot/"+e[i].shotFileName+"/' class='sp-view'><div class='image-holder'><img src='<?= base($path);?>/"+t+e[i].shotFileName+"."+e[i].shotFileType+"'></div><div class='dimOverlay'></div><figcaption><span><img src='<?= base($path);?>/images/icons/search67.svg'></span></figcaption></a></figure></div>");$(".grid").imagesLoaded(function(){a.append(o).masonry("appended",o,"reloadItems"),$(".mt-load-more-wrapper").hide(),r=!1})})}})}var a="<?php echo $row_count; ?>",i=3,o=10,s=Math.ceil((a-20)/o),t="images/shots/",r=!1,d=20;!function(a){a(window).scroll(function(){a(window).scrollTop()>=a(document).height()-1500&&!r&&(r=!0,s>=i&&(a(".mt-load-more-wrapper").show(),e(d),i++,d=10*i))})}(jQuery)});
+ $(document).ready(function(){
+
+
+  // Global Variables
+      var
+      $totalRecords = "<?php echo $row_count; ?>",
+      $currentPage = 3,  
+      $recordsPerPage = 10,
+      $numberOfPages = Math.ceil(($totalRecords - 20) / $recordsPerPage),
+      $image_path = 'images/shots/',
+      $busy = false,
+      $offset = 20;
+      $slug = "<?php echo $slug; ?>"
+
+    // fetch images function...
+      function load_data($offset){
+          $.ajax({
+              url: "<?= base($path);?>/loadmore_shots.php",
+              type: "post",
+              data: {"offset": $offset, "slug": $slug},
+              dataType: "json",
+              success:function(response){
+
+                  var $grid = $('.grid').masonry({
+                      columnWidth: '.grid-item',
+                      itemSelector: '.grid-item'
+                      });
+
+                    $(response).each(function(index){
+                      var $items = $("<div class='product-item grid-item grid-item'><figure class='product-thumb-image'><a href='"+'<?= base($path);?>/shot/'+response[index].shotFileName+'/'+"' class='sp-view'><div class='image-holder'><img src='"+'<?= base($path);?>/'+$image_path+response[index].shotFileName+'.'+response[index].shotFileType+"'></div><div class='dimOverlay'></div><figcaption><span><img src='<?= base($path);?>/images/icons/search67.svg'></span></figcaption></a></figure></div>")
+
+                            $('.grid').imagesLoaded(function(){
+
+                                  $grid.append($items).masonry( 'appended', $items, 'reloadItems');
+                                  $(".mt-load-more-wrapper").hide();
+                                  $busy = false;
+
+                                
+                            });
+                                      
+                  });
+                                      
+              }
+          });
+      }
+     
+      //Listen for scrolls
+      (function($){
+
+      $(window).scroll(function(){
+          if($(window).scrollTop() >= $(document).height() - 1500 && !$busy){
+
+            $busy = true;
+            //We can tell browser we are working here..
+
+            if($currentPage <= $numberOfPages){
+
+                $(".mt-load-more-wrapper").show();
+                load_data($offset);
+
+                $currentPage++;
+                $offset = $currentPage * 10;
+            
+         }
+          }
+
+      });
+
+
+
+})(jQuery);
+
+  });
 </script>
