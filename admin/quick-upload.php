@@ -1,15 +1,20 @@
 <?php   
-
-session_start();
-
 require_once '../../config/setup.php'; 
 
-if(!logged_in()){ 
-  
-  header("Location: portal.php");
+$images = glob('qm/*.jpg');
+// print_r($images);
+foreach ($images as $image) {
+    $info = pathinfo($image);
+    echo $info['filename'];
+    echo "\r";
+    $name = $info['filename'];
+    $ext = $info['extension'];
+
+          $stmt = $dbc->prepare('INSERT INTO shots (shotFileName, shotFileType) VALUES (:name, :ext)');
+          $stmt->bindParam(':name', $name, PDO::PARAM_STR);
+           $stmt->bindParam(':ext', $ext, PDO::PARAM_STR);
+        $stmt->execute();
 }
-
-
 
 // print_r($path);
  ?>

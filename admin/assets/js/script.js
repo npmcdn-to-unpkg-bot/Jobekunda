@@ -24,59 +24,6 @@
     
   });  
 
-              //Slider
-
-
-jQuery(document).ready(function($) {
-  jQuery.rsCSS3Easing.easeOutBack = 'cubic-bezier(0.175, 0.885, 0.320, 1.275)';
-  $('#slider-cover1').royalSlider({
-    arrowsNav: true,
-    arrowsNavAutoHide: false,
-    fadeinLoadedSlide: false,
-    controlNavigationSpacing: 0,
-    controlNavigation: 'none',
-    imageScaleMode: 'none',
-    imageAlignCenter:false,
-    blockLoop: true,
-    loop: true,
-    numImagesToPreload: 6,
-    transitionType: 'fade',
-    keyboardNavEnabled: true,
-    block: {
-      delay: 400
-    }
-  });
-});
-
-$(document).ready(function(){
-  $('.rsArrowRight .rsArrowIcn').html('<i class="fa fa-x3 fa-angle-right"></i>')
-    $('.rsArrowLeft .rsArrowIcn').html('<i class="fa fa-x3 fa-angle-left"></i>')
-
-});
-
-
-
-      // Notification drawer
-
-    $(document).ready(function(){
-      
-      $("#notificationLink").click(function(){
-        $("#notificationContainer").fadeToggle(300);
-        $("#notification_count").fadeOut("slow");
-        return false;
-    });
-
-    //Document Click
-
-      $(document).click(function(){
-        $("#notificationContainer").hide();
-      });
-          //Popup Click
-      $("#notificationContainer").click(function(){
-        return false
-    });
-
-    });
     
 
     // Sigin Overlay
