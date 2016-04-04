@@ -60,7 +60,6 @@
 <script type="text/javascript">
  $(document).ready(function(){
 
-
   // Global Variables
       var
       $totalRecords = "<?php echo $row_count; ?>",

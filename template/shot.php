@@ -37,7 +37,7 @@ if (isset($path['call_parts'][1]) AND $path['call_parts'][1] != '') {
 	</header>
 	<section class="mt-shot-viewer">
 		<div class="mt-shot-cover">
-			<img src="<?=base($path)?>/images/shots/<?= $shotData['shotFileName']?>.jpg">
+			<img src="<?=base($path)?>/images/shots/large/<?= $shotData['shotFileName']?>.jpg">
 		</div>
 	</section>
 
