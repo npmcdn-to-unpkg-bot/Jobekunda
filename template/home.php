@@ -1,4 +1,4 @@
-<?php $image_path = "images/shots/"; ?>
+<?php $image_path = "images/shots/large/"; ?>
         
         <div class = "pageContainer dark" id="landing" data-role="page">
           <section class="hero" style="margin-top:0px;">
@@ -38,8 +38,8 @@
           </section>
         </div>
       </div>
-    <div class="mt-transit-loader">
+<!--     <div class="mt-transit-loader">
       <div class="mt-page-loader-icon">
           <div id="preloader_3"></div>
       </div>
-    </div>
+    </div> -->

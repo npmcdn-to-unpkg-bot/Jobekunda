@@ -18,11 +18,11 @@ Mytailor.me
 
                 //========== Animation Loader ==========
 
-                      $(window).on('load', function(){
+                    //   $(window).on('load', function(){
 
-                          $('.mt-transit-loader').fadeOut('fast');
+                    //       $('.mt-transit-loader').fadeOut('fast');
 
-                    });
+                    // });
 
 
               	//=========== Side Bar ==========

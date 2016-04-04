@@ -16,6 +16,8 @@ foreach ($images as $image) {
         $stmt->execute();
 }
 
+
+
 // print_r($path);
  ?>
 <!DOCTYPE html>

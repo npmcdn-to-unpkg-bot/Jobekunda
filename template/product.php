@@ -35,7 +35,7 @@
 
                        /***** Load shots !! */
 
-                    $image_path = 'images/shots/';
+                    $image_path = 'images/shots/large/';
                     load_shots($dbc, $image_path, $path, $slug);
 
           
@@ -67,7 +67,7 @@
       $currentPage = 3,  
       $recordsPerPage = 10,
       $numberOfPages = Math.ceil(($totalRecords - 20) / $recordsPerPage),
-      $image_path = 'images/shots/',
+      $image_path = 'images/shots/large/',
       $busy = false,
       $offset = 20;
       $slug = "<?php echo $slug; ?>"
