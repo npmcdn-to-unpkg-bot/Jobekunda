@@ -17,7 +17,11 @@ function generate_query($slug, $limit, $offset){
 
 		switch ($slug) {
         case 'latest':
-                $queryString = "SELECT * FROM shots ORDER BY uploadDate DESC, views DESC, shotID DESC LIMIT $limit offset $offset";
+                $queryString = "SELECT * FROM shots
+                    ORDER BY uploadDate DESC,
+                    views DESC,
+                    shotID DESC
+                    LIMIT $limit offset $offset";
 
             	break;
         
@@ -29,21 +33,27 @@ function generate_query($slug, $limit, $offset){
             	break;
 
         case 'featured':
-                $queryString = "SELECT * FROM shots WHERE featured = 1 ORDER BY views DESC, shotID DESC LIMIT $limit offset $offset";
+                $queryString = "SELECT * FROM shots
+                      WHERE featured = 1
+                      ORDER BY views DESC,
+                      shotID DESC LIMIT $limit offset $offset";
 
             	break;
 
         case 'features':
-                $queryString = "SELECT * FROM shots WHERE featured = 1 ORDER BY RAND() LIMIT 21";
+                $queryString = "SELECT * FROM shots
+                      WHERE featured = 1
+                      ORDER BY RAND() LIMIT 21";
 
                 break;
 
         default:
-                $slug = 'latest';
-                $queryString = "SELECT * FROM shots ORDER BY uploadDate DESC, views DESC, shotID DESC LIMIT $limit offset $offset";
+                $queryString = "SELECT * FROM shots
+                      ORDER BY uploadDate DESC,
+                      views DESC,
+                      shotID DESC LIMIT $limit offset $offset";
              
                 break;
-
 
     }
 

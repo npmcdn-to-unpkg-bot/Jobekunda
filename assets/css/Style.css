@@ -1468,10 +1468,11 @@ ul.icons li a {
 .sp-content-box {
   z-index: 9997;
   min-height: 630px;
-  width: 628px;
+  width: 60%;
+  min-width: 40em;
   margin: 20px auto;
   padding: 40px 95px;
-  background: #fff;
+  background: #eee;
   background-position: fixed;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1483,7 +1484,6 @@ ul.icons li a {
 
 .mt-sp-img-wrapper {
   margin: auto;
-  cursor: pointer;
 }
 
 .mt-sp-img-wrapper > .sp-cover {
@@ -1538,12 +1538,12 @@ a.mt-close-anchor:hover, a.mt-arrows-anchor:hover {
 
 #prev {
   position: absolute;
-  left: 17em;
+  left: 10em;
 }
 
 #next {
   position: absolute;
-  right: 17em;
+  right: 10em;
 }
 
 .a-right {
@@ -1560,6 +1560,12 @@ a.mt-close-anchor:hover, a.mt-arrows-anchor:hover {
   position: absolute;
   top: 50%;
   background-position: 50% 52%;
+}
+
+.mt-sp-cov-container {
+  text-align: center;
+  padding: 2em;
+  background: #fff;
 }
 
 /*********************************************************************************************
@@ -1591,6 +1597,7 @@ a.mt-close-anchor:hover, a.mt-arrows-anchor:hover {
   width: 100%;
   padding: 0.4em 0em;
   border-bottom: 1px solid #eee;
+  background-color: #fff;
 }
 
 .mt-shot-avatar-wrapper {
