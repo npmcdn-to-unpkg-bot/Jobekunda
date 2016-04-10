@@ -18,8 +18,66 @@
                 </div>
             </div>
           </section>
+
+                       <div class="link-02-rt">
+
+                  <section class="kilama-01">
+                      <a class="_kilama 057_f" href="#" title="Top Collections">
+                          <div class="kilama-div">
+                            <div class="kilalma-ico">
+                              <img class="kilama-img"  style="height:6.25rem;" src="images/icons/t-deals.svg" alt>
+                            </div>
+                            <div class="kilama-tit">Top Collections</div>
+                            <div class="kilama-inf">Shop today's Deals.<br> Affordable limited offer</div>
+                          </div>
+                      </a>
+
+
+                      <a class="_kilama 057_f" href="#" title="Local-designers">
+                          <div class="kilama-div">
+                            <div class="kilalma-ico">
+                              <img class="kilama-img"  style="height:6.25rem;" src="images/icons/local.svg" alt>
+                            </div>
+                            <div class="kilama-tit">Local Designers</div>
+                            <div class="kilama-inf">Learn about designers<br>from your area</div>
+                          </div>
+                      </a>
+
+                         <a class="_kilama 057_f" href="#" title="Partner">
+                          <div class="kilama-div">
+                            <div class="kilalma-ico">
+                              <img class="kilama-img"  style="height:6.25rem;" src="images/icons/partner.svg" alt>
+                            </div>
+                            <div class="kilama-tit">Become a Partner</div>
+                            <div class="kilama-inf">great opportunities<br>for young businesses.</div>
+                          </div>
+                      </a>
+
+                         <a class="_kilama 057_f" href="#" title="Community">
+                          <div class="kilama-div">
+                            <div class="kilalma-ico">
+                              <img class="kilama-img"  style="height:6.25rem;" src="images/icons/community.svg" alt>
+                            </div>
+                            <div class="kilama-tit">Community</div>
+                            <div class="kilama-inf">wide network of tailors<br>all around Africa</div>
+                          </div>
+                      </a>
+
+                    <div style="clear: both;"></div>
+                  </section>
+
+
+                      <div class="v-090">
+                      <a href="<?=base($path)?>/shots" class="norm-text"><span class="button_09" id="vp-but0">View Shots</span></a>
+                      </div>
+
+              </div><!-- short banner -->
+
                 <div>
                 <div class="mt-row-wrapper clearfix">
+                <!--   <div>
+                    <h1>Featured Shots</h1>
+                  </div> -->
             <?php
                   /**Load featured shots**/
                   load_featured_shots($dbc, $image_path, $path, $query = 'features', $limit = 21);
@@ -27,6 +85,22 @@
                 ?>
   </div>
     </div>
+
+    <section class="mt-content-section-wrapper">
+      <div class="mt-wrap-ptb clearfix">
+        <div class="mt-2cols-wrap">
+
+        </div>
+
+        <div class="mt-2cols-wrap">
+          <div class="mt-small-banner-wrapper">
+            <div class="mt-small-banner"></div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
                 
         <div id="lst-section">
           <section>
@@ -38,8 +112,3 @@
           </section>
         </div>
       </div>
-<!--     <div class="mt-transit-loader">
-      <div class="mt-page-loader-icon">
-          <div id="preloader_3"></div>
-      </div>
-    </div> -->
