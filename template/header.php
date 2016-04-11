@@ -10,8 +10,8 @@
     </div>
 
     <div class="mt-logo-wrapper">
-      <a href="#">
-          <img src="images/myt.png" width="250px">
+      <a href="<?=base($path)?>/home?ref=logo">
+          <img src="<?=base($path)?>/images/myt.png" width="250px">
       </a>
     
 

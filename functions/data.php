@@ -53,3 +53,18 @@
     $data = $stmt->fetch();
         return $data;
 }
+
+/* -------------------------------------------------------------------------------- */
+/* Returns a tailor who did a particular product
+/*
+/* -------------------------------------------------------------------------------- */
+    function getTailors_Data($dbc ,$userID){
+
+        $stmt = $dbc->prepare("select users.userName, users.firstName,users.lastName, profiles.* 
+        from users inner join profiles on users.userID=profiles.userID
+        where users.userID = $userID;");
+
+    $stmt->execute();
+    $data = $stmt->fetch();
+        return $data;
+    }
