@@ -47,7 +47,7 @@
 
     function getShot_Data($dbc, $image){
 
-        $stmt = $dbc->prepare("SELECT * FROM shots WHERE shotFileName = :image");
+        $stmt = $dbc->prepare("SELECT * FROM shots WHERE shotFileName = :image LIMIT 1");
     $stmt->bindParam(':image', $image, PDO::PARAM_INT);
     $stmt->execute();
     $data = $stmt->fetch();

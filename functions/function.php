@@ -59,3 +59,10 @@ function generate_query($slug, $limit, $offset){
 
    		return $queryString;
 }
+
+function activateButton($var1, $var2, $active){
+        if ($var1 == $var2) {
+
+          echo "$active";
+        }
+}
