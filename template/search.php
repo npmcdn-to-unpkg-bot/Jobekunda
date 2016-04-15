@@ -7,10 +7,17 @@
 <!--          Navig-->
         </div>
       </section>
-        <main>
-          <h3>Results</h3>
-          <div id="hits"></div>
-          <ul id="pagination" class="pagination"></ul>
+        <main class="mt-search-main-wrapper">
+
+          <aside class="mt-search-aside-left">
+
+          </aside>
+          <div class="mt-search-results">
+            <h3>Results</h3>
+            <div id="hits"></div>
+            <ul id="pagination" class="pagination"></ul>
+
+          </div>
 
         </main>
 
