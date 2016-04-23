@@ -8,26 +8,22 @@
         <span class="mt-menu-text">Menu</span>
       </a>
     </div>
-
-    <div class="mt-logo-wrapper">
-      <a href="<?=base($path)?>/home?ref=logo" >
-          <img src="<?=base($path)?>/images/myt.png" width="250px">
+<!--     <div class="mt-logo-wrapper">
+      <a href="#">
+        <button>
+          <img src="">
+        </button>
       </a>
-    
-
-    </div>
-    <div class="mt-search-wrapper">
+    </div> -->
+    <div class="mt-search-wrapper expandable--search hide-on-phone">
+      <span class="icon-search"><i class="fa fa-search"></i></span>
       <form method="Get" action="#" id="search-box">
-        <div class="mt-search-box">
           <input type="search" id="q" autocapitalize="off" autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="text" value="" placeholder="search for items like men, women, shirts, shoes and more ..."/>
-          <div class="mt-search-icon">
-            <button class="mt-button-search" value="search" name ="b" type ="submit" disabled>
-              <span class="icon"><i class="fa fa-search"></i></span>
-            </button>
-          </div>
-        </div> 
       </form>
     </div>
+    <button class="mt-toggle-search mdl-button" style="visibility:hidden;">
+        <i class="fa fa-search icon-round" data-type="search"></i>
+      </button>
     </div><!-- Main bar ends -->  
 </header>
 

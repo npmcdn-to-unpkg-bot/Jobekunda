@@ -8,7 +8,7 @@
                     <div class="hero-content" style="">
                     <div class="mt-hero-textwrap">
                         <h1 class="mt-heading-text">MYTAILOR AFRICA</h1>
-                        <h2 class="mt-subheading-text">FIND THE BEST AFRICAN DRESSES HERE.</h2>
+                        <h2 class="mt-subheading-text">GET INSPIRED BY TALENTED AFRICAN FASHION DESIGNERS.</h2>
                     </div>
                     <div class="mt-hero-button">
                     <a href="<?=base($path)?>/shots" class="norm-text"><span class="button_09 special" id="sn-button">Explore</span></a>
@@ -22,18 +22,18 @@
                        <div class="link-02-rt">
 
                   <section class="kilama-01">
-                      <a class="_kilama 057_f" href="#" title="Top Collections">
+                      <a class="_kilama 057_f" href="<?=base($path)?>/shots/trending" title="Trending">
                           <div class="kilama-div">
                             <div class="kilalma-ico">
                               <img class="kilama-img"  style="height:6.25rem;" src="images/icons/t-deals.svg" alt>
                             </div>
-                            <div class="kilama-tit">Top Collections</div>
-                            <div class="kilama-inf">Shop today's Deals.<br> Affordable limited offer</div>
+                            <div class="kilama-tit">Trending Shots</div>
+                            <div class="kilama-inf">See what's trending<br>special pick for you.</div>
                           </div>
                       </a>
 
 
-                      <a class="_kilama 057_f" href="#" title="Local-designers">
+                      <a class="_kilama 057_f" href="<?=base($path)?>/brands/local" title="Local-designers">
                           <div class="kilama-div">
                             <div class="kilalma-ico">
                               <img class="kilama-img"  style="height:6.25rem;" src="images/icons/local.svg" alt>
@@ -87,7 +87,7 @@
   </div>
       
             <div style="text-align: center;padding-bottom: 4em;">
-              <a href="#" style="color:#03A9F4;">show me more...</a>
+              <a href="<?=base($path)?>/shots/trending" class="norm-text"><span class="button_09 special" id="sn-button">Show me more</span></a>
             </div>
         
     </div>
@@ -97,13 +97,13 @@
         <div class="mt-2cols-wrap">
           <div class="mt-info-box">
             <div style="padding:2em 0;">
-                <h2 class="bold-title">Design & Inspire</h2>
+                <h2 class="bold-title">Designs Inspire !</h2>
             </div>
 
-            <p class="attract-me">Inspiration comes in many ways. What you wear the backseat or driving up front, every part of the Uber experience has been designed around your safety and security.</p>
+            <p class="attract-me">Inspiration comes in many ways. What you wear tells alot about you. On your next meeting, interview, every part of the Uber experience has been designed around your safety and security.</p>
 
             <div class="mt-call-text">
-              <a href="" id="buzzle">Join other Designers  <i class="fa fa-arrow-circle-right hvr-buzz-out" aria-hidden="true"></i></a>
+              <a href="" id="buzzle">See Classic wears <i class="fa fa-arrow-circle-right hvr-buzz-out" aria-hidden="true"></i></a>
             </div>
           </div>
           <div>
@@ -126,7 +126,7 @@
             <h3 class="mt-title-white">what you like, is for you</h3>
             <p class="mt-sm-cont-text">Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of your recent photos. </p>
 
-            <a href="#" style="color: #03A9F4;">check out cool stuff</a>
+            <a href="" style="color: #03A9F4;">check out cool stuff</a>
 
           </section>
 
@@ -135,5 +135,9 @@
 
           </section>
          
+        </div>
+
+        <div class="mt-2cols-wrap" style="height:40em;">
+
         </div>
       </div>

@@ -13,10 +13,13 @@
 ?> 
     <section class="main-feed-header clearfix">
     <div class="mt-breadcrump-wrapper">
-     <ul class="breadcrump">
-       <li><a href="<?= base($path);?>/home" title="home">Mytailor</a></li>
-       <li id="bread"><?=$page['pageLabel']?></li>
-     </ul>
+
+      <?php
+     // <ul class="breadcrump">
+     //   <li><a href=" base($path);/home" title="home">Mytailor</a></li>
+     //   <li id="bread"><$page['pageLabel']</li>
+     // </ul>
+     ?>
     </div>
     <div class="mt-shots-nav-wrapper">
       <ul class="mt-shots-nav clearfix">

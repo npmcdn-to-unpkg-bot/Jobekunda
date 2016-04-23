@@ -11,7 +11,7 @@ function main_nav($dbc, $path ){
 	 $stmt = $dbc->prepare("SELECT * FROM pages WHERE pageLabel <> '' AND mt_group = 'public'");
           $stmt->execute();
              while ($nav = $stmt -> fetch()) { ?>
-  <li<?php selected_page($path['call_parts'][0], $nav['slug'], ' class="mt-list-active"') ?>><a href="<?=base($path).'/'.$nav['slug']?>" class="mt-sidebar-link btn"><?=$nav['pageLabel'];?></a></li>
+  <li<?php selected_page($path['call_parts'][0], $nav['slug'], ' class="mt-list-active"') ?>><a href="<?=base($path).'/'.$nav['slug']?>" class="mt-sidebar-link btn"><i class="mt-icon mt-<?=$nav['slug'];?>"></i><?=$nav['pageLabel'];?></a></li>
   <?php }        
 }
 
@@ -25,7 +25,7 @@ function load_featured_shots($dbc, $image_path, $path, $query, $limit){
           <figure class="lth-wrapper" style="background:url('<?=base($path).'/'.$image_path  . $image['shotFileName'] . '.' . $image['shotFileType'] ?>');background-size: cover;">
             <a href="<?=base($path).'/shot/'. $image['shotFileName']?>" class="sp-view">
               <img src="<?=base($path).'/'.$image_path . $image['shotFileName'] . '.' . $image['shotFileType'] ?>" alt="" style="display: none;">
-              <div class="overlay-items">
+              <div class="grid-item overlay-items">
               <figcaption>
               <span><img src="<?=base($path)?>/images/icons/search67.svg"></span>
               </figcaption>
