@@ -17,7 +17,7 @@ $row_count = row_count($dbc);
    <link rel="stylesheet" href="<?= base($path);?>/assets/css/jquery.mCustomScrollbar.min.css" />
    <link rel="stylesheet" href="http://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css">
    <script src="<?= base($path);?>/assets/js/jquery-2.1.4.min.js"></script>
-   <script src="assets/apps/algoliasearch-client-js-master/dist/algoliasearch.min.js"></script>
+   <script src="<?= base($path);?>/assets/apps/algoliasearch-client-js-master/dist/algoliasearch.min.js"></script>
    <script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.jquery.min.js"></script>
    <script src="http://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
 </head>
