@@ -1,64 +1,5 @@
-<?php
-/**
-* Template Name: Shots Page
-* Info: Pretty straight forward..
-*
-*/
-
- $slug = $path['call_parts'][1];
-
-?> 
-    <section class="main-feed-header clearfix">
-    <div class="mt-breadcrump-wrapper">
-     <ul class="breadcrump">
-       <li><a href="<?= base($path);?>/home" title="home">Mytailor</a></li>
-       <li id="bread"><?=$page['pageLabel']?></li>
-     </ul>
-    </div>
-    <div class="mt-shots-nav-wrapper">
-      <ul class="mt-shots-nav clearfix">
-        <li class="mt-list-item">
-          <a href="<?= base($path);?>/shots/trending"><span>Trending</span></a>
-        </li>
-        <li class="mt-list-item __active">
-          <a href="<?= base($path);?>/shots/latest"><span>Latest</span></a>
-        </li>
-        <li class="mt-list-item">
-          <a href="<?= base($path);?>/shots/featured"><span>Featured</span></a>
-        </li>
-      </ul>
-    </div>
-    </section>
-    <div class = "pageContainer">
-            <div class="clearfix mt-product-wrapper transit-3 grid">
-             <?php
-
-                       /***** Load shots !! */
-
-                    $image_path = 'images/shots/large/';
-                    load_shots($dbc, $image_path, $path, $slug);
-
-          
-                     
-
-             ?>
-        </div>
-        <section class="mt-load-more-wrapper" style="display:none">
-        <div class="mt-load-bar">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-        </section>
-
-    </div>
-<?php
-/* -------------------------------------------------------------------------------- */
-/* Load more shots with ajax on scroll...
-/* -------------------------------------------------------------------------------- */
-?>
-<script type="text/javascript">
  $(document).ready(function(){
+
 
   // Global Variables
       var
@@ -66,17 +7,16 @@
       $currentPage = 3,  
       $recordsPerPage = 10,
       $numberOfPages = Math.ceil(($totalRecords - 20) / $recordsPerPage),
-      $image_path = 'images/shots/large/',
+      $image_path = 'images/shots/',
       $busy = false,
       $offset = 20;
-      $slug = "<?php echo $slug; ?>"
 
     // fetch images function...
       function load_data($offset){
           $.ajax({
               url: "<?= base($path);?>/loadmore_shots.php",
               type: "post",
-              data: {"offset": $offset, "slug": $slug},
+              data: {"offset": $offset},
               dataType: "json",
               success:function(response){
 
@@ -130,4 +70,3 @@
 })(jQuery);
 
   });
-</script>

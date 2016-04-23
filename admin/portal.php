@@ -28,31 +28,28 @@ if (!validate_userinput() ){
             $dbc->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
             //select statement
-            $stmt = $dbc->prepare("SELECT member_id, username, password FROM members 
-                WHERE username = :username or email = :username AND password = :password AND status = 1");
+            $stmt = $dbc->prepare("SELECT userID, userName, password FROM users
+                WHERE username = :username or email = :username AND password = :password AND acc_type = 'admin' ");
 
-
-
-                #bind parameters 
-
+                #bind params
             $stmt->bindParam(':username', $usern );
-            $stmt->bindParam(':password', $passwd ); 
-
+            $stmt->bindParam(':password', $passwd );
                 $stmt->execute();
 
            // result 
-            $user_id = $stmt->fetchColumn();
+            $user_id = $stmt->fetchColumn(0);
 
             // no result then fail
             if($user_id == false)
             {
                 login_fail($message = 'The username or password you’ve entered doesn’t match any account. Sign up for an account.');
+
             }
         
             else
             {
 
-            $stmt = $dbc->prepare("UPDATE members SET last_logged_in = :time WHERE member_id = $user_id");
+            $stmt = $dbc->prepare("UPDATE users SET lastLogged_in = :time WHERE userID = $user_id");
             $stmt->bindParam(':time', $timestamp );
             $stmt->execute();
 
@@ -71,7 +68,7 @@ if (!validate_userinput() ){
         login_fail($message = 'We are unable to process your request. Please try again later');
 
     }
-
+    echo $message;
 }
 
 

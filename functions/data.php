@@ -47,9 +47,24 @@
 
     function getShot_Data($dbc, $image){
 
-        $stmt = $dbc->prepare("SELECT * FROM shots WHERE shotFileName = :image");
+        $stmt = $dbc->prepare("SELECT * FROM shots WHERE shotFileName = :image LIMIT 1");
     $stmt->bindParam(':image', $image, PDO::PARAM_INT);
     $stmt->execute();
     $data = $stmt->fetch();
         return $data;
 }
+
+/* -------------------------------------------------------------------------------- */
+/* Returns a tailor who did a particular product
+/*
+/* -------------------------------------------------------------------------------- */
+    function getTailors_Data($dbc ,$userID){
+
+        $stmt = $dbc->prepare("select users.userName, users.firstName,users.lastName, profiles.* 
+        from users inner join profiles on users.userID=profiles.userID
+        where users.userID = $userID;");
+
+    $stmt->execute();
+    $data = $stmt->fetch();
+        return $data;
+    }

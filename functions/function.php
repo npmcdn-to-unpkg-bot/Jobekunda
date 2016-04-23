@@ -43,7 +43,7 @@ function generate_query($slug, $limit, $offset){
         case 'features':
                 $queryString = "SELECT * FROM shots
                       WHERE featured = 1
-                      ORDER BY RAND() LIMIT 21";
+                      ORDER BY RAND() LIMIT 9";
 
                 break;
 
@@ -58,4 +58,11 @@ function generate_query($slug, $limit, $offset){
     }
 
    		return $queryString;
+}
+
+function activateButton($var1, $var2, $active){
+        if ($var1 == $var2) {
+
+          echo "$active";
+        }
 }

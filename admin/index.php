@@ -2,7 +2,7 @@
 
 session_start();
 
-require_once '../../config/setup.php'; 
+require_once '../../config/setup.php';
 
 if(!logged_in()){ 
   
@@ -16,7 +16,7 @@ if(!logged_in()){
 <!DOCTYPE html>
 <html>
 <head>
-   <title><?php echo $site_title .' | Admin'?></title>
+   <title><?php echo $page['pageTitle'] .' | '.$site_title ;?></title>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content="<?=$page['metaDesc'];?>">
@@ -28,26 +28,11 @@ if(!logged_in()){
 <body class="mt-layout">
 
 
-<?php include D_TEMPLATE.'/sidebar.php';
-
-include D_TEMPLATE.'/header.php';
-?>
-
-<div class="pageContainer">
-
-<div class="pagewrapper" style="top: 3.7em;min-height: 40em;">
+<?php  require_once '../../config/page.php';   ?>
 
 
-
-
-
-
-
-</div>
-      <!-- Transfer later -->
+<!-- Transfer later -->
     <div class="mt-layout-black__cover"></div>
-
-<?php include D_TEMPLATE.'/footer.php'; ?>
 
 
     <!-- Apps Script -->

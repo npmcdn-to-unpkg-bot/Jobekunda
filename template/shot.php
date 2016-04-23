@@ -5,12 +5,17 @@ if (isset($path['call_parts'][1]) AND $path['call_parts'][1] != '') {
 	$image = $path['call_parts'][1];
 	$shotData = getShot_data($dbc, $image);
 
-	$shot_name = $shotData['shotFileName'];
-	inc_view( $shot_name, $dbc);
+	if ($shotData) {
+			$shot_name = $shotData['shotFileName'];
+			inc_view( $shot_name, $dbc);
+	}else{
 
-} else{
+	 	header("Location:http://mytailor.me");
+		  }
 
-	 header("Location:http://mytailor.me");
+}else{
+
+	header("Location:http://mytailor.me");
 
 	}
 
@@ -29,9 +34,16 @@ if (isset($path['call_parts'][1]) AND $path['call_parts'][1] != '') {
 			</div>
 		</section>
 		<section class="mt-shot-avatar-wrapper">
-			<a href="#" class="mt-shot-avatar" title="Mytailor">
-				<img src="<?=base($path)?>/images/profilepix/45863590_2149.jpg" style="width:30px;">
-				<h2 class="mt-avatar-name">Mytailor Africa</h2>
+			<?php
+				$shotOwner = $shotData['userID'];
+
+				$tailors_info = getTailors_Data($dbc, $shotOwner);
+
+
+			?>
+			<a href="#" class="mt-shot-avatar" title="<?= $tailors_info['userName']; ?>">
+				<img src="<?=base($path)?>/images/profilepix/<?= $tailors_info['avatar'] .'.'. $tailors_info['avatarExt']; ?>" style="width:30px;">
+				<h2 class="mt-avatar-name"><?= $tailors_info['userName']; ?></h2>
 			</a>
 		</section>
 	</header>

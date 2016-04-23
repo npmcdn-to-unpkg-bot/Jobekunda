@@ -16,15 +16,27 @@ Mytailor.me
 
         $(function() {
 
-                //========== Animation Loader ==========
+                //========== Search icon on small devices ==========
+                      $('.mt-toggle-search').click(function() {
+             
+                             if ($(this).children().first().attr('data-type') == 'search') {
+                                  $('.pull-left').hide();
+                                $(this).children().first().attr('data-type', 'close');
+                                $(this).find('.icon-round').removeClass('fa-search');
+                                $(this).find('.icon-round').addClass('fa-times-circle');
+                                $('.mt-search-wrapper').removeClass('hide-on-phone');
+                               
 
-                    //   $(window).on('load', function(){
-
-                    //       $('.mt-transit-loader').fadeOut('fast');
-
-                    // });
-
-
+                      }
+                       // Search bar is currently showing
+                      else {
+                          $('.pull-left').show();
+                          $(this).children().first().attr('data-type', 'search');
+                          $('.mt-search-wrapper').addClass('hide-on-phone');
+                          $(this).find('.icon-round').removeClass('fa-times-circle');
+                          $(this).find('.icon-round').addClass('fa-search');
+                      }
+                    });
               	//=========== Side Bar ==========
 
                     //Open
@@ -247,6 +259,26 @@ Mytailor.me
 
         });
       
+                        $('.mt-search-wrapper input[type="search"]').keyup(function() {
+                     if( $(this).val() ) {
+                      $('#search-form').delay(200).submit();
+                    $('.mt-search-result-wrapper').show();
+                    $('.pageContainer').hide();
+
+                  } else{
+                      $('.mt-search-result-wrapper').hide();
+                    $('.pageContainer').show();
+                  }
+
+                  });
+
+                  $("#search-form").submit(function (event) {
+                      event.preventDefault();
+
+                  });
+
+
+
             //Initializa all plugins
                  $window.on('load', function(){
                   //Waves Buttons

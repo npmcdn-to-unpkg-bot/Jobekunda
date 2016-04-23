@@ -207,7 +207,7 @@ body.sideOpen{
     position: relative;
     left: 0;
     @extend .transit-4;
-}  
+}
 
 .mt-navAction-wrapper{
     padding: 35px 25px 5px 20px;
@@ -352,7 +352,7 @@ a.mt-sidebar-link{
     border: 1px solid #615A5A;
     border-radius: 2px;
 
-}    
+}
 
 .nav-pro-elemnts h3{
     float: right;
@@ -796,4 +796,243 @@ ul.icons li{
 #ico-menu{
     width:2em;
 
+}
+
+/*********************************************************************************************
+
+     DashBoard
+
+*********************************************************************************************/
+
+/*Page styles Dashboard*/
+
+.two-colums{width: 100%;}
+
+.action-feed{width: 30%;
+    float: right;
+    background:#D8D8D8;
+    padding: 1em;
+
+}
+
+.admin-main-wrapper{width: 70%;
+    float: left;
+    background: #eee;
+
+
+}
+
+.feed-header{    background: #202024;
+    padding: 1em;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+
+}
+
+.main-feed-header{
+    background: #Fff;
+    padding: 1em 0;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+
+}
+
+.breadcrump{    padding: 8px 15px;
+    margin: 12px 0;
+    list-style: none;
+    background-color: inherit;
+    white-space: nowrap;}
+
+.breadcrump>li{display: inline-block;
+    margin: 0;}
+
+.breadcrump>li+li:before {
+    content: "/ ";
+    padding: 0 5px;
+    color: #ccc;
+}
+
+
+.breadcrump>li>a{    color: #2196F3;
+    font-size: 98%;
+
+}
+
+.single-column{
+    background-color: #EEE;
+    margin-right: 0;
+    margin-left: 9px;
+}
+
+.col-3-box{background: #Fff;
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+    width: 32%;
+    padding-right: 7px;
+    padding-left: 7px;
+    position: relative;
+    height: 300px;
+    margin: 0 0.3em;
+    float: left;
+
+}
+
+.call-admin-head{
+    padding: 20px;}
+.perform-text{    width: 25%;
+    float: left;}
+
+
+.perform-text>img{    display: inline-block;
+    float: left;
+
+}
+
+.perform-text>span{    color: #808080;
+    font-size: 107%;
+    display: inline-block;
+    margin-top: 0.5em;
+    margin-left: 0.5em;
+
+
+}
+
+
+/*cards*/
+
+.chart-card{height: 70%;}
+
+.purple{    background-color: #3F51B5;
+
+}
+
+.cht-title{    color: #FFF;
+    font-size: 120%;
+
+}
+.pb-5{    padding: 0.5em 0.5em;
+    border-bottom: 1px solid #EEE;}
+.p-10{padding: 10px;}
+
+.red{background-color: #4DD0E1;}
+
+
+.blue{background-color: #2196F3;}
+
+/*Feed Bar right*/
+
+.feed-right{  float: right;
+    margin-right: 11px;
+    margin-top: 13px;}
+
+.feed-left{float: left;}
+
+.chart-number{    color: #fff;
+    text-align: center;
+    font-size: 93pt;
+    line-height: 1.3;}
+
+.insights-container{    height: 31em;
+    background: #eee;
+}
+.single-card{background: #fff;}
+
+.cl-2-sales>li{float: left;
+    width: 42%;
+
+}
+
+.cl-2-item>span{
+    display: block;
+    font-size: 20pt;}
+
+
+.r-text-div>span{    float: right;
+    font-size: 88%;
+    margin-top: 0.5em;
+    color: #949393;
+
+}
+.r-text-div>h3{display: inline-block;
+    font-size: 90%}
+/*Footer*/
+
+.footerContainerWrapper{    background: $dark_color url("../../images/pattern1.png");
+    padding: 4em 0px 1em 0;
+    text-align: center;
+
+}
+
+ul.icons {padding: 2em;
+    margin: 0 0 2em 0;}
+ul.icons li{
+    display: inline-block;
+    padding: 0 1.25em 0 0;
+    color:#736B6B;
+    margin: 0;
+    a{    font-size: 200%;
+
+    }
+}
+
+.copyright li{text-align: center;}
+/*Icons*/
+
+.menu-text{padding-left: 35px;
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 2px 2px 3px rgb(0, 0, 0);}
+
+#ico-menu{width:2em;}
+
+
+
+
+/*Icons*/
+
+.notification-items{     color: $light_color;}
+a.notification-items:hover, a.notification-items:active,  a.notification-items:focus{color: white;}
+
+.likes>a:active, .likes>a:focus{color:$red_color;}
+/*SideBar Actions*/
+
+
+.actionsMain{padding: 35px 25px 5px 20px;
+    margin: 0;}
+
+
+.actionsMain a {font-size: 75%;
+    color: #fff;
+    text-transform: uppercase;
+    display: inline-block;
+    zoom: 1;
+    letter-spacing: normal;
+    word-spacing: normal;
+    vertical-align: top;
+    text-rendering: auto;
+    letter-spacing: 3px;
+}
+
+.closeTrigger {
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    margin-top: -9px;
+    margin-bottom: 5px;
+
+}
+
+.signupSideM{text-align: right;
+    float: right;
+    padding: 3px 0px;
+    margin-bottom: 20px;}
+
+.signinSideM{ background: rgba(242, 48, 84, 0.81);
+    padding: 2em 7.5em;
+    margin-left: 0em;
+    border-radius: 4px;
+    border: 1px solid #5B5A5A;}
+
+.right-icons>li{
+    display: inline-block;
 }

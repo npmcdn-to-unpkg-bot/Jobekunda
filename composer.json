@@ -1,0 +1,14 @@
+{
+    "require": {
+        "algolia/algoliasearch-client-php": "^1.7"
+    },
+
+    "autoload":{
+
+    	"files":[
+    		"../config/connection.php",
+    		"../config/setup.php"
+
+    	]
+    }
+}
