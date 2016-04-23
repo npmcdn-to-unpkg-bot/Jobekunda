@@ -111,7 +111,7 @@
           </div>
         </div>
 
-        <div class="mt-2cols-wrap">
+        <div class="mt-2cols-wrap mdl-cards">
           <div class="mt-small-banner-wrapper">
             <div class="mt-small-banner"></div>
           </div>

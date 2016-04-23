@@ -6,7 +6,7 @@
 */
 ?> 
 <div class="mt-sidebar transit-4">
-  <div style="height:15em; background:#30353A;">
+  <div style="height:15em; background:#FB4164;">
 
 
   </div>

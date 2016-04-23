@@ -1,15 +1,18 @@
 <?php
-require_once '../config/setup.php';
+require_once '../../config/setup.php';
 
-if(isset($_GET['recordsPerPage']) ){
+	if(isset($_POST['offset']) ){
 
- 	$recordsPerPage = $_GET['recordsPerPage'];
- 	//$lastID  = $_GET['lastID'];
+	 	$offset = $_POST['offset'];
+	 	$slug = $_POST['slug'];
+	 	$limit = 10;
 
-	$stmt = $dbc->prepare("SELECT * FROM shots ORDER BY views DESC LIMIT $recordsPerPage");
-	$stmt->execute();
-	$data = $stmt -> fetchAll(PDO::FETCH_ASSOC);
-		echo json_encode($data);
-}
+	 	$query_string = generate_query($slug, $limit, $offset);
+		$stmt = $dbc->prepare("$query_string");
+		$stmt->execute();
+		$data = $stmt -> fetchAll(PDO::FETCH_ASSOC);
+			echo json_encode($data);
+	}
 
- //WHERE shotID < $lastID   && isset($_GET['lastID'])
+
+?>

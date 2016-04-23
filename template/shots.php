@@ -12,15 +12,17 @@
      }
 ?> 
     <section class="main-feed-header clearfix">
-    <div class="mt-breadcrump-wrapper">
+    
 
       <?php
+      //<div class="mt-breadcrump-wrapper">
      // <ul class="breadcrump">
      //   <li><a href=" base($path);/home" title="home">Mytailor</a></li>
      //   <li id="bread"><$page['pageLabel']</li>
      // </ul>
+      //</div>
      ?>
-    </div>
+    
     <div class="mt-shots-nav-wrapper">
       <ul class="mt-shots-nav clearfix">
         <li class="mt-list-item <?php activateButton($slug, 'trending', '__active'); ?>">
@@ -33,6 +35,11 @@
           <a href="<?= base($path);?>/shots/featured"><span>Featured</span></a>
         </li>
       </ul>
+    </div>
+
+    <div class="mt-shots-nav-actions">
+
+
     </div>
     </section>
     <div class = "pageContainer">
@@ -81,7 +88,7 @@
     // fetch images function...
       function load_data($offset){
           $.ajax({
-              url: "<?= base($path);?>/loadmore_shots.php",
+              url: "<?= base($path);?>/ajax/loadmore_shots.php",
               type: "post",
               data: {"offset": $offset, "slug": $slug},
               dataType: "json",

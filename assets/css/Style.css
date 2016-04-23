@@ -225,7 +225,6 @@ body {
   position: relative;
   height: 100%;
   overflow-x: hidden;
-  min-width: 720px;
 }
 
 p, a, h3, h5, h6, em, li {
@@ -781,6 +780,7 @@ span.icon-search {
 
 /*Header breadcrump*/
 .main-feed-header {
+  text-align: center;
   background: #Fff;
   height: 60px;
   -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
@@ -797,10 +797,17 @@ span.icon-search {
 }
 
 .mt-shots-nav-wrapper {
-  margin-left: 25px;
   width: 308px;
   display: inline-block;
-  float: left;
+  margin: 0 50px;
+}
+
+.mt-shots-nav-action {
+  float: right;
+  display: inline-block;
+  width: 50px;
+  padding: 1.2em 0.5em;
+  background: rgba(134, 134, 121, 0.41);
 }
 
 .breadcrump {
@@ -1043,6 +1050,23 @@ span.special:hover {
      Featured SHOTS
 
 *********************************************************************************************/
+.mdl-cards {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  min-height: 360px;
+}
+
 .mt-row-wrapper {
   width: 80%;
   min-width: 70em;
