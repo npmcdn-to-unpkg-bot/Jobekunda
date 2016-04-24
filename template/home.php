@@ -130,7 +130,7 @@
 
           </section>
 
-          <section style="height:30em;background: url('images/background/wear.png');">
+          <section style="height:30em;background: #eee;">
 
 
           </section>
