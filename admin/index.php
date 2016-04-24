@@ -1,8 +1,8 @@
 <?php   
-
+include "config.php";
 session_start();
 
-require_once '../../config/setup.php';
+
 
 if(!logged_in()){ 
   
@@ -11,7 +11,7 @@ if(!logged_in()){
 
 
 
-// print_r($path);
+print_r($path);
  ?>
 <!DOCTYPE html>
 <html>
@@ -28,9 +28,7 @@ if(!logged_in()){
 <body class="mt-layout">
 
 
-<?php  require_once '../../config/page.php';   ?>
-
-
+<?php include 'page.php'; ?>
 <!-- Transfer later -->
     <div class="mt-layout-black__cover"></div>
 
