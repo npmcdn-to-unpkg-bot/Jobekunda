@@ -1322,18 +1322,6 @@ ul.icons li a {
 }
 
 /*Icons*/
-.notification-items {
-  color: #C4C4C4;
-}
-
-a.notification-items:hover, a.notification-items:active, a.notification-items:focus {
-  color: white;
-}
-
-.likes > a:active, .likes > a:focus {
-  color: #F23054;
-}
-
 /*SideBar Actions*/
 .actionsMain {
   padding: 35px 25px 5px 20px;
@@ -1360,23 +1348,4 @@ a.notification-items:hover, a.notification-items:active, a.notification-items:fo
   font-size: 30px;
   margin-top: -9px;
   margin-bottom: 5px;
-}
-
-.signupSideM {
-  text-align: right;
-  float: right;
-  padding: 3px 0px;
-  margin-bottom: 20px;
-}
-
-.signinSideM {
-  background: rgba(242, 48, 84, 0.81);
-  padding: 2em 7.5em;
-  margin-left: 0em;
-  border-radius: 4px;
-  border: 1px solid #5B5A5A;
-}
-
-.right-icons > li {
-  display: inline-block;
 }

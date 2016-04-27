@@ -38,7 +38,16 @@
     </div>
 
     <div class="mt-shots-nav-actions">
-
+            <button class="icon-round mdl-button btn" id="dropdown">
+            <i class="icon-center mdi mdi-dots-vertical" data-type="hidden"></i>
+            </button>
+      <div class="mt-menu-container" style="visibility:hidden;" id="m9menu">
+          <ul class="" for="hdrbtn" data-upgraded=",MaterialMenu,MaterialRipple" style="clip: rect(0px 142px 160px 0px);">
+            <li class="mt-list-btn btn" style="transition-delay: 0.012s;"><a href="?cat=male" class="m-0">Male</a></li>
+            <li class="mt-list-btn btn" style="transition-delay: 0.084s;"><a href="?cat=female" class="m-0">Female</a></li>
+            <li class="mt-list-btn btn" style="transition-delay: 0.156s;"><a href="?cat=kids" class="m-0">Kids</a></li>
+            <li class="mt-list-btn btn" style="transition-delay: 0.156s;"><a href="?cat=accessories" class="m-0">Accessories</a></li>
+          </ul></div>
 
     </div>
     </section>

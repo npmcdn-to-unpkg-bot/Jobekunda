@@ -16,13 +16,13 @@
       </a>
     </div> -->
     <div class="mt-search-wrapper expandable--search hide-on-phone">
-      <span class="icon-search"><i class="fa fa-search"></i></span>
+      <span class="icon-search"><i class="mdi mdi-magnify" style="font-size: 22px;"></i></span>
       <form method="Get" action="#" id="search-box">
           <input type="search" id="q" autocapitalize="off" autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="text" value="" placeholder="search for items like men, women, shirts, shoes and more ..."/>
       </form>
     </div>
-    <button class="mt-toggle-search mdl-button" style="visibility:hidden;">
-        <i class="fa fa-search icon-round" data-type="search"></i>
+    <button class="icon-round mdl-button" style="visibility:hidden;">
+        <i class="mdi mdi-magnify icon-center" data-type="search"></i>
       </button>
     </div><!-- Main bar ends -->  
 </header>

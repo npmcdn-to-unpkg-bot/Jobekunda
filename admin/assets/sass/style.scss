@@ -1110,10 +1110,9 @@ ul.icons li{
 }
 /*Icons*/
 
-.notification-items{     color: $light_color;}
-a.notification-items:hover, a.notification-items:active,  a.notification-items:focus{color: white;}
 
-.likes>a:active, .likes>a:focus{color:$red_color;}
+
+
 /*SideBar Actions*/
 
 
@@ -1141,19 +1140,4 @@ a.notification-items:hover, a.notification-items:active,  a.notification-items:f
     margin-top: -9px;
     margin-bottom: 5px;
 
-}
-
-.signupSideM{text-align: right;
-    float: right;
-    padding: 3px 0px;
-    margin-bottom: 20px;}
-
-.signinSideM{ background: rgba(242, 48, 84, 0.81);
-    padding: 2em 7.5em;
-    margin-left: 0em;
-    border-radius: 4px;
-    border: 1px solid #5B5A5A;}
-
-.right-icons>li{
-    display: inline-block;
 }

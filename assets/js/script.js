@@ -59,9 +59,20 @@ Mytailor.me
                           return false;
                        });
 
-                       $('img').on('slideLeft', function  () {
-                            alert('tester');
-                       });
+                  //========== Drop menu ==========
+
+                  $('#dropdown').on('click', function () {
+                      if ($(this).children().first().attr('data-type') == 'hidden') {
+                            $('#m9menu').addClass('is-visible');
+                            $(this).children().first().attr('data-type', 'visible');
+
+                      } else{
+                         $('#m9menu').removeClass('is-visible');
+                         $(this).children().first().attr('data-type', 'hidden');
+                      }
+
+                     
+                  });
 
                 //========== sp Overlay ==========
 

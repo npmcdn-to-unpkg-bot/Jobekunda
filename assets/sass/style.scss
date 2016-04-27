@@ -10,7 +10,7 @@ Github URI: https://github.com/jobizzness/jobekunda
 
 @import "reset.scss";
 @import "waves.sass";
-@import "../css/font-awesome.min.css";
+@import "../fonts/MaterialDesign-Font/css/materialdesignicons.min.css";
 
 /*********************************************************************************************
 
@@ -148,9 +148,12 @@ textarea:focus, input:focus{
 
 .is-visible{
     background: rgba(0, 0, 0, 0.63);
-    visibility: visible;
+    visibility: visible !important;
 }     
 
+.m-0{
+    margin: 0;
+}
 /*********************************************************************************************
 
      Side Bar
@@ -278,6 +281,7 @@ a.mt-sidebar-link{
 }
 
 
+/*Sidebar Icons*/
 
 
 .mt-home{
@@ -442,7 +446,7 @@ a.mt-sidebar-link{
 
 
 
-button.mt-toggle-search{
+button.icon-round{
     border-radius: 50%;
     float: right;
     display: inline-flex;
@@ -459,8 +463,8 @@ button.mt-toggle-search{
         background-color: rgba(158,158,158,.2);
 }
 
-.icon-round{
-        position: absolute;
+.icon-center{
+    position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-12px,-12px);
@@ -654,12 +658,10 @@ span.icon-search{
     margin: 0 50px;
 
 }
-.mt-shots-nav-action{
+.mt-shots-nav-actions{
     float: right;
     display: inline-block;
-    width: 50px;
-    padding: 1.2em 0.5em;
-    background: rgba(134, 134, 121, 0.41);
+    padding: 0.6em 0.2em;
 }
 
 .breadcrump{   
@@ -688,6 +690,36 @@ span.icon-search{
     font-size: 98%;
 
 }
+
+.mt-menu-container{
+    background: #fff;
+    padding: 0.3em 0;
+    position: absolute;
+    right: 10px;
+    top: 43px;
+    width: 142px;
+    height: 167px;
+    z-index: 999;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.mt-menu-container>ul>li{
+    display: block;
+    padding: 0;
+    margin: 0;
+
+}
+
+.mt-menu-container>ul>li>a{
+    padding: 0.9em 2em;
+    display: block;
+    font-size: 14px !important;
+
+    &:hover{
+            background: rgba(148, 159, 164, 0.13) !important;}
+}
+
+
 
 @media (max-width: 600px){
     .mt-breadcrump-wrapper{
