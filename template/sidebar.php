@@ -5,7 +5,7 @@
 *
 */
 ?> 
-<div class="mt-sidebar transit-4">
+<div class="mt-sidebar transit-4 --scroll">
   <div style="height:15em; background:#FB4164;">
 
 
@@ -15,8 +15,8 @@
       <ul class="mt-sidebar-list">
 
           <?php
-          $owner= 'public';
-          main_nav($dbc, $path, $owner); ?>
+          $group= 'public';
+          main_nav($dbc, $path, $group); ?>
     </ul>            
   </nav>
   </div>

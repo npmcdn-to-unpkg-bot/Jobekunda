@@ -11,7 +11,7 @@ if(!logged_in()){
 
 
 
-print_r($path);
+//print_r($path);
  ?>
 <!DOCTYPE html>
 <html>

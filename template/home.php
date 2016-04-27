@@ -53,7 +53,7 @@
                           </div>
                       </a>
                       
-                         <a class="_kilama 057_f" href="#" title="Partner">
+                         <a class="_kilama 057_f" href="<?=base($path)?>/partners" title="Partners">
                           <div class="kilama-div">
                             <div class="kilalma-ico">
                               <img class="kilama-img"  style="height:6.25rem;" src="images/icons/partner.svg" alt>

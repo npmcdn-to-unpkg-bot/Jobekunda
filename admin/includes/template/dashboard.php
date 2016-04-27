@@ -84,7 +84,7 @@
                           <li><a href="">
                               <img src="images/icons/chat.svg" alt="" width="20px">
                             </a></li>
-                            <li><a href="">
+                            <li><a href="<?=base($path);?>/shots">
                               <img src="images/icons/media.svg" alt="" width="20px">
 
                             </a></li>

@@ -12,3 +12,22 @@ function main_nav($dbc, $path ){
     <?php }
 }
 
+
+/* -------------------------------------------------------------------------------- */
+/* Display all shots
+/* -------------------------------------------------------------------------------- */
+
+function load_shots($dbc, $image_path, $path, $query)
+{
+    $images = get_shots($dbc, $query);
+    foreach ($images as $image) {
+        ?>
+        <div class="mt-shot-card" data-id="<?=$image['shotID'];?>">
+            <div class="mt-shot-image">
+                <img src="<?=base($path).'../../'.'/'.$image_path . $image['shotFileName'] . '.' . $image['shotFileType'] ?>">
+            </div>
+        </div>
+
+    <?php }
+
+}

@@ -24,9 +24,9 @@
         }
 
 
-    $page = data_page($dbc, $path['call_parts'][0]);
+    $page = data_page($dbc, $path['call_parts'][0], 'admin');
     if(!$page){
-        $page = data_page($dbc, 'dashboard');
+        $page = data_page($dbc, 'dashboard', 'admin');
     }
 
     

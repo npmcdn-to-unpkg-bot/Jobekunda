@@ -7,9 +7,11 @@
 /* -------------------------------------------------------------------------------- */
 /* gets all data about a page
 /* -------------------------------------------------------------------------------- */
-	function data_page($dbc, $slug){
-			$stmt = $dbc->prepare("SELECT * FROM pages WHERE slug = :slug");
-		$stmt->bindParam(':slug', $slug, PDO::PARAM_INT);
+
+	function data_page($dbc, $slug, $group){
+			$stmt = $dbc->prepare("SELECT * FROM pages WHERE slug = :slug AND mt_group = :group");
+		$stmt->bindParam(':slug', $slug, PDO::PARAM_STR);
+        $stmt->bindParam(':group', $group, PDO::PARAM_STR);
         $stmt->execute();
         $data = $stmt -> fetch();
             if ($data) {

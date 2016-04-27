@@ -7,18 +7,18 @@
 /* -------------------------------------------------------------------------------- */
 /* gets all data about a page
 /* -------------------------------------------------------------------------------- */
-	function data_page($dbc, $slug){
-			$stmt = $dbc->prepare("SELECT * FROM pages WHERE slug = :slug");
-		$stmt->bindParam(':slug', $slug, PDO::PARAM_INT);
-        $stmt->execute();
-        $data = $stmt -> fetch();
-            if ($data) {
-                return $data;
-            }
-        return false;
+function data_page($dbc, $slug, $owner){
+    $stmt = $dbc->prepare("SELECT * FROM pages WHERE slug = :slug  AND mt_group = :group");
+    $stmt->bindParam(':slug', $slug, PDO::PARAM_STR);
+    $stmt->bindParam(':group', $owner, PDO::PARAM_STR);
+    $stmt->execute();
+    $data = $stmt -> fetch();
+    if ($data) {
+        return $data;
+    }
+    return false;
 
-	}
-
+}
 /* -------------------------------------------------------------------------------- */
 /* tells you how many shots you have
 /* -------------------------------------------------------------------------------- */
@@ -29,6 +29,18 @@
  	}
 
 
+/* -------------------------------------------------------------------------------- */
+/* gets all shots with limit 20
+/* -------------------------------------------------------------------------------- */
+    function get_shots($dbc, $slug){
+
+        $queryString = generate_query($slug, 20, 0);
+        $stmt = $dbc->prepare("$queryString");
+        $stmt->execute();
+        $data = $stmt -> fetchAll();
+            return $data;
+    }
+    
 /* -------------------------------------------------------------------------------- */
 /* Gets all data about a single shot
 /*

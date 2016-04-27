@@ -8,7 +8,7 @@
     include D_TEMPLATE.'/header.php';     
 
   
-echo '  <div class = "pagewrapper"style="top: 3.7em;">';
+echo '  <div class = "pagewrapper"style="top: 3.7em;background: #D8D8D8;">';
 /* -------------------------------------------------------------------------------- */
 /* Loaad the page from the pageID Variable...
 /* -------------------------------------------------------------------------------- */
@@ -37,5 +37,3 @@ echo '  <div class = "pagewrapper"style="top: 3.7em;">';
         }
 
 echo '  </div><!--End-->';
-
-        include D_TEMPLATE.'/footer.php';

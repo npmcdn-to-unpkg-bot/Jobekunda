@@ -181,7 +181,7 @@ Waves.init();
 
     (function($){
     $(window).load(function(){
-        $(".mt-sidebar").mCustomScrollbar();
+        $(".--scroll").mCustomScrollbar();
     });
 })(jQuery);
 
