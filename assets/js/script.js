@@ -59,20 +59,56 @@ Mytailor.me
                           return false;
                        });
 
-                  //========== Drop menu ==========
+/**
+   * Dropdown menu and all its functions.
+   *
+   *
+   * @functions : Opens, closes the menu 
+   * @Events : listens for clicks on the trigger $dropper.
+   */
 
-                  $('#dropdown').on('click', function () {
-                      if ($(this).children().first().attr('data-type') == 'hidden') {
-                            $('#m9menu').addClass('is-visible');
-                            $(this).children().first().attr('data-type', 'visible');
 
-                      } else{
-                         $('#m9menu').removeClass('is-visible');
-                         $(this).children().first().attr('data-type', 'hidden');
-                      }
+                 var $menu = $('#m9menu');
 
-                     
-                  });
+                     $('#dropdown').on('click', function () {
+
+                          if ( $(this).children().first().attr('data-type') == 'hidden'){
+                               $menu.dropIt($(this));
+
+                          }else{
+                               $menu.closeIt($(this));
+                          }
+
+                      }); 
+
+
+
+/*
+* DropIt() will toggle the menu and changes the
+* data-'type' attribute of the trigger to visible
+*
+* @params
+*/
+
+                  $menu.dropIt = function ($dropper) {
+
+                      $menu.addClass('is-visible showMenu');
+                      $dropper.children().first().attr('data-type', 'visible');
+                
+                  };
+
+/*
+* CloseIt() will toggle the menu and changes the
+* data-'type' attribute of the trigger to hidden
+*
+* @params
+*/
+                $menu.closeIt = function ($dropper){
+
+                      $menu.removeClass('is-visible showMenu');
+                      $dropper.children().first().attr('data-type', 'hidden');
+                };
+
 
                 //========== sp Overlay ==========
 
@@ -296,7 +332,7 @@ Mytailor.me
                     Waves.attach('.btn', ['waves-button', 'waves-float']);
                     Waves.init();
                   //Scroller
-                    $(".mt-sidebar").mCustomScrollbar();
+                    $(".--scroll").mCustomScrollbar();
 
                     var $grid = $('.grid').masonry({
                   // options

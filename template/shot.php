@@ -25,7 +25,7 @@ if (isset($path['call_parts'][1]) AND $path['call_parts'][1] != '') {
 <div class="pageContainer">
 
 <div class="mt-shot-wrapper">
-	<header class="mt-shot-header clearfix">
+	<header class="mt-shot-header clearfix mt-card-light">
 		<section class="mt-shot-actions">
 			<div class="mt-shot-actions-back-btn">
 				<a href="<?=base($path)?>/shots" title="Shots">
@@ -47,11 +47,66 @@ if (isset($path['call_parts'][1]) AND $path['call_parts'][1] != '') {
 			</a>
 		</section>
 	</header>
-	<section class="mt-shot-viewer">
+
+	<section class="mt-shot-viewer mt-card-light">
 		<div class="mt-shot-cover">
 			<img src="<?=base($path)?>/images/shots/large/<?= $shotData['shotFileName']?>.jpg">
 		</div>
 	</section>
+
+	<div class="mt-shots-info-wrap mt-card-light">
+		<div class="mt-shot-info-head">
+			<div class="mt-shot-user-actions-wrap">
+				<ul class="mt-shot-user-actions">
+				<li class="each-action">
+						<a href="#">
+							<i class="mdi mdi-eye"></i>
+							<span>5k</span> views
+						</a>
+					</li>
+					<li class="each-action">
+						<a href="#" class="">
+							<i class="mdi mdi-heart-outline" style="font-size: 2em;"></i>
+						</a>
+					</li>
+
+
+				</ul>
+			</div>
+			<div class="mt-shot-utility-icons">
+				<ul>
+					<li class="util-list-surcelink m-0">
+						<a class="btn mt-btn-circle m-0" href="#" title="source URL">
+                              <i class="mdi mdi-link-variant"></i>
+                              </a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="mt-shot-comments-wrapper scroller hidden">
+
+			<div class="mt-shot-comment-cont">
+			
+			</div>
+
+		</div>
+		<div class="comment-form-wrapper">
+			<div class="input-cont">
+				<input class="form-control" type="text" placeholder="Write your comment here ...">
+			</div>
+		</div>
+			<div class="btn-cont">
+				<span class="arrow">
+				</span>
+				<a href="" class="btn blue icn-only">
+				<i class="fa fa-check icon-white"></i>
+				</a>
+			</div>
+
+		</div>
+
+	</div>
 
 </div>
 

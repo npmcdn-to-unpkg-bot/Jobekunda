@@ -1,14 +1,14 @@
 {
     "require": {
-        "algolia/algoliasearch-client-php": "^1.7"
+        "algolia/algoliasearch-client-php": "^1.7",
+        "php-activerecord/php-activerecord": "1.1.2"
     },
 
-    "autoload":{
-
-    	"files":[
-    		"../config/connection.php",
-    		"../config/setup.php"
-
-    	]
+    "autoload": {
+    	    "files": [ "public_html/vendor/php-activerecord/ActiveRecord.php"
+    	    ]
+    
     }
+
+    
 }

@@ -7,10 +7,8 @@ require_once '../config/setup.php';
 	 	$slug = $_POST['slug'];
 	 	$limit = 10;
 
-	 	$query_string = generate_query($slug, $limit, $offset);
-		$stmt = $dbc->prepare("$query_string");
-		$stmt->execute();
-		$data = $stmt -> fetchAll(PDO::FETCH_ASSOC);
+	$data = mt\shots::get($slug, $category, $limit, $offset);
+	
 			echo json_encode($data);
 	}
 

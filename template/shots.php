@@ -5,11 +5,29 @@
 *
 */
 
+// Get URL variables and send to our Engine
+
  $slug = $path['call_parts'][1];
- 
+ $category = null;
+
      if($slug == ''){
         $slug = 'latest';
-     }
+
+          if( $path['query_vars']['cat'] ){
+              $category = $path['query_vars']['cat'];
+    
+            }
+
+     } 
+     
+$image_path = 'images/shots/large/';
+
+
+
+$shots = mt\shots::get($slug, $category );
+
+// echo json_encode();
+// echo VAR_DUMP($shots);
 ?> 
     <section class="main-feed-header clearfix">
     
@@ -41,8 +59,9 @@
             <button class="icon-round mdl-button btn" id="dropdown">
             <i class="icon-center mdi mdi-dots-vertical" data-type="hidden"></i>
             </button>
+
       <div class="mt-menu-container" style="visibility:hidden;" id="m9menu">
-          <ul class="" for="hdrbtn" data-upgraded=",MaterialMenu,MaterialRipple" style="clip: rect(0px 142px 160px 0px);">
+          <ul>
             <li class="mt-list-btn btn" style="transition-delay: 0.012s;"><a href="?cat=male" class="m-0">Male</a></li>
             <li class="mt-list-btn btn" style="transition-delay: 0.084s;"><a href="?cat=female" class="m-0">Female</a></li>
             <li class="mt-list-btn btn" style="transition-delay: 0.156s;"><a href="?cat=kids" class="m-0">Kids</a></li>
@@ -53,17 +72,33 @@
     </section>
     <div class = "pageContainer">
             <div class="clearfix mt-product-wrapper transit-3 grid">
-             <?php
 
-                       /***** Load shots !! */
 
-                    $image_path = 'images/shots/large/';
-                    load_shots($dbc, $image_path, $path, $slug);
+             <?php  foreach ($shots as $shot) : ?>
+
+                        <div class="product-item grid-item grid-item">
+                          <figure class="product-thumb-image">
+                            <a href="<?=base($path).'/shot/'. $shot->shotfilename.'/'?>" class="sp-view">
+                            <div class="image-holder">
+                                <img src="<?=base($path).'/'.$image_path . $shot->shotfilename . '.' . $shot->shotfiletype ?>">
+                            </div>
+                            <div class="dimOverlay"></div>
+                            <figcaption>
+                                <span><img src="<?=base($path)?>/images/icons/search67.svg"></span>
+                            </figcaption>
+                            </a>
+                          </figure>
+                        </div>
+
+                <?php endforeach; ?>
+
+                    <!--    /***** Load shots !! */
+
+                    
+                    load_shots($dbc, $image_path, $path, $slug); -->
 
           
                      
-
-             ?>
         </div>
         
         <section class="mt-load-more-wrapper" style="display:none">

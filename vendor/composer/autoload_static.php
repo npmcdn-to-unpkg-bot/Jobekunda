@@ -7,13 +7,27 @@ namespace Composer\Autoload;
 class ComposerStaticInit91a576274fc6d64c48dca39853fa6423
 {
     public static $files = array (
-        'a34782e53ab24b5a658aa8ed80584fe8' => __DIR__ . '/../..' . '/../config/connection.php',
-        'fa71cb89405a9884bdaa646d58c9de7f' => __DIR__ . '/../..' . '/../config/setup.php',
+        '9493bbc5e45864b5fecc2736a1de623c' => __DIR__ . '/../..' . '/__DIR__ . /public_html/vendor/php-activerecord/ActiveRecord.php',
+    );
+
+    public static $prefixesPsr0 = array (
+        'A' => 
+        array (
+            'AlgoliaSearch\\Tests' => 
+            array (
+                0 => __DIR__ . '/..' . '/algolia/algoliasearch-client-php/tests',
+            ),
+            'AlgoliaSearch' => 
+            array (
+                0 => __DIR__ . '/..' . '/algolia/algoliasearch-client-php/src',
+            ),
+        ),
     );
 
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixesPsr0 = ComposerStaticInit91a576274fc6d64c48dca39853fa6423::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

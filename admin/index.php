@@ -1,16 +1,11 @@
-<?php   
+<?php
 include "config.php";
 session_start();
-
-
 
 if(!logged_in()){ 
   
   header("Location: portal.php");
 }
-
-
-
 //print_r($path);
  ?>
 <!DOCTYPE html>

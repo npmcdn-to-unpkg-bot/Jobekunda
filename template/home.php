@@ -103,7 +103,7 @@
             <p class="attract-me">Inspiration comes in many ways. What you wear tells alot about you. On your next meeting, interview, every part of the Uber experience has been designed around your safety and security.</p>
 
             <div class="mt-call-text">
-              <a href="" id="buzzle">See Classic wears <i class="fa fa-arrow-circle-right hvr-buzz-out" aria-hidden="true"></i></a>
+              <a href="" id="buzzle">See Classic wears <i class="mdi mdi-arrow-right-bold hvr-buzz-out" aria-hidden="true"></i></a>
             </div>
           </div>
           <div>
@@ -113,7 +113,15 @@
 
         <div class="mt-2cols-wrap mdl-cards">
           <div class="mt-small-banner-wrapper">
-            <div class="mt-small-banner"></div>
+            <ul>
+              <li>
+                <div class="mt-small-banner"></div>
+              </li>
+              <li>
+                <div class="mt-small-banner"></div>
+              </li>
+            </ul>
+            
           </div>
         </div>
       </div>
