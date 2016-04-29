@@ -43,9 +43,9 @@ class pages {
         if (!isset($path['call_parts'][0]) || $path['call_parts'][0] == '') {
             $path['call_parts'][0] = 'home';
 
-        } else{
+        } 
             $slug = $path['call_parts'][0];
-        }
+        
 
         $page = \page::find(array('conditions' => array('slug = ? AND mt_group = ?', $slug, $group) ));
 

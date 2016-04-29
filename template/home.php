@@ -79,10 +79,30 @@
                 <div class="mt-row-wrapper clearfix">
 
             <?php
-                  /**Load featured shots**/
-                  load_featured_shots($dbc, $image_path, $path, $query = 'features', $limit = 21);
 
-                ?>
+            $shots = mt\shots::get('featured', '', 21 );
+
+
+                    foreach ($shots as $shot) :  
+    ?>
+
+    <div class ="lth-col-1 ht-col-1 all-container">
+          <figure class="lth-wrapper" style="background:url('<?=base($path).'/'.$image_path . $shot->shotfilename . '.' . $shot->shotfiletype ?>');background-size: cover;">
+            <a href="<?=base($path).'/shot/'. $shot->shotfilename?>" class="sp-view">
+              <img src="<?=base($path).'/'.$image_path . $shot->shotfilename . '.' . $shot->shotfiletype ?>" alt="" style="display: none;">
+              <div class="grid-item overlay-items">
+              <figcaption>
+              <span><img src="<?=base($path)?>/images/icons/search67.svg"></span>
+              </figcaption>
+              </div>
+            </a>
+          </figure>
+      </div>
+
+        <?php endforeach; ?>
+
+
+                 
                 
   </div>
       
