@@ -22,9 +22,11 @@ function load_shots($dbc, $image_path, $path, $query)
     $images = get_shots($dbc, $query);
     foreach ($images as $image) {
         ?>
-        <div class="mt-shot-card" data-id="<?=$image['shotID'];?>">
+        <div class="mt-shot-card">
             <div class="mt-shot-image">
+                <a href="?id=<?=$image['shotID'];?>" style="margin:0;">
                 <img src="<?=base($path).'../../'.'/'.$image_path . $image['shotFileName'] . '.' . $image['shotFileType'] ?>">
+                </a>
             </div>
         </div>
 

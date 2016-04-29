@@ -48,7 +48,7 @@ function data_page($dbc, $slug, $owner){
 
     function getShot_Data($dbc, $image){
 
-        $stmt = $dbc->prepare("SELECT * FROM shots WHERE shotFileName = :image LIMIT 1");
+        $stmt = $dbc->prepare("SELECT * FROM shots WHERE shotID = :image LIMIT 1");
     $stmt->bindParam(':image', $image, PDO::PARAM_INT);
     $stmt->execute();
     $data = $stmt->fetch();

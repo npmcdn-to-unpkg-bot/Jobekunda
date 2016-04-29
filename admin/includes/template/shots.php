@@ -5,6 +5,25 @@
  * Date: 4/24/2016
  * Time: 6:30 AM
  */
+$image_path = 'images/shots/large/';
+$shotUrl = '';
+$shotTitle = '';
+$sourceURL = '';
+$category = '';
+$description = '';
+
+if( $path['query_vars']['id'] ){
+    $shotid = $path['query_vars']['id'];
+
+    $data = getShot_Data($dbc, $shotid);
+
+    $shotUrl = $data['shotFileName'];
+    $shotTitle = $data['shotName'];
+    $sourceURL = $data['url'];
+    $category = $data['categoryID'];
+    $description = $data['shotDescription'];
+}
+
 ?>
 
 <div class="pageContainer">
@@ -54,17 +73,20 @@
                           </div>
 
                           <section class="mt-pad-wrap">
-                          	<form type="post" action="#">
+                          	<form type="post" action="updateshot.php">
                           		<div class="form-body">
 	              					<div class="mt-form-group">
-	                                    <input type="text" class="" readonly="" value="http://mytailor.me">
+	                                    <input type="text" class="" readonly="" disabled value="<?=$shotUrl?>">
 	                                    <label class="top-label">URL</label>
 	                                </div>
 	                                <div class="mt-form-group">
-	                                    <input type="text" class="" value="test">
+	                                    <input type="text" class="" value="<?=$shotTitle?>">
 	                                    <label class="top-label">Title</label>
-	                                    <!-- <span class="help-block">Some help goes here...</span> -->
 	                                </div>
+                                  <div class="mt-form-group">
+                                      <input type="text" class="" value="<?=$shotTitle?>">
+                                      <label class="top-label">Source URL</label>
+                                  </div>
 	                                <div class="mt-form-group">
 	                                    <select>
 	                                        <option value="1" selected="">Men</option>
@@ -74,15 +96,23 @@
 	                                    </select>
 	                                    <label class="top-label">Category</label>
 	                                </div>
+                                  <div class="md-checkbox">
+                                      <input type="checkbox" id="checkbox113" class="md-check">
+                                      <label>
+                                      <span class="inc"></span>
+                                      <span class="check"></span>
+                                      <span class="box"></span>
+                                      Feature</label>
+                                 </div>
 	                                <div class="mt-form-group">
-	                                    <textarea class="" rows="3"></textarea>
+	                                    <textarea class="" rows="3" value="<?=$description?>"></textarea>
 	                                    <label class="top-label">Description</label>
 	                                </div>
 
 	                            </div>
 
 	                            <div class="mt-form-actions noborder">
-	                                <button type="button" class="btn btn-blue">Submit</button>
+	                                <button type="submit" class="btn btn-blue" >Submit</button>
 	                                <button type="button" class="btn default">Cancel</button>
 	                            </div>
                           	</form>
@@ -109,7 +139,24 @@
                </section>
 
                <!-- May need this later -->
-                <div class="call-admin-head clearfix"></div>
+                <div class="call-admin-head clearfix">
+                      <div class="right-icons-wrapper">
+                      <ul class="right-icons">
+                          <li><a href="">
+                              <img src="images/icons/chat.svg" alt="" width="20px">
+                            </a></li>
+                            <li><a href="<?=base($path);?>/shots">
+                              <img src="images/icons/media.svg" alt="" width="20px">
+
+                            </a></li>
+                            <li><a href="">
+                              <img src="images/icons/adduser.svg" alt="" width="20px">
+                            </a></li>
+
+                      </ul>
+
+                  </div>
+                </div>
 
                 	<!-- Dumps all images -->
                 <div class="single-column mt-shots-card clearfix">
@@ -119,8 +166,8 @@
 
                        /***** Load shots !! */
 
-                    $image_path = 'images/shots/large/';
-                    load_shots($dbc, $image_path, $path, $slug);
+
+                    load_shots($dbc, $image_path, $path, '');
 
           
                      

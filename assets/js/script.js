@@ -75,14 +75,28 @@ Mytailor.me
                           if ( $(this).children().first().attr('data-type') == 'hidden'){
                                $menu.dropIt($(this));
 
+                               $('html').click(function() {
+
+                                    $menu.closeIt($('#dropdown'));   //Hide the menus if visible
+
+                                });
+
+
+
                           }else{
+
                                $menu.closeIt($(this));
+
                           }
 
                       }); 
 
 
 
+
+                                              $('#dropdown').click(function(event){
+                            event.stopPropagation();
+                          });
 /*
 * DropIt() will toggle the menu and changes the
 * data-'type' attribute of the trigger to visible

@@ -10,55 +10,6 @@ function inc_view($image, $dbc){
 		$stmt->execute();
 }
 
-/* -------------------------------------------------------------------------------- */
-/* Generate Query String from url
-/* -------------------------------------------------------------------------------- */
-function generate_query($slug, $limit, $offset){
-
-		switch ($slug) {
-        case 'latest':
-                $queryString = "SELECT * FROM shots
-                    ORDER BY uploadDate DESC,
-                    views DESC,
-                    shotID DESC
-                    LIMIT $limit offset $offset";
-
-            	break;
-        
-        case 'trending':
-                $queryString = "SELECT AVG(views/DATEDIFF(NOW(), uploadDate)) 
-                    as Popularity, shots.* 
-                    FROM shots GROUP BY shotID 
-                    ORDER by popularity DESC LIMIT $limit offset $offset";
-            	break;
-
-        case 'featured':
-                $queryString = "SELECT * FROM shots
-                      WHERE featured = 1
-                      ORDER BY views DESC,
-                      shotID DESC LIMIT $limit offset $offset";
-
-            	break;
-
-        case 'features':
-                $queryString = "SELECT * FROM shots
-                      WHERE featured = 1
-                      ORDER BY RAND() LIMIT 9";
-
-                break;
-
-        default:
-                $queryString = "SELECT * FROM shots
-                      ORDER BY uploadDate DESC,
-                      views DESC,
-                      shotID DESC LIMIT $limit offset $offset";
-             
-                break;
-
-    }
-
-   		return $queryString;
-}
 
 function activateButton($var1, $var2, $active){
         if ($var1 == $var2) {

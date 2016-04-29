@@ -188,39 +188,7 @@ Waves.init();
 
 
 
-// Content Loader
-$(document).ready(function(){
-
-//set trigger and content variable
-    var trigger = $('.snd-navigation a'),
-        container = $('#_5h60');
-
-        //Fire on click
-
-        trigger.on('click', function(){
-
-          //set $this for re-use. Set trigger from data attribute
-
-          var $this = $(this),
-            target = $this.data('target');
-          if (!$(this).hasClass("n-active")) {
-            // Remove the class from anything that is active
-            $("a.n-active").removeClass("n-active");
-            // And make this active
-            $(this).addClass("n-active");
-  }
-
-        $('#bread').text(target);
-
-            //Load target page into container
-
-            container.load('template/user/' + target + '.php');
-
-            //stop link
-            return false;
-        });
-
-});
+// 
 
 
 //Login effect

@@ -1060,12 +1060,23 @@ ul.icons li{
 }
 
 
+.mt-form-group input[disabled]{
+    cursor: not-allowed;
+}
+
+.md-checkbox{
+    margin-bottom: 20px;
+}
+.md-checkbox input[type=checkbox] {
+    visibility: hidden;
+    position: absolute;
+}
 
 
+.md-checkbox label{
+        color: #03A9F4;
 
-
-
-
+}
 
 
 

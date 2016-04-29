@@ -8,21 +8,27 @@
  * @author      Jobizzness
  */
 
-
 class shots {
-        
+
+
         // Gets the shots based on the query stated
         public static function get($slug, $category = null, $limit = 20, $offset = 0){
 
+			$whereClause = '';
+			if($category){
+
+					$whereClause = "category = '$category' ";
+			}
         	switch ($slug) {
 
         		case 'trending': 
         		    $shots = \shot::find('all',
 					array('select'=>'AVG(views/DATEDIFF(NOW(), uploadDate)) as Popularity, shots.*',
-						'group'=>'shotID',
-						'order' => 'Popularity desc',
-						'limit'=> $limit,
-						'offset'=>$offset));
+							'conditions'=> $whereClause,
+							'group'=>'shotID',
+							'order' => 'Popularity desc',
+							'limit'=> $limit,
+							'offset'=>$offset));
 
         			break;
 
@@ -39,6 +45,7 @@ class shots {
         		#Then show latest shots
         			$shots = \shot::find('all',
 						array('order' => 'uploadDate desc, views desc, shotID desc',
+								'conditions'=> $whereClause,
 								'limit'=> $limit,
 								'offset'=>$offset));
         			break;

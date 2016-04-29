@@ -1,6 +1,6 @@
 <?php
     //setup
-    //error_reporting(0);
+    error_reporting(0);
     $site_title = 'MyTailor';
 
  require_once '../../config/connection.php';

@@ -2,17 +2,16 @@
 
 require_once '../config/setup.php';
 $row_count = row_count($dbc);
-// print_r($path);
 
 
  ?>
 <!DOCTYPE html>
 <html>
 <head>
-   <title><?php echo $site_title .' | '. $page['pageTitle'];?></title>
+   <title><?php echo $site_title .' | '. $page->pagetitle?></title>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta name="description" content="<?=$page['metaDesc'];?>">
+   <meta name="description" content="<?=$page->metadesc?>">
    <link rel="stylesheet" href="<?= base($path);?>/assets/css/Style.css" type="text/css"/>
    <link rel="shortcut icon" href="<?= base($path);?>/images/favicon.png" />
    <link rel="stylesheet" href="<?= base($path);?>/assets/css/jquery.mCustomScrollbar.min.css" />
