@@ -80,7 +80,7 @@
 
             <?php
 
-            $shots = mt\shots::get('featured', '', 21 );
+            $shots = mt\shots::get('featured', '', 9 );
 
 
                     foreach ($shots as $shot) :  
@@ -137,9 +137,9 @@
               <li>
                 <div class="mt-small-banner"></div>
               </li>
-              <li>
+             <!--  <li>
                 <div class="mt-small-banner"></div>
-              </li>
+              </li> -->
             </ul>
             
           </div>

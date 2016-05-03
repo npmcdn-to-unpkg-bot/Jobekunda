@@ -13,7 +13,7 @@ function main_nav($dbc, $path, $group){
           $stmt->execute();
              while ($nav = $stmt -> fetch()) { ?>
   <li<?php selected_page($path['call_parts'][0], $nav['slug'], ' class="mt-list-active"') ?>><a href="<?=base($path).'/'.$nav['slug']?>" class="mt-sidebar-link btn"><i class="mt-icon mt-<?=$nav['slug'];?>"></i><?=$nav['pageLabel'];?></a></li>
-  <?php }        
+  <?php }
 }
 
 /* -------------------------------------------------------------------------------- */

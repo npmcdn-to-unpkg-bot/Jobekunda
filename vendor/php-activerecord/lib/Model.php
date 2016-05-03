@@ -85,7 +85,7 @@ class Model
 	 *
 	 * @var array
 	 */
-	private $attributes = array();
+	public $attributes = array();
 
 	/**
 	 * Flag whether or not this model's attributes have been modified since it will either be null or an array of column_names that have been modified

@@ -12,11 +12,11 @@
 
      if($slug == ''){
         $slug = 'latest';
-     } elseif( $path['query_vars']['cat'] ){
+     if( $path['query_vars']['cat'] ){
 
              $category = $path['query_vars']['cat'];
          }
-
+     }
      
 $image_path = 'images/shots/large/';
 
@@ -60,17 +60,16 @@ $shots = mt\shots::get($slug, $category );
 
       <div class="mt-menu-container" style="visibility:hidden;" id="m9menu">
           <ul>
-            <li class="mt-list-btn btn" style="transition-delay: 0.012s;"><a href="?cat=male" class="m-0">Male</a></li>
-            <li class="mt-list-btn btn" style="transition-delay: 0.084s;"><a href="?cat=female" class="m-0">Female</a></li>
-            <li class="mt-list-btn btn" style="transition-delay: 0.156s;"><a href="?cat=kids" class="m-0">Kids</a></li>
-            <li class="mt-list-btn btn" style="transition-delay: 0.156s;"><a href="?cat=accessories" class="m-0">Accessories</a></li>
+            <li class="mt-list-btn btn" style="transition-delay: 0.012s;"><a href="?cat=ma" class="m-0">Male</a></li>
+            <li class="mt-list-btn btn" style="transition-delay: 0.084s;"><a href="?cat=fm" class="m-0">Female</a></li>
+            <li class="mt-list-btn btn" style="transition-delay: 0.156s;"><a href="?cat=ki" class="m-0">Kids</a></li>
+            <li class="mt-list-btn btn" style="transition-delay: 0.156s;"><a href="?cat=ac" class="m-0">Accessories</a></li>
           </ul></div>
 
     </div>
     </section>
     <div class = "pageContainer">
             <div class="clearfix mt-product-wrapper transit-3 grid">
-
 
              <?php  foreach ($shots as $shot) : ?>
 
@@ -89,13 +88,6 @@ $shots = mt\shots::get($slug, $category );
                         </div>
 
                 <?php endforeach; ?>
-
-                    <!--    /***** Load shots !! */
-
-                    
-                    load_shots($dbc, $image_path, $path, $slug); -->
-
-          
                      
         </div>
         
@@ -130,19 +122,30 @@ $shots = mt\shots::get($slug, $category );
     // fetch images function...
       function load_data($offset){
           $.ajax({
-              url: "<?= base($path);?>/loadmore_shots.php",
+              url: "<?=base($path);?>/ajax/more_shots/",
               type: "post",
               data: {"offset": $offset, "slug": $slug},
               dataType: "json",
               success:function(response){
 
+                // console.log(response);
+                // return;
                   var $grid = $('.grid').masonry({
                       columnWidth: '.grid-item',
                       itemSelector: '.grid-item'
                       });
 
-                    $(response).each(function(index){
-                      var $items = $("<div class='product-item grid-item grid-item'><figure class='product-thumb-image'><a href='"+'<?= base($path);?>/shot/'+response[index].shotFileName+'/'+"' class='sp-view'><div class='image-holder'><img src='"+'<?= base($path);?>/'+$image_path+response[index].shotFileName+'.'+response[index].shotFileType+"'></div><div class='dimOverlay'></div><figcaption><span><img src='<?= base($path);?>/images/icons/search67.svg'></span></figcaption></a></figure></div>")
+
+                    $(response).each(function(index, value){
+
+                      var $items = $("<div class='product-item grid-item grid-item'><figure class='product-thumb-image'><a href='"
+                        +'<?= base($path);?>/shot/'
+                        +value.shotfilename+'/'
+                        +"' class='sp-view'><div class='image-holder'><img src='"
+                        +'<?= base($path);?>/'
+                        +$image_path+value.shotfilename
+                        +'.'+value.shotfiletype
+                        +"'></div><div class='dimOverlay'></div><figcaption><span><img src='<?= base($path);?>/images/icons/search67.svg'></span></figcaption></a></figure></div>")
 
                             $('.grid').imagesLoaded(function(){
 
@@ -155,6 +158,9 @@ $shots = mt\shots::get($slug, $category );
                                       
                   });
                                       
+              },
+              error:function(err, msg){
+                console.log(err);
               }
           });
       }

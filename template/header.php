@@ -21,7 +21,7 @@
           <input type="search" id="q" autocapitalize="off" autocomplete="off" autocorrect="off" role="textbox" spellcheck="false" type="text" value="" placeholder="search for items like men, women, shirts, shoes and more ..."/>
       </form>
     </div>
-    <button class="icon-round mdl-button" style="visibility:hidden;">
+    <button class="icon-round mdl-button mt-toggle-search" style="visibility:hidden;">
         <i class="mdi mdi-magnify icon-center" data-type="search"></i>
       </button>
     </div><!-- Main bar ends -->  

@@ -17,3 +17,22 @@ function activateButton($var1, $var2, $active){
           echo "$active";
         }
 }
+
+function mtToJson($data, $options = null) {
+
+	return $data;
+		// //$out = "[";
+		// 	foreach( $data as $row) {
+
+		// 		if ($options != null)
+		// 		$out .= $row->to_json($options);
+
+		// 		else 
+		// 		$out .= $row->to_json();
+		// 		$out .= ",";
+		// 	}
+
+		// 	$out = rtrim($out, ',');
+		// 	//$out .= "]";
+		// return $out;
+}

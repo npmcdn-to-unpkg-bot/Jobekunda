@@ -1,6 +1,47 @@
-<?php   session_start();
+<?php   
+/**
+ * 
+ *
+ * @package  MyTailor
+ * @author   Matarr Jobe <Jobizzness@gmail.com>
+ */
 
-require_once '../config/setup.php';
+
+/** Define CONFIG as our main setup directory */
+define( 'CONFIG', dirname(dirname(__FILE__)) . '/CONFIG/' );
+
+
+  require_once CONFIG . 'setup.php';
+
+/*
+|--------------------------------------------------------------------------
+| Run The Application
+|--------------------------------------------------------------------------
+|
+| Handle the incoming request
+| through our class, and send the associated response back to
+| the client's browser allowing them to enjoy the creative
+| and wonderful application we have prepared for them.
+|
+*/
+
+    $path = mt\Http\Requests::get_path();
+
+/*
+* If we have the users URL ? 
+* we can now load the right page for our friend
+*
+*/
+
+
+       if (isset($path)) {
+
+          $page = mt\pages::loadPage($path, 'public');
+
+
+      }
+
+
 $row_count = row_count($dbc);
 
 
@@ -17,7 +58,6 @@ $row_count = row_count($dbc);
    <link rel="stylesheet" href="<?= base($path);?>/assets/css/jquery.mCustomScrollbar.min.css" />
    <link rel="stylesheet" href="http://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css">
    <script src="<?= base($path);?>/assets/js/jquery-2.1.4.min.js"></script>
-   <script src="<?= base($path);?>/assets/js/Angular/angular.min.js"></script>
    <script src="<?= base($path);?>/assets/apps/algoliasearch-client-js-master/dist/algoliasearch.min.js"></script>
    <script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.jquery.min.js"></script>
    <script src="http://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>

@@ -8,7 +8,7 @@
  * @author      Jobizzness
  */
 
-class shots extends \ActiveRecord\Model {
+class shots {
 
 
         // Gets the shots based on the query stated
@@ -33,15 +33,8 @@ class shots extends \ActiveRecord\Model {
         			break;
 
         		case 'featured':
-					if(!empty($category) AND $category != '') {
-
-						$whereClause = " AND category = '$category'";
-					}else{
-						$whereClause = '';
-						}
-
         			$shots = \shot::find('all',
-						array('conditions'=>'featured = 1 ' . $whereClause,
+						array('conditions'=>'featured = 1',
 							'order' => 'views desc, shotID desc',
 							'limit'=> $limit,
 							'offset'=>$offset));
@@ -51,10 +44,11 @@ class shots extends \ActiveRecord\Model {
 
         		#Then show latest shots
         			$shots = \shot::find('all',
-						array('conditions'=> $whereClause,
-								'order' => 'uploadDate desc, views desc, shotID desc',
+						array('order' => 'uploadDate desc, views desc, shotID desc',
+								'conditions'=> $whereClause,
 								'limit'=> $limit,
 								'offset'=>$offset));
+        			break;
         	}       			
 
         			return $shots;

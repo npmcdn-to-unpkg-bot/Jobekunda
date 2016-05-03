@@ -1883,7 +1883,7 @@ p.attract-me {
 
 .mt-small-banner {
   height: 55vh;
-  /*    background: url('../../images/background/bb.jpg');*/
+  background: url("../../images/background/bb.jpg");
   background-size: cover;
 }
 
