@@ -63,7 +63,7 @@ $row_count = row_count($dbc);
    <script src="http://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
 </head>
 <body class="mt-layout">
-    <?php  require_once '../config/page.php';   ?>
+    <?php  require_once CONFIG . 'page.php';   ?>
 
       <!-- Transfer later -->
     <div class="mt-layout-black__cover"></div>
