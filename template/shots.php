@@ -7,10 +7,11 @@
 
 // Get URL variables and send to our Engine
 
- $slug = $path['call_parts'][1];
+isset($path['call_parts'][1]) ?  $slug = $path['call_parts'][1] : $slug = 'latest';
+
  $category = null;
 
-     if($slug == ''){
+     if(empty($slug)){
         $slug = 'latest';
 
       }
@@ -119,15 +120,17 @@ $shots = mt\shots::get($slug, $category );
       $numberOfPages = Math.ceil(($totalRecords - 20) / $recordsPerPage),
       $image_path = 'images/shots/large/',
       $busy = false,
-      $offset = 20;
-      $slug = "<?php echo $slug; ?>"
+      $offset = 20,
+      $slug = "<?=$slug; ?>",
+      $category = "<?=$category;?>"
+
 
     // fetch images function...
       function load_data($offset){
           $.ajax({
               url: "<?=base($path);?>/ajax/more_shots/",
               type: "post",
-              data: {"offset": $offset, "slug": $slug},
+              data: {"offset": $offset, "slug": $slug, "category": $category},
               dataType: "json",
               success:function(response){
 

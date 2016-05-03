@@ -5,10 +5,11 @@
 
 	 	$offset = $_POST['offset'];
 	 	$slug = $_POST['slug'];
+	 	$category = $_POST['category'];
 	 	$limit = 10;
 	 	//$category = $_GET['category'];
 
-	 	$data = mt\shots::get($slug, '', $limit, $offset);
+	 	$data = mt\shots::get($slug, $category, $limit, $offset);
 
 	 	if (!empty($data)) {
 	 		
