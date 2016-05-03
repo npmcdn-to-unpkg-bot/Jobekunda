@@ -15,9 +15,9 @@
 
       }
 
-     if( $path['query_vars']['cat'] ){
+     if(isset($_GET['cat'])){
 
-             $category = $path['query_vars']['cat'];
+             $category = $_GET['cat'];
          }
      
      
