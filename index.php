@@ -8,7 +8,7 @@
 
 
 /** Define CONFIG as our main setup directory */
-define( 'CONFIG', dirname(dirname(__FILE__)) . '/CONFIG/' );
+define( 'CONFIG', dirname(dirname(__FILE__)) . '/config/' );
 
 
   require_once CONFIG . 'setup.php';
