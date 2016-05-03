@@ -15,9 +15,9 @@
 
       }
 
-     if(isset($path['ct'])){
+     if(isset($path['query_vars']['cat'])){
 
-             $category = $_path['ct'];
+             $category = $path['query_vars']['cat'];
          }
      
      
@@ -63,10 +63,10 @@ $shots = mt\shots::get($slug, $category );
 
       <div class="mt-menu-container" style="visibility:hidden;" id="m9menu">
           <ul>
-            <li class="mt-list-btn btn" style="transition-delay: 0.012s;"><a href="?ct=ma" class="m-0">Male</a></li>
-            <li class="mt-list-btn btn" style="transition-delay: 0.084s;"><a href="?ct=fm" class="m-0">Female</a></li>
-            <li class="mt-list-btn btn" style="transition-delay: 0.156s;"><a href="?ct=ki" class="m-0">Kids</a></li>
-            <li class="mt-list-btn btn" style="transition-delay: 0.156s;"><a href="?ct=ac" class="m-0">Accessories</a></li>
+            <li class="mt-list-btn btn" style="transition-delay: 0.012s;"><a href="?cat=ma" class="m-0">Male</a></li>
+            <li class="mt-list-btn btn" style="transition-delay: 0.084s;"><a href="?cat=fm" class="m-0">Female</a></li>
+            <li class="mt-list-btn btn" style="transition-delay: 0.156s;"><a href="?cat=ki" class="m-0">Kids</a></li>
+            <li class="mt-list-btn btn" style="transition-delay: 0.156s;"><a href="?cat=ac" class="m-0">Accessories</a></li>
           </ul></div>
 
     </div>
