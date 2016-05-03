@@ -12,11 +12,14 @@
 
      if($slug == ''){
         $slug = 'latest';
+
+      }
+
      if( $path['query_vars']['cat'] ){
 
              $category = $path['query_vars']['cat'];
          }
-     }
+     
      
 $image_path = 'images/shots/large/';
 
