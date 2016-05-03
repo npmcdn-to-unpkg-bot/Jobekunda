@@ -614,6 +614,7 @@ a.mt-sidebar-link:hover {
 }
 
 button.icon-round {
+  cursor: pointer;
   border-radius: 50%;
   float: right;
   display: inline-flex;

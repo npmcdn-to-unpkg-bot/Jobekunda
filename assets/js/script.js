@@ -22,8 +22,8 @@ Mytailor.me
                              if ($(this).children().first().attr('data-type') == 'search') {
                                   $('.pull-left').hide();
                                 $(this).children().first().attr('data-type', 'close');
-                                $(this).find('.icon-round').removeClass('fa-search');
-                                $(this).find('.icon-round').addClass('fa-times-circle');
+                                $(this).find('.icon-center').removeClass('mdi-magnify');
+                                $(this).find('.icon-center').addClass('mdi-close-circle');
                                 $('.mt-search-wrapper').removeClass('hide-on-phone');
                                
 
@@ -33,8 +33,8 @@ Mytailor.me
                           $('.pull-left').show();
                           $(this).children().first().attr('data-type', 'search');
                           $('.mt-search-wrapper').addClass('hide-on-phone');
-                          $(this).find('.icon-round').removeClass('fa-times-circle');
-                          $(this).find('.icon-round').addClass('fa-search');
+                          $(this).find('.icon-center').removeClass('mdi-close-circle');
+                          $(this).find('.icon-center').addClass('mdi-magnify');
                       }
                     });
               	//=========== Side Bar ==========
