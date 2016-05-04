@@ -89,10 +89,11 @@ if( $path['query_vars']['id'] ){
                                   </div>
 	                                <div class="mt-form-group">
 	                                    <select>
-	                                        <option value="1" selected="">Men</option>
-	                                        <option value="2">Female</option>
-	                                        <option value="3">Kids</option>
-	                                        <option value="4">Accessories</option>
+                                        <option value="" selected></option>
+	                                        <option value="ma">Men</option>
+	                                        <option value="fm">Female</option>
+	                                        <option value="ki">Kids</option>
+	                                        <option value="ac">Accessories</option>
 	                                    </select>
 	                                    <label class="top-label">Category</label>
 	                                </div>
@@ -167,7 +168,7 @@ if( $path['query_vars']['id'] ){
                        /***** Load shots !! */
 
 
-                    load_shots($dbc, $image_path, $path, '');
+                    //load_shots($dbc, $image_path, $path, '');
 
           
                      

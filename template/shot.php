@@ -1,6 +1,6 @@
 <?php
 
-if (isset($path['call_parts'][1]) AND $path['call_parts'][1] != '') {
+if (isset($path['call_parts'][1]) AND !empty($path['call_parts'][1])) {
 
 	$image = $path['call_parts'][1];
 	$shotData = getShot_data($dbc, $image);
@@ -52,21 +52,42 @@ if (isset($path['call_parts'][1]) AND $path['call_parts'][1] != '') {
 		<div class="mt-shot-cover">
 			<img src="<?=base($path)?>/images/shots/large/<?= $shotData['shotFileName']?>.jpg">
 		</div>
+		<div class="shot-info" style="
+    padding: 1em 3em;
+    min-height: 20px;
+    background: #F8F8F8;
+">
+				<div class="shot-title" style="
+    padding: 1em 0;
+"><a href="#" style="
+    font-size: larger;
+    text-decoration: underline;
+    /* font-weight: 600; */
+    /* color: #795548; */
+">African Skirts &amp; tops</a></div>
+				<div class="shot-description"><p style="
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #646464;
+">This is just something i've been working on, i hope its dope and yall like it and all you knoe how posts can get. something i've been working on, i hope its dope and yall like it and all you knoe how posts can get.</p></div>
+			</div>
 	</section>
 
 	<div class="mt-shots-info-wrap mt-card-light">
 		<div class="mt-shot-info-head">
 			<div class="mt-shot-user-actions-wrap">
 				<ul class="mt-shot-user-actions">
+
 				<li class="each-action">
-						<a href="#">
-							<i class="mdi mdi-eye"></i>
-							<span>5k</span> views
-						</a>
-					</li>
-					<li class="each-action">
-						<a href="#" class="">
-							<i class="mdi mdi-heart-outline" style="font-size: 2em;"></i>
+					<a href="#" class="">
+						<i class="mdi mdi-heart-outline" style="font-size: 2em;color: #F23054;"></i>
+						<span>2k</span>
+					</a>
+				</li>
+				<li class="each-action">
+						<a>
+							<i class="mdi mdi-eye" style="font-size: 2em;"></i>
+							<span>5k</span>
 						</a>
 					</li>
 

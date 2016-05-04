@@ -7,7 +7,7 @@
  */
 
 
-/** Define CONFIG as our main setup directory */
+/** Define CONFIG as our main config directory */
 define( 'CONFIG', dirname(dirname(__FILE__)) . '/config/' );
 
 
@@ -25,7 +25,7 @@ define( 'CONFIG', dirname(dirname(__FILE__)) . '/config/' );
 |
 */
 
-    $path = mt\Http\Requests::get_path();
+    $path = mt\Http\Requests::capture();
 
 /*
 * If we have the users URL ? 
@@ -33,13 +33,14 @@ define( 'CONFIG', dirname(dirname(__FILE__)) . '/config/' );
 *
 */
 
+ 
 
        if (isset($path)) {
 
-          $page = mt\pages::loadPage($path, 'public');
 
+            $page = mt\pages::getPage($path); 
 
-      }
+        }
 
 
 $row_count = row_count($dbc);
@@ -53,25 +54,33 @@ $row_count = row_count($dbc);
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content="<?=$page->metadesc?>">
-   <link rel="stylesheet" href="<?= base($path);?>/assets/css/Style.css" type="text/css"/>
-   <link rel="shortcut icon" href="<?= base($path);?>/images/favicon.png" />
-   <link rel="stylesheet" href="<?= base($path);?>/assets/css/jquery.mCustomScrollbar.min.css" />
+   <link rel="stylesheet" href="<?=base($path);?>/assets/css/Style.css" type="text/css"/>
+   <link rel="shortcut icon" href="<?=base($path);?>/images/favicon.png" />
+   <link rel="stylesheet" href="<?=base($path);?>/assets/css/jquery.mCustomScrollbar.min.css" />
    <link rel="stylesheet" href="http://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css">
-   <script src="<?= base($path);?>/assets/js/jquery-2.1.4.min.js"></script>
-   <script src="<?= base($path);?>/assets/apps/algoliasearch-client-js-master/dist/algoliasearch.min.js"></script>
+   <script src="<?=base($path);?>/assets/js/jquery-2.1.4.min.js"></script>
+   <script src="<?=base($path);?>/assets/apps/algoliasearch-client-js-master/dist/algoliasearch.min.js"></script>
    <script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.jquery.min.js"></script>
    <script src="http://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
 </head>
 <body class="mt-layout">
-    <?php  require_once CONFIG . 'page.php';   ?>
 
+    <?php  
+
+      include CONFIG .'page.php';
+
+
+    ?>
       <!-- Transfer later -->
     <div class="mt-layout-black__cover"></div>
 
-    <!-- Apps Script -->
+
+    <!--Main Plugins-->
     <script src="<?= base($path);?>/assets/js/plugins.js"></script>
+    <!-- Custom Scripts -->
     <script src="<?= base($path);?>/assets/js/script.js"></script>
 
+    <!-- Google Analytics -->
      <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

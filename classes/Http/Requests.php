@@ -8,20 +8,22 @@
  */
 
 
+// Looks at the URL and what the user is asking for ? If the user has access to that information
+// It sends a response Which could be the page or a redirect to another page..
+// Loads the right page and the template..
+
 
 
 class Requests {
 
+
+
 /* -------------------------------------------------------------------------------- */
 /* gets url path and break into a multi dimensional array
 /* -------------------------------------------------------------------------------- */
-    public function __construct(){
-
-    }
-
    
 
-public static function get_path() {
+public static function capture() {
  
     $path = [];
     if (isset($_SERVER['REQUEST_URI'])) {
