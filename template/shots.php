@@ -28,8 +28,6 @@ $image_path = 'images/shots/large/';
 
 $shots = mt\shots::get($slug, $category );
 
-// echo json_encode();
-// echo VAR_DUMP($shots);
 ?> 
     <section class="main-feed-header clearfix">
     
@@ -40,7 +38,7 @@ $shots = mt\shots::get($slug, $category );
      //   <li><a href=" base($path);/home" title="home">Mytailor</a></li>
      //   <li id="bread"><$page['pageLabel']</li>
      // </ul>
-      //</div>
+      //</di
      ?>
     
     <div class="mt-shots-nav-wrapper">

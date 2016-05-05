@@ -7,7 +7,6 @@
 	 	$slug = $_POST['slug'];
 	 	$category = $_POST['category'];
 	 	$limit = 10;
-	 	//$category = $_GET['category'];
 
 	 	$data = mt\shots::get($slug, $category, $limit, $offset);
 

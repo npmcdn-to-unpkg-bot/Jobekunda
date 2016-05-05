@@ -1,7 +1,7 @@
 <header class="mt-header normal" itemscope itemtype='https://schema.org/WPHeader'>
   <div class="mt-global-header">
     <div class="pull-left">
-      <a class="sideTrigger">
+      <a ng-click="toggleSidebar()" class="sideTrigger">
         <span class="mt-menu-icon">
           <img src="<?=base($path)?>/images/icons/menu.svg"  style="width: 25px; height: 30px;">
         </span>

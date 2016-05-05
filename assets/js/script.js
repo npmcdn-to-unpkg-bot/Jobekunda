@@ -94,7 +94,7 @@ Mytailor.me
 
 
 
-                                              $('#dropdown').click(function(event){
+              $('#dropdown').click(function(event){
                             event.stopPropagation();
                           });
 /*
@@ -223,6 +223,7 @@ Mytailor.me
 
                             //=====Open Overlay
                             $sp_overlay.mt_OpenOval = function(image, name) {
+                                    // i will make an ajax call to get all the data i need then load it bimm
                                       $('.sp-cover>img').attr('src', image);
                                       $body.css({'position': 'static','top': -offsetY + 'px', 'overflow-y': 'hidden'});
                                           $sp_overlay
@@ -263,7 +264,7 @@ Mytailor.me
                                      data: {"image": image},
                                      type: 'post',
                                      success: function() {
-                              
+
                                     }
                                   });
                             }

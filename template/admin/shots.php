@@ -141,22 +141,7 @@ if( $path['query_vars']['id'] ){
 
                <!-- May need this later -->
                 <div class="call-admin-head clearfix">
-                      <div class="right-icons-wrapper">
-                      <ul class="right-icons">
-                          <li><a href="">
-                              <img src="images/icons/chat.svg" alt="" width="20px">
-                            </a></li>
-                            <li><a href="<?=base($path);?>/shots">
-                              <img src="images/icons/media.svg" alt="" width="20px">
 
-                            </a></li>
-                            <li><a href="">
-                              <img src="images/icons/adduser.svg" alt="" width="20px">
-                            </a></li>
-
-                      </ul>
-
-                  </div>
                 </div>
 
                 	<!-- Dumps all images -->
@@ -167,13 +152,21 @@ if( $path['query_vars']['id'] ){
 
                        /***** Load shots !! */
 
+                       $shots = mt\shots::get($slug);
 
-                    //load_shots($dbc, $image_path, $path, '');
+                        foreach ($shots as $shot) :
+        ?>
+        <div class="mt-shot-card">
+            <div class="mt-shot-image">
+                <a href="?id=<?=$shot->shotid;?>" style="margin:0;">
+                <img src="<?=base($path).'../../'.'/'.$image_path . $shot->shotfilename . '.' . $shot->shotfiletype ?>">
+                </a>
+            </div>
+        </div>
 
-          
                      
-
-             ?>
+      <?php endforeach; ?>
+        
 
                 		</div>
                 	</div>

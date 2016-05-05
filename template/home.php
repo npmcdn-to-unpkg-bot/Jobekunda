@@ -19,7 +19,7 @@
             </div>
           </section>
 
-                       <div class="link-02-rt">
+                  <div class="link-02-rt">
 
                   <section class="kilama-01">
                       <a class="_kilama 057_f" href="<?=base($path)?>/shots/trending" title="Trending">
@@ -158,14 +158,12 @@
 
           </section>
 
-          <section style="height:30em;background: #eee;">
-
+          <section class="categories-wrapper" style="height:30em;background: #eee;">
+            <div class="categories-title">
+              Categories
+            </div>
 
           </section>
          
-        </div>
-
-        <div class="mt-2cols-wrap" style="height:40em;">
-
         </div>
       </div>

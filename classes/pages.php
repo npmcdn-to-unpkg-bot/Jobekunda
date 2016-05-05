@@ -20,11 +20,11 @@ class pages {
 	*/
 	public $slug;
 
-    public static function getPage($path, $group = 'public') {
+    public static function getPage($path, $group = 'public', $defaultPage) {
 
 
         if (!isset($path['call_parts'][0]) || empty($path['call_parts'][0])) {
-            $path['call_parts'][0] = 'home';
+            $path['call_parts'][0] = $defaultPage;
 
         }
             $slug = $path['call_parts'][0];

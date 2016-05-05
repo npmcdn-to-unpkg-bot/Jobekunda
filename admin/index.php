@@ -18,7 +18,7 @@ define( 'CONFIG', dirname(dirname(dirname(__FILE__))) . '/CONFIG/' );
 |
 */
 
-    $path = mt\Http\Requests::get_path();
+    $path = mt\Http\Requests::capture();
 
 /*
 * If we have the users URL ? 
@@ -29,11 +29,9 @@ define( 'CONFIG', dirname(dirname(dirname(__FILE__))) . '/CONFIG/' );
 
        if (isset($path)) {
 
-          $page = mt\pages::loadPage($path, 'admin');
-
+          $page = mt\pages::getPage($path, 'admin', 'dashboard');
 
       }
-
 
 
 // session_start();
