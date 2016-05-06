@@ -1091,15 +1091,6 @@ ul.icons li a {
   margin-left: 0.5em;
 }
 
-.right-icons-wrapper {
-  float: right;
-}
-
-ul.right-icons > li {
-  float: left;
-  margin: 0;
-}
-
 /*cards*/
 .chart-card {
   height: 70%;

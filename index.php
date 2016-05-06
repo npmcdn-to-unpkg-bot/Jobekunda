@@ -38,7 +38,7 @@ define( 'CONFIG', dirname(dirname(__FILE__)) . '/config/' );
        if (isset($path)) {
 
 
-            $page = mt\pages::getPage($path, 'public', 'home'); 
+            $page = mt\pages::getPage($path, 'admin', 'home'); 
 
         }
 
@@ -54,19 +54,12 @@ $row_count = row_count($dbc);
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta name="description" content="<?=$page->metadesc?>">
-                <!-- My Styles -->
    <link rel="stylesheet" href="<?=base($path);?>/assets/css/Style.css" type="text/css"/>
    <link rel="shortcut icon" href="<?=base($path);?>/images/favicon.png" />
-          <!-- Plugin Css -->
-            <link rel="stylesheet" href="<?=base($path);?>/assets/css/jquery.mCustomScrollbar.min.css" />
+   <link rel="stylesheet" href="<?=base($path);?>/assets/css/jquery.mCustomScrollbar.min.css" />
    <link rel="stylesheet" href="http://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.css">
-              <!-- Angular Js -->
-                          <script src="<?=base($path);?>/assets/js/jquery-2.1.4.min.js"></script>
-    <script src="<?=base($path);?>/assets/js/angular/angular.min.js"></script>
-    <script src="<?=base($path);?>/assets/js/angular/angular-route.min.js"></script>
-    <script src="<?=base($path);?>/assets/js/angular/angular-animate.min.js"></script>
-              <!-- Alogolia & Instant Search -->
-                <script src="<?=base($path);?>/assets/apps/algoliasearch-client-js-master/dist/algoliasearch.min.js"></script>
+   <script src="<?=base($path);?>/assets/js/jquery-2.1.4.min.js"></script>
+   <script src="<?=base($path);?>/assets/apps/algoliasearch-client-js-master/dist/algoliasearch.min.js"></script>
    <script src="//cdn.jsdelivr.net/algoliasearch/3/algoliasearch.jquery.min.js"></script>
    <script src="http://cdn.jsdelivr.net/instantsearch.js/1/instantsearch.min.js"></script>
 </head>
@@ -86,16 +79,15 @@ $row_count = row_count($dbc);
     <script src="<?= base($path);?>/assets/js/plugins.js"></script>
     <!-- Custom Scripts -->
     <script src="<?= base($path);?>/assets/js/script.js"></script>
-    <script src="<?= base($path);?>/assets/js/ang-script.js"></script>
 
     <!-- Google Analytics -->
      <script>
-     //  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-     //  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-     //  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-     //  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-     //  ga('create', 'UA-56825866-2', 'auto');
-     //  ga('send', 'pageview');
-     // </script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-56825866-2', 'auto');
+      ga('send', 'pageview');
+     </script>
 </body>
 </html>

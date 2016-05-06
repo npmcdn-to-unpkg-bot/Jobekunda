@@ -3,9 +3,9 @@
                 /*
                 *Basic templates
                 */
-    include A_TEMPLATE.'/sidebar.php'; 
+    include A_VIEW.'/sidebar.php'; 
 
-    include A_TEMPLATE.'/header.php';     
+    include A_VIEW.'/header.php';     
 
   
 echo '  <div class = "pagewrapper"style="top: 3.7em;background: #D8D8D8;">';
@@ -17,18 +17,18 @@ echo '  <div class = "pagewrapper"style="top: 3.7em;background: #D8D8D8;">';
         switch($template){
             case 'shots':
                
-                include A_TEMPLATE.'/shots.php';
+                include A_VIEW.'/shots.php';
                 break;
 
             case 'brands':
                
-                include A_TEMPLATE.'/brands.php';
+                include A_VIEW.'/brands.php';
                 break;
 
             DEFAULT:
 
                $path['call_parts'][0] = 'dashboard';
-                include A_TEMPLATE.'/dashboard.php';
+                include A_VIEW.'/dashboard.php';
 
         }
 

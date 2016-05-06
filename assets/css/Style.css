@@ -1907,17 +1907,6 @@ p.attract-me {
   margin: 0;
 }
 
-.categories-wrapper {
-  padding: 20px 10px;
-}
-
-.categories-title {
-  text-align: center;
-  padding: 1em;
-  color: #585555;
-  font-size: 45px;
-}
-
 /* Buzz Out */
 @-webkit-keyframes hvr-buzz-out {
   10% {

@@ -15,7 +15,7 @@ include '../../config/setup.php';
 |
 */
 
-    $path = mt\Http\Requests::capture();
+    $path = mt\Http\Requests::get_path();
 
 
   $requestURL = $path['call_parts'][0];
