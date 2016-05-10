@@ -38,7 +38,7 @@ define( 'CONFIG', dirname(dirname(__FILE__)) . '/config/' );
        if (isset($path)) {
 
 
-            $page = mt\pages::getPage($path, 'admin', 'home'); 
+            $page = mt\pages::getPage($path, 'public', 'home'); 
 
         }
 
